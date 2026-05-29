@@ -31,10 +31,12 @@ from openai import OpenAI
 #  KONFIGURÁCIA – uprav podľa seba
 # ─────────────────────────────────────────────────────────────
 
-PODCAST_TITLE = "AI Dnes"
-PODCAST_DESCRIPTION = "Denný 20-minútový prehľad noviniek zo sveta umelej inteligencie."
+PODCAST_TITLE = "Kolby AI Podcast"
+PODCAST_DESCRIPTION = "Každý deň novinky zo sveta umelej inteligencie po slovensky."
 PODCAST_LANGUAGE = "sk"
-PODCAST_AUTHOR = "AI Podcast Bot"
+PODCAST_AUTHOR = "Andrej Kolbaský"
+PODCAST_EMAIL = "andrej.kolbasky@gmail.com"
+PODCAST_IMAGE_URL = "https://akalabeth77.github.io/ai-podcast/cover.png"
 
 # Slovenský hlas (edge-tts): Lukáš alebo Viktória
 # Všetky dostupné hlasy: edge-tts --list-voices | grep sk-SK
@@ -267,9 +269,20 @@ def update_rss_feed(episode_title: str, mp3_filename: str, mp3_size: int,
     ET.SubElement(channel, "description").text = PODCAST_DESCRIPTION
     ET.SubElement(channel, "language").text = PODCAST_LANGUAGE
     ET.SubElement(channel, "link").text = base_url
-    ET.SubElement(channel, "{http://www.itunes.com/dtds/podcast-1.0.dtd}author").text = PODCAST_AUTHOR
-    ET.SubElement(channel, "{http://www.itunes.com/dtds/podcast-1.0.dtd}explicit").text = "false"
-    ET.SubElement(channel, "{http://www.itunes.com/dtds/podcast-1.0.dtd}category", text="Technology")
+
+    itunes = "http://www.itunes.com/dtds/podcast-1.0.dtd"
+    ET.SubElement(channel, f"{{{itunes}}}author").text = PODCAST_AUTHOR
+    ET.SubElement(channel, f"{{{itunes}}}explicit").text = "false"
+    ET.SubElement(channel, f"{{{itunes}}}category", attrib={"text": "Technology"})
+    ET.SubElement(channel, f"{{{itunes}}}image", attrib={"href": PODCAST_IMAGE_URL})
+    owner = ET.SubElement(channel, f"{{{itunes}}}owner")
+    ET.SubElement(owner, f"{{{itunes}}}name").text = PODCAST_AUTHOR
+    ET.SubElement(owner, f"{{{itunes}}}email").text = PODCAST_EMAIL
+
+    image = ET.SubElement(channel, "image")
+    ET.SubElement(image, "url").text = PODCAST_IMAGE_URL
+    ET.SubElement(image, "title").text = PODCAST_TITLE
+    ET.SubElement(image, "link").text = base_url
 
     for ep in episodes:
         item = ET.SubElement(channel, "item")
