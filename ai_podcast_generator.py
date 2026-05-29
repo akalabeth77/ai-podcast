@@ -46,13 +46,8 @@ TTS_RATE = "+5%"
 # Koľko článkov spracovať (viac = dlhší podcast)
 MAX_ARTICLES = 8
 
-# Modely v poradí – skript skúša každý kým jeden nezafunguje
-FREE_MODELS = [
-    "deepseek/deepseek-chat:free",          # DeepSeek V3 – najspoľahlivejší free
-    "google/gemma-3-27b-it:free",           # Google Gemma 3 27B
-    "mistralai/mistral-7b-instruct:free",   # Mistral 7B – záloha
-]
-LLM_MODEL = FREE_MODELS[0]  # default, prepisuje sa pri retry
+# Google Gemini – 1500 požiadaviek/deň zadarmo, bez rate limitov
+LLM_MODEL = "gemini-2.0-flash"  # alebo "gemini-1.5-flash" ako záloha
 
 # Výstupné súbory
 OUTPUT_DIR = Path("./output")
@@ -143,14 +138,14 @@ def generate_podcast_script(articles: list[dict]) -> tuple[str, str]:
     if not articles:
         raise ValueError("Žiadne články na spracovanie!")
 
-    api_key = os.environ.get("OPENROUTER_API_KEY")
+    api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         raise EnvironmentError("OPENROUTER_API_KEY nie je nastavený!")
 
     # OpenRouter je OpenAI-kompatibilný – stačí zmeniť base_url
     client = OpenAI(
         api_key=api_key,
-        base_url="https://openrouter.ai/api/v1",
+        base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
     )
 
     articles_text = "\n\n".join([
@@ -184,36 +179,23 @@ DNEŠNÉ SPRÁVY:
 
 Začni priamo skriptom, bez akýchkoľvek úvodných poznámok."""
 
-    def call_llm(messages: list, max_tokens: int) -> str:
-        """Skúša modely v poradí, pri chybe prejde na ďalší."""
-        import time
-        for model in FREE_MODELS:
-            for attempt in range(2):  # max 2 pokusy na model
-                try:
-                    print(f"🤖 Skúšam model: {model} (pokus {attempt+1})")
-                    resp = client.chat.completions.create(
-                        model=model,
-                        max_tokens=max_tokens,
-                        messages=messages,
-                        timeout=60,
-                    )
-                    return resp.choices[0].message.content.strip()
-                except Exception as e:
-                    err = str(e)
-                    print(f"  ⚠️  {model} zlyhalo: {err[:80]}")
-                    if "429" in err or "rate" in err.lower():
-                        time.sleep(15)  # počkaj pri rate limite
-                    elif "404" in err or "No endpoints" in err:
-                        break  # model neexistuje, skús ďalší
-                    else:
-                        time.sleep(5)
-        raise RuntimeError("Všetky modely zlyhali. Skontroluj OpenRouter dashboard.")
+    print(f"🤖 Generujem skript cez Gemini ({LLM_MODEL})...")
+    response = client.chat.completions.create(
+        model=LLM_MODEL,
+        max_tokens=3000,
+        messages=[{"role": "user", "content": prompt}]
+    )
+    script = response.choices[0].message.content.strip()
 
-    script = call_llm([{"role": "user", "content": prompt}], max_tokens=3000)
-    episode_title = call_llm([{"role": "user", "content": (
-        f"Na základe tohto podcast skriptu vygeneruj krátky, výstižný názov epizódy "
-        f"(max 60 znakov, po slovensky, bez úvodzoviek):\n\n{script[:500]}"
-    )}], max_tokens=80).strip('"\'')
+    title_response = client.chat.completions.create(
+        model=LLM_MODEL,
+        max_tokens=80,
+        messages=[{"role": "user", "content": (
+            f"Na základe tohto podcast skriptu vygeneruj krátky, výstižný názov epizódy "
+            f"(max 60 znakov, po slovensky, bez úvodzoviek):\n\n{script[:500]}"
+        )}]
+    )
+    episode_title = title_response.choices[0].message.content.strip().strip('"\'')
 
     print(f"  ✅ Skript vygenerovaný: {len(script)} znakov | Názov: {episode_title}")
     return episode_title, script
