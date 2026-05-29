@@ -46,10 +46,13 @@ TTS_RATE = "+5%"
 # Koľko článkov spracovať (viac = dlhší podcast)
 MAX_ARTICLES = 8
 
-# Model cez OpenRouter – vyber čo chceš:
-# Zadarmo:  "google/gemini-2.0-flash-exp:free"  alebo  "meta-llama/llama-3.3-70b-instruct:free"
-# Platené:  "anthropic/claude-haiku-4-5"  alebo  "openai/gpt-4o-mini"
-LLM_MODEL = "meta-llama/llama-3.3-70b-instruct:free"
+# Modely v poradí – skript skúša každý kým jeden nezafunguje
+FREE_MODELS = [
+    "deepseek/deepseek-chat:free",          # DeepSeek V3 – najspoľahlivejší free
+    "google/gemma-3-27b-it:free",           # Google Gemma 3 27B
+    "mistralai/mistral-7b-instruct:free",   # Mistral 7B – záloha
+]
+LLM_MODEL = FREE_MODELS[0]  # default, prepisuje sa pri retry
 
 # Výstupné súbory
 OUTPUT_DIR = Path("./output")
@@ -59,7 +62,7 @@ EPISODES_FILE = Path("./docs/episodes.json")
 
 # ─────────────────────────────────────────────────────────────
 #  RSS FEEDY – zdroje AI noviniek
-# ──────────────────────────────────────────────────────────
+# ─────────────────────────────────────────────────────────────
 
 AI_NEWS_FEEDS = [
     # Technologické médiá
@@ -181,24 +184,36 @@ DNEŠNÉ SPRÁVY:
 
 Začni priamo skriptom, bez akýchkoľvek úvodných poznámok."""
 
-    print(f"🤖 Generujem skript cez OpenRouter ({LLM_MODEL})...")
-    response = client.chat.completions.create(
-        model=LLM_MODEL,
-        max_tokens=3000,
-        messages=[{"role": "user", "content": prompt}]
-    )
-    script = response.choices[0].message.content.strip()
+    def call_llm(messages: list, max_tokens: int) -> str:
+        """Skúša modely v poradí, pri chybe prejde na ďalší."""
+        import time
+        for model in FREE_MODELS:
+            for attempt in range(2):  # max 2 pokusy na model
+                try:
+                    print(f"🤖 Skúšam model: {model} (pokus {attempt+1})")
+                    resp = client.chat.completions.create(
+                        model=model,
+                        max_tokens=max_tokens,
+                        messages=messages,
+                        timeout=60,
+                    )
+                    return resp.choices[0].message.content.strip()
+                except Exception as e:
+                    err = str(e)
+                    print(f"  ⚠️  {model} zlyhalo: {err[:80]}")
+                    if "429" in err or "rate" in err.lower():
+                        time.sleep(15)  # počkaj pri rate limite
+                    elif "404" in err or "No endpoints" in err:
+                        break  # model neexistuje, skús ďalší
+                    else:
+                        time.sleep(5)
+        raise RuntimeError("Všetky modely zlyhali. Skontroluj OpenRouter dashboard.")
 
-    # Vygeneruj krátky názov epizódy
-    title_response = client.chat.completions.create(
-        model=LLM_MODEL,
-        max_tokens=80,
-        messages=[{"role": "user", "content": (
-            f"Na základe tohto podcast skriptu vygeneruj krátky, výstižný názov epizódy "
-            f"(max 60 znakov, po slovensky, bez úvodzoviek):\n\n{script[:500]}"
-        )}]
-    )
-    episode_title = title_response.choices[0].message.content.strip().strip('"\'')
+    script = call_llm([{"role": "user", "content": prompt}], max_tokens=3000)
+    episode_title = call_llm([{"role": "user", "content": (
+        f"Na základe tohto podcast skriptu vygeneruj krátky, výstižný názov epizódy "
+        f"(max 60 znakov, po slovensky, bez úvodzoviek):\n\n{script[:500]}"
+    )}], max_tokens=80).strip('"\'')
 
     print(f"  ✅ Skript vygenerovaný: {len(script)} znakov | Názov: {episode_title}")
     return episode_title, script
