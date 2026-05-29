@@ -1,0 +1,5 @@
+feedparser
+openai
+edge-tts
+httpx
+python-dateutil
