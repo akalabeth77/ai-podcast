@@ -49,7 +49,7 @@ MAX_ARTICLES = 8
 # Model cez OpenRouter – vyber čo chceš:
 # Zadarmo:  "google/gemini-2.0-flash-exp:free"  alebo  "meta-llama/llama-3.3-70b-instruct:free"
 # Platené:  "anthropic/claude-haiku-4-5"  alebo  "openai/gpt-4o-mini"
-LLM_MODEL = "google/gemini-2.0-flash-exp:free"
+LLM_MODEL = "meta-llama/llama-3.3-70b-instruct:free"
 
 # Výstupné súbory
 OUTPUT_DIR = Path("./output")
