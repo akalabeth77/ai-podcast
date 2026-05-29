@@ -47,7 +47,7 @@ TTS_RATE = "+5%"
 MAX_ARTICLES = 8
 
 # Google Gemini – 1500 požiadaviek/deň zadarmo, bez rate limitov
-LLM_MODEL = "gemini-1.5-flash"  # alebo "gemini-1.5-flash" ako záloha
+LLM_MODEL = "gemini-2.5-flash"
 
 # Výstupné súbory
 OUTPUT_DIR = Path("./output")
@@ -155,7 +155,7 @@ def generate_podcast_script(articles: list[dict]) -> tuple[str, str]:
         for i, a in enumerate(articles)
     ])
 
-    today_sk = datetime.now().strftime("%-d. %-m. %Y")
+    today_sk = datetime.now().strftime("%d. %m. %Y").lstrip("0").replace(". 0", ". ")
 
     prompt = f"""Si slovenský podcast moderátor pre show "AI Dnes".
 Napíš prirodzený, plynulý podcast skript v slovenčine na {today_sk}.
