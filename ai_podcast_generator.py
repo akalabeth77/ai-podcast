@@ -47,7 +47,7 @@ TTS_RATE = "+5%"
 MAX_ARTICLES = 8
 
 # Google Gemini – 1500 požiadaviek/deň zadarmo, bez rate limitov
-LLM_MODEL = "gemini-2.0-flash"  # alebo "gemini-1.5-flash" ako záloha
+LLM_MODEL = "gemini-1.5-flash"  # alebo "gemini-1.5-flash" ako záloha
 
 # Výstupné súbory
 OUTPUT_DIR = Path("./output")
