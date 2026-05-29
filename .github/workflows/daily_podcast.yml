@@ -1,0 +1,67 @@
+name: Denný AI Podcast
+
+on:
+  # Spúšťaj každý deň o 6:00 UTC (= 7:00 SEČ, alebo 8:00 SELČ)
+  schedule:
+    - cron: "0 6 * * *"
+
+  # Alebo spusti manuálne cez GitHub UI (Actions → Run workflow)
+  workflow_dispatch:
+
+permissions:
+  contents: write   # Potrebné pre commit RSS + vytvorenie Release
+  pages: write
+  id-token: write
+
+jobs:
+  generate-podcast:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ─── Stiahni repo ───────────────────────────────────────
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ─── Python ─────────────────────────────────────────────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Inštaluj závislosti
+        run: |
+          pip install feedparser openai edge-tts httpx python-dateutil
+
+      # ─── Spusti generátor ───────────────────────────────────
+      - name: Generuj podcast
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GITHUB_REPO_OWNER: ${{ github.repository_owner }}
+          GITHUB_REPO_NAME: ${{ github.event.repository.name }}
+        run: python ai_podcast_generator.py
+
+      # ─── Získaj dnešný dátum pre Release tag ────────────────
+      - name: Nastav dátum
+        id: date
+        run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      # ─── Vytvor GitHub Release a nahraj MP3 ─────────────────
+      - name: Nahraj MP3 ako GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.date.outputs.DATE }}
+          name: "AI Dnes – ${{ steps.date.outputs.DATE }}"
+          files: output/ai-dnes-${{ steps.date.outputs.DATE }}.mp3
+          body: |
+            Denná epizóda AI Dnes podcastu.
+            Automaticky vygenerovaná ${{ steps.date.outputs.DATE }}.
+
+      # ─── Commitni RSS feed na GitHub Pages ──────────────────
+      - name: Commitni RSS feed
+        run: |
+          git config user.name "AI Podcast Bot"
+          git config user.email "bot@ai-podcast.local"
+          git add docs/feed.xml docs/episodes.json
+          git diff --staged --quiet || git commit -m "😙️ Epizóda ${{ steps.date.outputs.DATE }}"
+          git push
