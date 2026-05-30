@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Každý deň novinky zo sveta umelej inteligencie po slovensky.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-29</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-30</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,16 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-29</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-30</link>
     </image>
+    <item>
+      <title>AI revol</title>
+      <description>Ahojte všetci fanúšikovia technológií, AI a budúcnosti! Vitajte pri ďalšej epizóde vášho obľúbeného podcastu AI Dnes. Dnes je piatok, 30. mája 2026, a ja som váš moderátor, pripravený vás previesť najhorúcejšími správami zo sveta umelej inteligencie. Dnes sa pozrieme na to, ako vám AI chce upratovať byt, ale za akú cenu, prečo aj ikona ako Ferrari podlieha AI revolúcii, prečo kodéri nechcú pracovať bez AI a či je to dobré, a povieme si aj o tom, ako môže byť AI v práci skvelý pomocník, ale aj pr...</description>
+      <pubDate>Sat, 30 May 2026 07:07:16 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-30/ai-dnes-2026-05-30.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-30/ai-dnes-2026-05-30.mp3" length="1945440" type="audio/mpeg" />
+      <ns0:duration>00:20:00</ns0:duration>
+    </item>
     <item>
       <title>AI D</title>
       <description>Ahojte všetci pri mikrofóne! Vítam vás pri ďalšej epizóde vášho obľúbeného podcastu AI Dnes. Píše sa 29. máj 2026 a máme pre vás opäť poriadnu dávku noviniek zo sveta umelej inteligencie, ktorá nám neustále mení životy – či už si to uvedomujeme, alebo nie. Dnes sa pozrieme na to, ako sa nám AI snaží upratať dom (zadarmo, ale s há...</description>
