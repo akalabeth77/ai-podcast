@@ -32,7 +32,13 @@ from openai import OpenAI
 # ─────────────────────────────────────────────────────────────
 
 PODCAST_TITLE = "Kolby AI Podcast"
-PODCAST_DESCRIPTION = "Každý deň novinky zo sveta umelej inteligencie po slovensky."
+PODCAST_DESCRIPTION = (
+    "Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. "
+    "Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, "
+    "nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. "
+    "Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. "
+    "Ideálne na rannú kávu alebo cestou do práce."
+)
 PODCAST_LANGUAGE = "sk"
 PODCAST_AUTHOR = "Andrej Kolbaský"
 PODCAST_EMAIL = "andrej.kolbasky@gmail.com"
@@ -159,27 +165,28 @@ def generate_podcast_script(articles: list[dict]) -> tuple[str, str]:
 
     today_sk = datetime.now().strftime("%d. %m. %Y").lstrip("0").replace(". 0", ". ")
 
-    prompt = f"""Si slovenský podcast moderátor pre show "AI Dnes".
+    prompt = f"""Si slovenský podcast moderátor pre show "Kolby AI Podcast".
 Napíš prirodzený, plynulý podcast skript v slovenčine na {today_sk}.
 
-ŠTRUKTÚRA (dodržuj):
-1. Úvod (30 sekúnd): Pozdrav, čo poslucháč dnes uslyší
-2. Hlavné správy (15-18 minút): Prejdi každú novinku, vysvetli kontext, prečo je dôležitá pre bežného človeka
-3. Praktický tip (2-3 minúty): Na základe dnešných správ jeden konkrétny tip ako využiť AI v bežnom živote
-4. Záver (30 sekúnd): Rozlúčenie
+ŠTRUKTÚRA (dodržuj presne):
+1. Úvod (30 sekúnd): Pozdrav poslucháčov, predstav sa ako Kolby AI Podcast, povedz čo dnes uslyší
+2. Hlavné správy (15-18 minút): Prejdi každú novinku zvlášť – vysvetli o čo ide, prečo je dôležitá pre bežného človeka, pridaj vlastný komentár
+3. Praktický tip dňa (2-3 minúty): Jeden konkrétny tip ako využiť AI v praxi na základe dnešných správ
+4. Záver (30 sekúnd): Rozlúč sa, pozvи na ďalšiu epizódu
 
-PRAVIDLÁ:
-- Píš hovorovo, nie formálne – ako by si rozprával priateľovi
-- Vysvetľuj technické pojmy jednoducho (napr. "LLM – to sú veľké jazykové modely, v skratke mozog za ChatGPT")
-- Pridávaj vlastné komentáre a postrehy, buď živý a zaujímavý
-- Dĺžka: cca 2000-2500 slov (zodpovedá 20 minútam)
-- NEPÍŠ stage directions ako [pauza] alebo [hudba] – iba hovorený text
-- Úplne vynechaj URL adresy
+PRAVIDLÁ – dodržuj všetky:
+- Píš hovorovo, nie formálne – ako by si rozprával priateľovi pri káve
+- Vysvetľuj technické pojmy jednoducho (napr. "veľký jazykový model – to je mozog za ChatGPT")
+- Buď živý, zaujímavý, pridávaj vlastné postrehy a humor
+- Minimálna dĺžka: 2500 slov – toto je tvrdá podmienka, kratší skript je neprijateľný
+- NEPÍŠ stage directions, poznámky pre moderátora ani zátvorky – iba hovorený text
+- Úplne vynechaj URL adresy a linky
+- Nepoužívaj skratky ako "AI Dnes" – vždy "Kolby AI Podcast"
 
 DNEŠNÉ SPRÁVY:
 {articles_text}
 
-Začni priamo skriptom, bez akýchkoľvek úvodných poznámok."""
+Začni priamo skriptom bez akýchkoľvek úvodných poznámok. Skript musí mať minimálne 2500 slov."""
 
     print(f"🤖 Generujem skript cez Gemini ({LLM_MODEL})...")
     response = client.chat.completions.create(
@@ -188,6 +195,13 @@ Začni priamo skriptom, bez akýchkoľvek úvodných poznámok."""
         messages=[{"role": "user", "content": prompt}]
     )
     script = response.choices[0].message.content.strip()
+
+    word_count = len(script.split())
+    if word_count < 1200:
+        raise ValueError(
+            f"Skript je príliš krátky: {word_count} slov (minimum 1200). "
+            "Skontroluj limity API alebo zvýš max_tokens."
+        )
 
     title_response = client.chat.completions.create(
         model=LLM_MODEL,
@@ -325,7 +339,7 @@ async def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     date_str = datetime.now().strftime("%Y-%m-%d")
-    mp3_filename = f"ai-dnes-{date_str}.mp3"
+    mp3_filename = f"kolby-ai-{date_str}.mp3"
     mp3_path = OUTPUT_DIR / mp3_filename
 
     # GitHub repo nastavenie (pre URL v RSS)

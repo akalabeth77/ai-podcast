@@ -31,7 +31,7 @@ jobs:
 
       - name: Inštaluj závislosti
         run: |
-          pip install feedparser openai edge-tts httpx python-dateutil
+          pip install -r requirements.txt
 
       # ─── Spusti generátor ───────────────────────────────────
       - name: Generuj podcast
@@ -51,10 +51,10 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.date.outputs.DATE }}
-          name: "AI Dnes – ${{ steps.date.outputs.DATE }}"
-          files: output/ai-dnes-${{ steps.date.outputs.DATE }}.mp3
+          name: "Kolby AI Podcast – ${{ steps.date.outputs.DATE }}"
+          files: output/kolby-ai-${{ steps.date.outputs.DATE }}.mp3
           body: |
-            Denná epizóda AI Dnes podcastu.
+            Denná epizóda Kolby AI Podcast.
             Automaticky vygenerovaná ${{ steps.date.outputs.DATE }}.
 
       # ─── Commitni RSS feed na GitHub Pages ──────────────────
