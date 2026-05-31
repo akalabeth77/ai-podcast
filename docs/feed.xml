@@ -2,7 +2,7 @@
 <rss xmlns:ns0="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>Kolby AI Podcast</title>
-    <description>Každý deň novinky zo sveta umelej inteligencie po slovensky.</description>
+    <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
     <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-31</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
@@ -19,12 +19,12 @@
       <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-31</link>
     </image>
     <item>
-      <title>AI, marihuana</title>
-      <description>Ahojte všetci pri mikrofóne! Vitajte pri ďalšej dávke umelých inteligencií, inovácií a možno aj trošku šialenstva v podcaste AI Dnes. Dnes je 31. mája 2026 a máme pre vás riadne horúce novinky zo sveta AI, ktoré vás možno prekvapia, možno pobavia, a možno aj trošku vystrašia. Pozrieme sa na to, ako sa AI preplieta s marihuanou a bitcoinom, ako sa niektorí vracajú k starému dobrému webu, aj na veľmi znepokojivé praktiky falošných AI influencerov. A nakoniec si dáme jeden super praktický tip, ako ...</description>
-      <pubDate>Sun, 31 May 2026 19:49:22 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-31/ai-dnes-2026-05-31.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-31/ai-dnes-2026-05-31.mp3" length="6798672" type="audio/mpeg" />
-      <ns0:duration>00:20:00</ns0:duration>
+      <title>Kolby AI Podcast</title>
+      <description>Ahojte všetci, vitajte pri Kolby AI Podcaste! Som váš hostiteľ a s radosťou vás vítam pri ďalšej dávke najčerstvejších a najzaujímavejších správ zo sveta umelej inteligencie. Dnes je piatok, 31. mája 2026, a my sa opäť ponoríme do divokých vôd AI, aby sme zistili, čo nám to tento týždeň prichystalo. Pripravte sa na poriadnu jazdu, pretože máme pred sebou správy, ktoré vás buď šokujú, rozosmejú, alebo prinajmenšom donútia zamyslieť sa nad tým, kam sa to vlastne uberáme. Budeme sa rozprávať o podi...</description>
+      <pubDate>Sun, 31 May 2026 20:15:23 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-31/kolby-ai-2026-05-31.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-31/kolby-ai-2026-05-31.mp3" length="5973408" type="audio/mpeg" />
+      <ns0:duration>00:16:35</ns0:duration>
     </item>
     <item>
       <title>AI revol</title>
