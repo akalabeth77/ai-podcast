@@ -184,7 +184,7 @@ Začni priamo skriptom, bez akýchkoľvek úvodných poznámok."""
     print(f"🤖 Generujem skript cez Gemini ({LLM_MODEL})...")
     response = client.chat.completions.create(
         model=LLM_MODEL,
-        max_tokens=3000,
+        max_tokens=8000,
         messages=[{"role": "user", "content": prompt}]
     )
     script = response.choices[0].message.content.strip()
