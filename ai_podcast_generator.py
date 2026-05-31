@@ -240,7 +240,18 @@ def update_rss_feed(episode_title: str, mp3_filename: str, mp3_size: int,
     episode_id = now.strftime("%Y-%m-%d")
     mp3_url = f"{base_url.rstrip('/')}/{mp3_filename}"
 
-    # Pridaj novú epizódu
+    # Vypočítaj reálne trvanie z MP3
+    duration_str = "00:20:00"
+    mp3_path = OUTPUT_DIR / mp3_filename
+    if mp3_path.exists():
+        try:
+            from mutagen.mp3 import MP3
+            audio = MP3(str(mp3_path))
+            total_sec = int(audio.info.length)
+            duration_str = f"{total_sec // 3600:02d}:{(total_sec % 3600) // 60:02d}:{total_sec % 60:02d}"
+        except Exception:
+            pass
+
     new_episode = {
         "id": episode_id,
         "title": episode_title,
@@ -248,10 +259,13 @@ def update_rss_feed(episode_title: str, mp3_filename: str, mp3_size: int,
         "pub_date": pub_date,
         "mp3_url": mp3_url,
         "mp3_size": mp3_size,
-        "duration": "00:20:00",
+        "duration": duration_str,
     }
+
+    # Nahraď existujúcu epizódu pre daný dátum, alebo pridaj novú
+    episodes = [ep for ep in episodes if ep.get("id") != episode_id]
     episodes.insert(0, new_episode)
-    episodes = episodes[:60]  # Uchovaj max 60 epizód
+    episodes = episodes[:60]
 
     with open(EPISODES_FILE, "w", encoding="utf-8") as f:
         json.dump(episodes, f, ensure_ascii=False, indent=2)

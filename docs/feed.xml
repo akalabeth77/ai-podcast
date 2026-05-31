@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Každý deň novinky zo sveta umelej inteligencie po slovensky.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-31</link>
+    <link>https://akalabeth77.github.io/ai-podcast</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,7 +16,7 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-31</link>
+      <link>https://akalabeth77.github.io/ai-podcast</link>
     </image>
     <item>
       <title>AI:</title>
@@ -24,22 +24,6 @@
       <pubDate>Sun, 31 May 2026 11:42:33 +0000</pubDate>
       <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-31/ai-dnes-2026-05-31.mp3</guid>
       <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-31/ai-dnes-2026-05-31.mp3" length="5383440" type="audio/mpeg" />
-      <ns0:duration>00:20:00</ns0:duration>
-    </item>
-    <item>
-      <title>AI</title>
-      <description>Ahojte všetci a vitajte pri ďalšej epizóde vášho obľúbeného podcastu AI Dnes! Dnes je 31. máj 2026 a, ako vždy, máme pre vás poriadnu dávku noviniek zo sveta umelej inteligencie a technológií, ktoré hýbu svetom. Čo nás dnes čaká? Pozrieme sa na to, ako AI niekedy slúži podvodníkom, prečo je dobré premýšľať, čo zadarmo poskytujete technologickým firmám, Meta chystá nový AI gadget a na záver si, samozrejme, dáme jeden super praktický tip, ako AI využiť vo svoj prospech, no zároveň zostať v bezpečí...</description>
-      <pubDate>Sun, 31 May 2026 08:53:43 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-31/ai-dnes-2026-05-31.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-31/ai-dnes-2026-05-31.mp3" length="503712" type="audio/mpeg" />
-      <ns0:duration>00:20:00</ns0:duration>
-    </item>
-    <item>
-      <title>AI upratuje</title>
-      <description>Ahojte všetci priatelia umelých inteligencií a fanúšikovia budúcnosti! Vitajte pri ďalšej epizóde vášho obľúbeného podcastu AI Dnes. Dnes je piatok, 30. mája 2026, a ja som váš moderátor, pripravený ponoriť sa s vami do sveta, ktorý sa každým dňom mení pred očami vďaka AI. Dnes si povieme o tom, ako sa umelá inteligencia snaží upratať naše domovy – doslova a zadarmo, ale s malým háčikom. Pozrieme sa na budúcnosť áut a dokonca aj na to, ako AI mení dizajnérsky svet, aj keď občas funguje ako taký ...</description>
-      <pubDate>Sat, 30 May 2026 08:34:29 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-30/ai-dnes-2026-05-30.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-30/ai-dnes-2026-05-30.mp3" length="1750464" type="audio/mpeg" />
       <ns0:duration>00:20:00</ns0:duration>
     </item>
     <item>
@@ -56,14 +40,6 @@
       <pubDate>Fri, 29 May 2026 21:58:06 +0000</pubDate>
       <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-29/ai-dnes-2026-05-29.mp3</guid>
       <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-29/ai-dnes-2026-05-29.mp3" length="146592" type="audio/mpeg" />
-      <ns0:duration>00:20:00</ns0:duration>
-    </item>
-    <item>
-      <title>AI Dnes:</title>
-      <description>Ahojte všetci a vitajte pri ďalšej epizóde AI Dnes! Dnes je 29. mája 2026 a máme pre vás opäť poriadnu dávku noviniek zo sveta umelej inteligencie. Povieme si, prečo vám chce jedna firma zadarmo upratať byt, ale aj to, prečo by sme mali byť na pozore, keď firmy začnú až príliš veriť, že AI všetko vyrieši. Pozrieme sa na prekvapivý dizajn prvého...</description>
-      <pubDate>Fri, 29 May 2026 21:46:18 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-29/ai-dnes-2026-05-29.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-29/ai-dnes-2026-05-29.mp3" length="143424" type="audio/mpeg" />
       <ns0:duration>00:20:00</ns0:duration>
     </item>
   </channel>

@@ -3,3 +3,4 @@ openai
 edge-tts
 httpx
 python-dateutil
+mutagen
