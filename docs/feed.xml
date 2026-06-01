@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-31</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-01</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,16 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-31</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-01</link>
     </image>
+    <item>
+      <title>AI svet</title>
+      <description>Ahojte všetci priatelia umelých inteligencií, fanúšikovia technológií a zvedavci, ktorí sa radi ponárajú do sveta, kde sa digitálne stretáva s reálnym! Je 1. jún 2026 a vy počúvate Kolby AI Podcast, vášho sprievodcu divokým, fascinujúcim a občas poriadne šialeným svetom umelej inteligencie. Dnes sa ponoríme do bizarných kútov internetu, kde sa s Bitcoinom predávajú vaporizéry, pozrieme sa na starú dobrú webstránku, ktorá prekvapivo konkuruje AI start-upom, a nebudú chýbať ani nejaké tie etické d...</description>
+      <pubDate>Mon, 01 Jun 2026 07:33:34 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-01/kolby-ai-2026-06-01.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-01/kolby-ai-2026-06-01.mp3" length="7788384" type="audio/mpeg" />
+      <ns0:duration>00:21:38</ns0:duration>
+    </item>
     <item>
       <title>Kolby AI Podcast</title>
       <description>Ahojte všetci, vitajte pri Kolby AI Podcaste! Som váš hostiteľ a s radosťou vás vítam pri ďalšej dávke najčerstvejších a najzaujímavejších správ zo sveta umelej inteligencie. Dnes je piatok, 31. mája 2026, a my sa opäť ponoríme do divokých vôd AI, aby sme zistili, čo nám to tento týždeň prichystalo. Pripravte sa na poriadnu jazdu, pretože máme pred sebou správy, ktoré vás buď šokujú, rozosmejú, alebo prinajmenšom donútia zamyslieť sa nad tým, kam sa to vlastne uberáme. Budeme sa rozprávať o podi...</description>
