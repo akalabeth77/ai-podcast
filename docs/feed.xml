@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-01</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-02</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,16 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-01</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-02</link>
     </image>
+    <item>
+      <title>AI Novinky:</title>
+      <description>Ahojte všetci priatelia technológií, inovácií a všetkého, čo nám v budúcnosti uľahčí (alebo možno skomplikuje) život! Vitajte pri ďalšej epizóde vášho obľúbeného Kolby AI Podcastu, kde sa ponoríme do najčerstvejších správ zo sveta umelej inteligencie. Dnes je 2. jún 2026 a máme pre vás riadnu dávku horúcich noviniek, ktoré ovplyvňujú nielen technologický svet, ale aj nás všetkých. Povieme si o revolučných oznámeniach z Microsoft Build 2026, pozrieme sa na prekvapivý krok Donalda Trumpa ohľadom r...</description>
+      <pubDate>Tue, 02 Jun 2026 21:23:48 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-02/kolby-ai-2026-06-02.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-02/kolby-ai-2026-06-02.mp3" length="6240528" type="audio/mpeg" />
+      <ns0:duration>00:17:20</ns0:duration>
+    </item>
     <item>
       <title>AI novinky:</title>
       <description>Ahojte všetci, vitajte pri mikrofónoch Kolby AI Podcastu, tu je váš obľúbený sprievodca svetom umelej inteligencie a všetkého, čo s ňou súvisí. Dnes je prvý jún 2026 a my sa ponoríme do najčerstvejších a najšokujúcejších správ zo sveta technológií. Pripravte sa, pretože dnešná epizóda je plná neuveriteľných príbehov – od kryptokanabisových vapov, cez podvodníkov s AI, až po prekvapivé kroky miliardárov a ekologických aktivistiek. Nebude chýbať ani náš praktický tip dňa, takže si určite naladíte ...</description>
