@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-05</link>
+    <link>https://github.com/tvoje-meno/ai-podcast/releases/download/2026-06-05</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,15 +16,15 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-05</link>
+      <link>https://github.com/tvoje-meno/ai-podcast/releases/download/2026-06-05</link>
     </image>
     <item>
-      <title>AI novinky:</title>
-      <description>Ahojte všetci priatelia umelej inteligencie a všetkého, čo s ňou súvisí! Vitajte pri počúvaní Kolby AI Podcastu. Dnes je piaty jún 2026 a ja vás srdečne zdravím pri našom pravidelnom stretnutí s najhorúcejšími novinkami zo sveta AI. Pripravte si kávu, alebo čo už len radi popíjate, pretože sa dnes pozrieme na poriadnu kopu zaujímavých tém. Od gigantických dátových centier, cez čipy, ktoré hýbu svetom, až po snahy regulovať potenciálne nebezpečenstvo AI. Verím, že to bude ako vždy pestré a plné p...</description>
-      <pubDate>Fri, 05 Jun 2026 10:03:54 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-05/kolby-ai-2026-06-05.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-05/kolby-ai-2026-06-05.mp3" length="5678064" type="audio/mpeg" />
-      <ns0:duration>00:15:46</ns0:duration>
+      <title>Ep. 9: Éj-aj v laptope a nekonečné dátové centrá: Sny vs. realita</title>
+      <description>Ahojte všetci priaznivci technológií a budúcnosti! Vitajte pri Kolby AI Podcaste, dnešného 5. júna 2026. Som váš moderátor a pred vami je už neuveriteľná, v poradí deviata epizóda, kde sa spoločne ponoríme do najčerstvejších a najzaujímavejších správ zo sveta umelej inteligencie. Viete, niekedy mám pocit, že ten čas letí rýchlejšie ako svetelné bity cez dátové káble, a to hlavne v éj-aj svete, kde sa novinky sypú ako jarné kvety po daždi. A veru, dnes máme pred sebou poriadnu kytičku plnú prekva...</description>
+      <pubDate>Fri, 05 Jun 2026 18:02:51 +0000</pubDate>
+      <guid>https://github.com/tvoje-meno/ai-podcast/releases/download/2026-06-05/kolby-ai-2026-06-05.mp3</guid>
+      <enclosure url="https://github.com/tvoje-meno/ai-podcast/releases/download/2026-06-05/kolby-ai-2026-06-05.mp3" length="12209616" type="audio/mpeg" />
+      <ns0:duration>00:33:54</ns0:duration>
     </item>
     <item>
       <title>AI agenty,</title>

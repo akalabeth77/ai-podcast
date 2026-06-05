@@ -138,9 +138,9 @@ def fetch_todays_ai_news(max_articles: int = MAX_ARTICLES) -> list[dict]:
 #  KROK 2: Vygeneruj podcast skript
 # ─────────────────────────────────────────────────────────────
 
-def generate_podcast_script(articles: list[dict]) -> tuple[str, str]:
+def generate_podcast_script(articles: list[dict], episode_number: int) -> tuple[str, str]:
     """
-    Cez OpenRouter vygeneruje prirodzený slovenský podcast skript.
+    Cez Gemini vygeneruje prirodzený slovenský podcast skript.
     Vracia (title, full_script).
     """
     if not articles:
@@ -148,9 +148,8 @@ def generate_podcast_script(articles: list[dict]) -> tuple[str, str]:
 
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        raise EnvironmentError("OPENROUTER_API_KEY nie je nastavený!")
+        raise EnvironmentError("GEMINI_API_KEY nie je nastavený!")
 
-    # OpenRouter je OpenAI-kompatibilný – stačí zmeniť base_url
     client = OpenAI(
         api_key=api_key,
         base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
@@ -166,54 +165,85 @@ def generate_podcast_script(articles: list[dict]) -> tuple[str, str]:
     today_sk = datetime.now().strftime("%d. %m. %Y").lstrip("0").replace(". 0", ". ")
 
     prompt = f"""Si slovenský podcast moderátor pre show "Kolby AI Podcast".
-Napíš prirodzený, plynulý podcast skript v slovenčine na {today_sk}.
+Napíš prirodzený, plynulý podcast skript v slovenčine na {today_sk}. Toto je epizóda číslo {episode_number}.
 
 ŠTRUKTÚRA (dodržuj presne):
-1. Úvod (30 sekúnd): Pozdrav poslucháčov, predstav sa ako Kolby AI Podcast, povedz čo dnes uslyší
-2. Hlavné správy (15-18 minút): Prejdi každú novinku zvlášť – vysvetli o čo ide, prečo je dôležitá pre bežného človeka, pridaj vlastný komentár
-3. Praktický tip dňa (2-3 minúty): Jeden konkrétny tip ako využiť AI v praxi na základe dnešných správ
-4. Záver (30 sekúnd): Rozlúč sa, pozvи na ďalšiu epizódu
+1. Úvod: Pozdrav poslucháčov, predstav sa ako Kolby AI Podcast (epizóda {episode_number}), zhrň ČO KONKRÉTNE dnes pokryjeme – vymenuj všetky témy, ktoré sa budú preberať
+2. Hlavné správy: Prejdi KAŽDÚ jednu novinku zo zoznamu zvlášť – vysvetli o čo ide, prečo je dôležitá pre bežného človeka, pridaj vlastný komentár a zaujímavú analógiu
+3. Praktický tip dňa: Jeden konkrétny, použiteľný tip ako využiť AI v praxi na základe dnešných správ – s konkrétnym príkladom ako to urobiť
+4. Záver: Zhrň čo sme dnes prebrali, rozlúč sa, pozvи na zajtra
 
-PRAVIDLÁ – dodržuj všetky:
-- Píš hovorovo, nie formálne – ako by si rozprával priateľovi pri káve
-- Vysvetľuj technické pojmy jednoducho (napr. "veľký jazykový model – to je mozog za ChatGPT")
-- Buď živý, zaujímavý, pridávaj vlastné postrehy a humor
-- Minimálna dĺžka: 2500 slov – toto je tvrdá podmienka, kratší skript je neprijateľný
-- NEPÍŠ stage directions, poznámky pre moderátora ani zátvorky – iba hovorený text
-- Úplne vynechaj URL adresy a linky
-- Nepoužívaj skratky ako "AI Dnes" – vždy "Kolby AI Podcast"
+KRITICKÉ PRAVIDLÁ – porušenie je neprijateľné:
+- KOMPLETNOSŤ: Ak v úvode spomínaš nejakú tému, MUSÍŠ ju v epizóde aj skutočne pokryť. Nikdy nesľubuj témy, ktoré nepokryješ. Každá téma zo zoznamu správ musí byť spracovaná pred záverom.
+- DĹŽKA: Minimálne 3500 slov – epizóda musí byť kompletná. Nekončи pred záverom. Záver píš až keď si pokryl každú novinku.
+- PLYNULOSŤ: Píš hovorovo, nie formálne – ako by si rozprával priateľovi pri káve
+- ZROZUMITEĽNOSŤ: Vysvetľuj technické pojmy jednoducho (napr. "veľký jazykový model – to je mozog za ChatGPT")
+- ŽIVOSŤ: Buď zaujímavý, pridávaj vlastné postrehy, humor a analógie zo slovenského kontextu
+- BEZ STAGE DIRECTIONS: NEPÍŠ poznámky pre moderátora, zátvorky ani pokyny – iba hovorený text
+- BEZ LINKOV: Úplne vynechaj URL adresy a webové linky
+- NÁZOV SHOW: Nepoužívaj "AI Dnes" ani iné varianty – vždy "Kolby AI Podcast"
 
-DNEŠNÉ SPRÁVY:
+FONETICKÉ PRAVIDLÁ – toto je kľúčové pre správnu výslovnosť:
+Slovenský text-to-speech číta anglické slová zle. Preto anglické technické pojmy VŽDY nahraď fonetickým zápisom:
+- "cloud" → píš "klaud"
+- "AI" → píš "éj-aj" (alebo "umelá inteligencia")
+- "ChatGPT" → píš "čet-dží-pí-tí"
+- "OpenAI" → píš "óupn éj-aj"
+- "startup" → píš "štartap"
+- "streaming" → píš "stríming"
+- "online" → píš "onlajn"
+- "update" / "upgrade" → píš "apdejt" / "apgreid"
+- "app" → píš "apka" alebo "aplikácia"
+- "prompt" → píš "promt"
+- "benchmark" → píš "benčmark"
+- "deployment" → píš "nasadenie" alebo "diploiment"
+- "framework" → píš "frejmmvork"
+- "training" (v kontexte AI) → píš "trénovanie"
+- "fine-tuning" → píš "fajn-tjúning"
+- "reinforcement learning" → píš "posilňovacie učenie"
+- "deep learning" → píš "hlboké učenie"
+- "neural network" → píš "neurónová sieť"
+- "open source" → píš "óupn-sors"
+- "multimodal" → píš "multimodálny"
+- "token" (v kontexte AI) → píš "token" (toto je v poriadku)
+- "GitHub" → píš "git-hab"
+- "Google" → nechaj ako je (všeobecne známe)
+- "Microsoft" → nechaj ako je
+- Iné anglické slová: vždy nahraď slovenským ekvivalentom alebo fonetickým zápisom
+
+DNEŠNÉ SPRÁVY (pokryj VŠETKY):
 {articles_text}
 
-Začni priamo skriptom bez akýchkoľvek úvodných poznámok. Skript musí mať minimálne 2500 slov."""
+FORMÁT VÝSTUPU – VEĽMI DÔLEŽITÉ:
+Úplne prvý riadok musí byť IBA názov epizódy v tomto formáte:
+NAZOV: Ep. {episode_number}: [kreatívny názov max 60 znakov]
+Príklady: "NAZOV: Ep. 9: Keď laptopy začnú myslieť za nás" alebo "NAZOV: Ep. 9: Dátové centrá — drahé sny alebo nevyhnutnosť?"
+Za názvom nasleduje prázdny riadok a potom začína samotný hovorený skript (bez akýchkoľvek ďalších metadát)."""
 
     print(f"🤖 Generujem skript cez Gemini ({LLM_MODEL})...")
     response = client.chat.completions.create(
         model=LLM_MODEL,
-        max_tokens=8000,
+        max_tokens=16000,
         messages=[{"role": "user", "content": prompt}]
     )
-    script = response.choices[0].message.content.strip()
+    full_output = response.choices[0].message.content.strip()
+
+    # Extrahuj názov z prvého riadku
+    lines = full_output.split("\n")
+    episode_title = f"Ep. {episode_number}"
+    script = full_output
+    if lines[0].startswith("NAZOV:"):
+        episode_title = lines[0].removeprefix("NAZOV:").strip().strip('"\'')
+        script = "\n".join(lines[1:]).lstrip("\n").strip()
 
     word_count = len(script.split())
-    if word_count < 1200:
+    if word_count < 2000:
         raise ValueError(
-            f"Skript je príliš krátky: {word_count} slov (minimum 1200). "
+            f"Skript je príliš krátky: {word_count} slov (minimum 2000). "
             "Skontroluj limity API alebo zvýš max_tokens."
         )
 
-    title_response = client.chat.completions.create(
-        model=LLM_MODEL,
-        max_tokens=80,
-        messages=[{"role": "user", "content": (
-            f"Na základe tohto podcast skriptu vygeneruj krátky, výstižný názov epizódy "
-            f"(max 60 znakov, po slovensky, bez úvodzoviek):\n\n{script[:500]}"
-        )}]
-    )
-    episode_title = title_response.choices[0].message.content.strip().strip('"\'')
-
-    print(f"  ✅ Skript vygenerovaný: {len(script)} znakov | Názov: {episode_title}")
+    print(f"  ✅ Skript vygenerovaný: {word_count} slov | Názov: {episode_title}")
     return episode_title, script
 
 
@@ -246,7 +276,7 @@ def update_rss_feed(episode_title: str, mp3_filename: str, mp3_size: int,
     # Načítaj existujúce epizódy
     episodes = []
     if EPISODES_FILE.exists():
-        with open(EPISODES_FILE) as f:
+        with open(EPISODES_FILE, encoding="utf-8") as f:
             episodes = json.load(f)
 
     now = datetime.now(timezone.utc)
@@ -349,6 +379,13 @@ async def main():
     # MP3 sú nahrané ako GitHub Release assets
     release_base = f"https://github.com/{github_user}/{github_repo}/releases/download/{date_str}"
 
+    # Vypočítaj číslo epizódy
+    episode_number = 1
+    if EPISODES_FILE.exists():
+        with open(EPISODES_FILE, encoding="utf-8") as f:
+            existing = json.load(f)
+        episode_number = len(existing) + 1
+
     # 1. Novinky
     articles = fetch_todays_ai_news()
     if not articles:
@@ -356,7 +393,7 @@ async def main():
         articles = fetch_todays_ai_news(max_articles=MAX_ARTICLES)
 
     # 2. Skript
-    episode_title, script = generate_podcast_script(articles)
+    episode_title, script = generate_podcast_script(articles, episode_number)
 
     # Ulož skript pre debugovanie
     script_path = OUTPUT_DIR / f"script-{date_str}.txt"
