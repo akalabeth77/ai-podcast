@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-04</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-05</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,16 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-04</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-05</link>
     </image>
+    <item>
+      <title>AI novinky:</title>
+      <description>Ahojte všetci priatelia umelej inteligencie a všetkého, čo s ňou súvisí! Vitajte pri počúvaní Kolby AI Podcastu. Dnes je piaty jún 2026 a ja vás srdečne zdravím pri našom pravidelnom stretnutí s najhorúcejšími novinkami zo sveta AI. Pripravte si kávu, alebo čo už len radi popíjate, pretože sa dnes pozrieme na poriadnu kopu zaujímavých tém. Od gigantických dátových centier, cez čipy, ktoré hýbu svetom, až po snahy regulovať potenciálne nebezpečenstvo AI. Verím, že to bude ako vždy pestré a plné p...</description>
+      <pubDate>Fri, 05 Jun 2026 10:03:54 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-05/kolby-ai-2026-06-05.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-05/kolby-ai-2026-06-05.mp3" length="5678064" type="audio/mpeg" />
+      <ns0:duration>00:15:46</ns0:duration>
+    </item>
     <item>
       <title>AI agenty,</title>
       <description>Ahojte všetci, vitajte pri ďalšej epizóde Kolby AI Podcastu! Ja som váš moderátor a teším sa, že ste sa k nám opäť pridali, aby sme spoločne preskúmali, čo nové a zaujímavé sa deje vo svete umelej inteligencie. Dnes máme pred sebou naozaj šťavnaté témy, od robotov v skladoch, s ktorými sa už môžeme porozprávať, až po fascinujúce – a možno trochu strašidelné – schopnosti najnovších AI agentov, ktorí o nás vedia až príliš. Pozrieme sa aj na to, ako sa AI snaží pomôcť Amazonu pri hľadaní produktov,...</description>
