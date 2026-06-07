@@ -68,7 +68,7 @@ EPISODES_FILE = Path("./docs/episodes.json")
 # ─────────────────────────────────────────────────────────────
 
 AI_NEWS_FEEDS = [
-    # Technologické médiá
+    # Technologické médiá – svet
     "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
     "https://techcrunch.com/category/artificial-intelligence/feed/",
     "https://arstechnica.com/tag/ai/feed/",
@@ -78,39 +78,79 @@ AI_NEWS_FEEDS = [
     "https://huggingface.co/blog/feed.xml",
     # Komunita
     "https://hnrss.org/newest?q=LLM+AI+GPT+Claude&points=100",
-    # MIT Technology Review – AI sekcia
+    # MIT Technology Review
     "https://www.technologyreview.com/feed/",
+    # EU / európska perspektíva
+    "https://www.euractiv.com/sections/digital/feed/",
+    "https://sciencebusiness.net/feed",
 ]
+
+# Feedy špeciálne pre EU/SK sekciu
+EU_SK_FEEDS = [
+    "https://www.euractiv.com/sections/digital/feed/",
+    "https://sciencebusiness.net/feed",
+    "https://www.euractiv.com/sections/data-protection/feed/",
+]
+
+
+# ─────────────────────────────────────────────────────────────
+#  POMOCNÉ FUNKCIE
+# ─────────────────────────────────────────────────────────────
+
+DAYS_SK = ["pondelok", "utorok", "streda", "štvrtok", "piatok", "sobota", "nedeľa"]
+
+def get_today_sk() -> str:
+    """Vráti dnešný dátum vrátane dňa v týždni po slovensky."""
+    now = datetime.now()
+    day_name = DAYS_SK[now.weekday()]
+    date_part = now.strftime("%d. %m. %Y").lstrip("0").replace(". 0", ". ")
+    return f"{day_name}, {date_part}"
+
+
+def clean_markdown(text: str) -> str:
+    """Odstráni markdown formátovanie, ktoré by TTS čítal ako slová (hviezdičky a pod.)."""
+    # Tučné a kurzíva: **text** a *text*
+    text = re.sub(r'\*{1,3}([^*]+)\*{1,3}', r'\1', text)
+    # Nadpisy: # Nadpis
+    text = re.sub(r'^#{1,6}\s+', '', text, flags=re.MULTILINE)
+    # Citácie: > text
+    text = re.sub(r'^>\s*', '', text, flags=re.MULTILINE)
+    # Markdown linky: [text](url)
+    text = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', text)
+    # Horizontálne čiary
+    text = re.sub(r'^[-*_]{3,}\s*$', '', text, flags=re.MULTILINE)
+    # Odsadzovanie zoznamov: "- " alebo "* " na začiatku riadku
+    text = re.sub(r'^[\-\*•]\s+', '', text, flags=re.MULTILINE)
+    # Číslované zoznamy: "1. " na začiatku riadku (len ak nasledujú ďalší text)
+    text = re.sub(r'^\d+\.\s+', '', text, flags=re.MULTILINE)
+    # Kód: `code`
+    text = re.sub(r'`([^`]+)`', r'\1', text)
+    # Viacnásobné prázdne riadky → jeden
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    return text.strip()
 
 
 # ─────────────────────────────────────────────────────────────
 #  KROK 1: Stiahni novinky
 # ─────────────────────────────────────────────────────────────
 
-def fetch_todays_ai_news(max_articles: int = MAX_ARTICLES) -> list[dict]:
-    """Stiahne dnešné AI novinky zo všetkých RSS feedov."""
+def _parse_feed_articles(feed_urls: list[str], max_per_feed: int = 5, max_age_days: int = 2) -> list[dict]:
+    """Pomocná funkcia – stiahne a vyčistí články zo zoznamu feedov."""
     today = datetime.now(timezone.utc).date()
     articles = []
-
-    print("📰 Sťahujem AI novinky...")
-
-    for feed_url in AI_NEWS_FEEDS:
+    for feed_url in feed_urls:
         try:
             feed = feedparser.parse(feed_url, agent="AI-Podcast-Bot/1.0")
-            for entry in feed.entries[:5]:  # max 5 z každého zdroja
-                # Skontroluj čerstvosť (max 48h staré)
+            for entry in feed.entries[:max_per_feed]:
                 pub = entry.get("published_parsed") or entry.get("updated_parsed")
                 if pub:
                     pub_date = datetime(*pub[:6], tzinfo=timezone.utc).date()
-                    if (today - pub_date).days > 2:
+                    if (today - pub_date).days > max_age_days:
                         continue
-
                 title = entry.get("title", "").strip()
                 summary = entry.get("summary", "") or entry.get("description", "")
-                # Odistrihni HTML tagy
                 summary = re.sub(r"<[^>]+>", " ", summary).strip()
                 summary = re.sub(r"\s+", " ", summary)[:800]
-
                 if title and len(title) > 10:
                     articles.append({
                         "title": title,
@@ -120,25 +160,45 @@ def fetch_todays_ai_news(max_articles: int = MAX_ARTICLES) -> list[dict]:
                     })
         except Exception as e:
             print(f"  ⚠️  Chyba pri {feed_url}: {e}")
+    return articles
 
-    # Odober duplikáty podľa podobného názvu
-    seen_titles = set()
+
+def _deduplicate(articles: list[dict]) -> list[dict]:
+    seen = set()
     unique = []
     for a in articles:
         key = a["title"].lower()[:60]
-        if key not in seen_titles:
-            seen_titles.add(key)
+        if key not in seen:
+            seen.add(key)
             unique.append(a)
+    return unique
 
-    print(f"  ✅ Nájdených {len(unique)} článkov, vyberám top {max_articles}")
-    return unique[:max_articles]
+
+def fetch_todays_ai_news(max_articles: int = MAX_ARTICLES) -> list[dict]:
+    """Stiahne dnešné AI novinky zo všetkých RSS feedov."""
+    print("📰 Sťahujem AI novinky...")
+    articles = _deduplicate(_parse_feed_articles(AI_NEWS_FEEDS))
+    print(f"  ✅ Nájdených {len(articles)} článkov, vyberám top {max_articles}")
+    return articles[:max_articles]
+
+
+def fetch_eu_sk_news(max_articles: int = 3) -> list[dict]:
+    """Stiahne novinky o AI zo zdrojov zameraných na EÚ/Slovensko."""
+    print("🇪🇺 Sťahujem EÚ/SK AI novinky...")
+    articles = _deduplicate(_parse_feed_articles(EU_SK_FEEDS, max_per_feed=5, max_age_days=4))
+    print(f"  ✅ Nájdených {len(articles)} EÚ/SK článkov, vyberám top {max_articles}")
+    return articles[:max_articles]
 
 
 # ─────────────────────────────────────────────────────────────
 #  KROK 2: Vygeneruj podcast skript
 # ─────────────────────────────────────────────────────────────
 
-def generate_podcast_script(articles: list[dict], episode_number: int) -> tuple[str, str]:
+def generate_podcast_script(
+    articles: list[dict],
+    episode_number: int,
+    eu_articles: list[dict] | None = None,
+) -> tuple[str, str]:
     """
     Cez Gemini vygeneruje prirodzený slovenský podcast skript.
     Vracia (title, full_script).
@@ -156,39 +216,56 @@ def generate_podcast_script(articles: list[dict], episode_number: int) -> tuple[
     )
 
     articles_text = "\n\n".join([
-        f"**{i+1}. {a['title']}**\n"
+        f"{i+1}. {a['title']}\n"
         f"Zdroj: {a['source']}\n"
         f"Obsah: {a['summary']}"
         for i, a in enumerate(articles)
     ])
 
-    today_sk = datetime.now().strftime("%d. %m. %Y").lstrip("0").replace(". 0", ". ")
+    eu_section = ""
+    if eu_articles:
+        eu_text = "\n\n".join([
+            f"{i+1}. {a['title']}\n"
+            f"Zdroj: {a['source']}\n"
+            f"Obsah: {a['summary']}"
+            for i, a in enumerate(eu_articles)
+        ])
+        eu_section = f"""
+
+EÚ / SLOVENSKO SPRÁVY (použi pre sekciu č. 3 nižšie):
+{eu_text}"""
+
+    today_sk = get_today_sk()
 
     prompt = f"""Si slovenský podcast moderátor pre show "Kolby AI Podcast".
-Napíš prirodzený, plynulý podcast skript v slovenčine na {today_sk}. Toto je epizóda číslo {episode_number}.
+Napíš prirodzený, plynulý podcast skript v slovenčine. Dnes je {today_sk}. Toto je epizóda číslo {episode_number}.
 
-ŠTRUKTÚRA (dodržuj presne):
-1. Úvod: Pozdrav poslucháčov, predstav sa ako Kolby AI Podcast (epizóda {episode_number}), zhrň ČO KONKRÉTNE dnes pokryjeme – vymenuj všetky témy, ktoré sa budú preberať
-2. Hlavné správy: Prejdi KAŽDÚ jednu novinku zo zoznamu zvlášť – vysvetli o čo ide, prečo je dôležitá pre bežného človeka, pridaj vlastný komentár a zaujímavú analógiu
-3. Praktický tip dňa: Jeden konkrétny, použiteľný tip ako využiť AI v praxi na základe dnešných správ – s konkrétnym príkladom ako to urobiť
-4. Záver: Zhrň čo sme dnes prebrali, rozlúč sa, pozvи na zajtra
+ŠTRUKTÚRA (dodržuj presne, v tomto poradí):
+1. ÚVOD: Pozdrav poslucháčov, predstav sa ako Kolby AI Podcast (epizóda {episode_number}), povedz dnešný dátum (deň aj dátum), zhrň ČO KONKRÉTNE dnes pokryjeme – vymenuj všetky témy zo svetových správ aj z EÚ/SK sekcie
+2. SVETOVÉ AI SPRÁVY: Prejdi KAŽDÚ jednu novinku z "DNEŠNÉ SPRÁVY" zvlášť – vysvetli o čo ide, prečo je dôležitá pre bežného človeka, pridaj vlastný komentár a zaujímavú analógiu
+3. EÚ A SLOVENSKO V AI: Osobitná sekcia venovaná správam z Európskej únie a Slovenska v kontexte umelej inteligencie – regulácie, financovanie, dopady AI zákonov na nás, slovenské AI projekty a startupy. Použи správy z "EÚ / SLOVENSKO SPRÁVY" a doplň vlastným kontextom.
+4. PRAKTICKÝ TIP DŇA: Jeden konkrétny, použiteľný tip ako využiť AI v praxi na základe dnešných správ – s krokovým príkladom ako to urobiť
+5. ZÁVER: Stručné zhrnutie čo sme dnes prebrali (jedna veta ku každej téme), rozlúčka, pozvanie na zajtra
 
 KRITICKÉ PRAVIDLÁ – porušenie je neprijateľné:
-- KOMPLETNOSŤ: Ak v úvode spomínaš nejakú tému, MUSÍŠ ju v epizóde aj skutočne pokryť. Nikdy nesľubuj témy, ktoré nepokryješ. Každá téma zo zoznamu správ musí byť spracovaná pred záverom.
-- DĹŽKA: Minimálne 3500 slov – epizóda musí byť kompletná. Nekončи pred záverom. Záver píš až keď si pokryl každú novinku.
-- PLYNULOSŤ: Píš hovorovo, nie formálne – ako by si rozprával priateľovi pri káve
-- ZROZUMITEĽNOSŤ: Vysvetľuj technické pojmy jednoducho (napr. "veľký jazykový model – to je mozog za ChatGPT")
-- ŽIVOSŤ: Buď zaujímavý, pridávaj vlastné postrehy, humor a analógie zo slovenského kontextu
-- BEZ STAGE DIRECTIONS: NEPÍŠ poznámky pre moderátora, zátvorky ani pokyny – iba hovorený text
-- BEZ LINKOV: Úplne vynechaj URL adresy a webové linky
-- NÁZOV SHOW: Nepoužívaj "AI Dnes" ani iné varianty – vždy "Kolby AI Podcast"
+- KOMPLETNOSŤ: Ak v úvode sľubuješ tému, MUSÍŠ ju pokryť. Záver píš AŽ po pokrytí každej témy. Nekonči predčasne.
+- DĹŽKA: Minimálne 3500 slov – nie kratšie. Každú tému rozvíjaj do hĺbky.
+- SPRÁVNY DEŇ: V celej epizóde používaj presný deň a dátum: {today_sk}. Nikdy nepíš nesprávny deň.
+- PLYNULOSŤ: Píš hovorovo – ako keby si rozprával priateľovi pri káve. Plynulé prechody medzi témami.
+- ZROZUMITEĽNOSŤ: Vysvetľuj technické pojmy jednoducho, vždy s analógiou zo bežného života.
+- ŽIVOSŤ: Pridávaj vlastné postrehy, humor, analógie zo slovenského kontextu.
+- BEZ MARKDOWN: ABSOLÚTNE ZAKÁZANÉ používať hviezdičky (*), dvojité hviezdičky (**), mriežky (#), pomlčky ako odrážky (- text), citácie (> text) ani žiadne iné formátovacie znaky. Tieto znaky TTS číta ako slová a znie to absurdne. Iba čistý súvislý hovorený text.
+- BEZ ZÁTVORIEK: Nepíš poznámky ani vysvetlivky v zátvorkách – hovorí sa to plynule.
+- BEZ LINKOV: Žiadne URL adresy, žiadne webové adresy.
+- ČÍSLA: Všetky čísla píš slovom (napr. "jeden milión" nie "1 000 000", "päťdesiat percent" nie "50%").
+- NÁZOV SHOW: Vždy "Kolby AI Podcast", nikdy iné varianty.
 
-FONETICKÉ PRAVIDLÁ – toto je kľúčové pre správnu výslovnosť:
-Slovenský text-to-speech číta anglické slová zle. Preto anglické technické pojmy VŽDY nahraď fonetickým zápisom:
+FONETICKÉ PRAVIDLÁ – slovenský TTS číta anglické slová zle, VŽDY nahraď:
+- "AI" → píš "AI" veľkými písmenami (TTS ho číta správne ako dve písmená); NIKDY "éj-aj" ani "ejaj"
+- "OpenAI" → píš "Open AI" (s medzerou)
+- "ChatGPT" → píš "čet dží pí tí"
+- "GPT" → píš "dží pí tí"
 - "cloud" → píš "klaud"
-- "AI" → píš "éj-aj" (alebo "umelá inteligencia")
-- "ChatGPT" → píš "čet-dží-pí-tí"
-- "OpenAI" → píš "óupn éj-aj"
 - "startup" → píš "štartap"
 - "streaming" → píš "stríming"
 - "online" → píš "onlajn"
@@ -196,29 +273,21 @@ Slovenský text-to-speech číta anglické slová zle. Preto anglické technick�
 - "app" → píš "apka" alebo "aplikácia"
 - "prompt" → píš "promt"
 - "benchmark" → píš "benčmark"
-- "deployment" → píš "nasadenie" alebo "diploiment"
 - "framework" → píš "frejmmvork"
-- "training" (v kontexte AI) → píš "trénovanie"
-- "fine-tuning" → píš "fajn-tjúning"
-- "reinforcement learning" → píš "posilňovacie učenie"
-- "deep learning" → píš "hlboké učenie"
-- "neural network" → píš "neurónová sieť"
-- "open source" → píš "óupn-sors"
-- "multimodal" → píš "multimodálny"
-- "token" (v kontexte AI) → píš "token" (toto je v poriadku)
-- "GitHub" → píš "git-hab"
-- "Google" → nechaj ako je (všeobecne známe)
-- "Microsoft" → nechaj ako je
-- Iné anglické slová: vždy nahraď slovenským ekvivalentom alebo fonetickým zápisom
+- "fine-tuning" → píš "fajntjúning"
+- "open source" → píš "óupnsors"
+- "GitHub" → píš "gitHab"
+- "API" → píš "A P I" (s medzerami medzi písmenami)
+- "CEO" → píš "generálny riaditeľ"
+- Iné anglické slová: nahraď slovenským prekladom alebo píš foneticky
 
-DNEŠNÉ SPRÁVY (pokryj VŠETKY):
-{articles_text}
+DNEŠNÉ SPRÁVY (pokryj VŠETKY v sekcii č. 2):
+{articles_text}{eu_section}
 
-FORMÁT VÝSTUPU – VEĽMI DÔLEŽITÉ:
-Úplne prvý riadok musí byť IBA názov epizódy v tomto formáte:
-NAZOV: Ep. {episode_number}: [kreatívny názov max 60 znakov]
-Príklady: "NAZOV: Ep. 9: Keď laptopy začnú myslieť za nás" alebo "NAZOV: Ep. 9: Dátové centrá — drahé sny alebo nevyhnutnosť?"
-Za názvom nasleduje prázdny riadok a potom začína samotný hovorený skript (bez akýchkoľvek ďalších metadát)."""
+FORMÁT VÝSTUPU – PRVÝ RIADOK MUSÍ BYŤ PRÁVE TOTO:
+NAZOV: Ep. {episode_number}: [kreatívny slovenský názov vystihujúci hlavnú tému, max 65 znakov]
+Príklady: "NAZOV: Ep. 10: Brusel reguluje, Silicon Valley ignoruje" alebo "NAZOV: Ep. 11: Keď AI vstupuje do volebnej kabínky"
+Potom prázdny riadok a začína hovorený skript. Žiadne ďalšie metadáta."""
 
     print(f"🤖 Generujem skript cez Gemini ({LLM_MODEL})...")
     response = client.chat.completions.create(
@@ -235,6 +304,9 @@ Za názvom nasleduje prázdny riadok a potom začína samotný hovorený skript 
     if lines[0].startswith("NAZOV:"):
         episode_title = lines[0].removeprefix("NAZOV:").strip().strip('"\'')
         script = "\n".join(lines[1:]).lstrip("\n").strip()
+
+    # Odstráň prípadné zvyšné markdown znaky
+    script = clean_markdown(script)
 
     word_count = len(script.split())
     if word_count < 2000:
@@ -392,8 +464,10 @@ async def main():
         print("❌ Žiadne dnešné novinky. Skúsim staršie (48h)...")
         articles = fetch_todays_ai_news(max_articles=MAX_ARTICLES)
 
+    eu_articles = fetch_eu_sk_news()
+
     # 2. Skript
-    episode_title, script = generate_podcast_script(articles, episode_number)
+    episode_title, script = generate_podcast_script(articles, episode_number, eu_articles)
 
     # Ulož skript pre debugovanie
     script_path = OUTPUT_DIR / f"script-{date_str}.txt"
