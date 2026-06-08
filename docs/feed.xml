@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-07</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-08</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-07</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-08</link>
     </image>
+    <item>
+      <title>Ep. 11: Keď AI mení Siri, médiá aj americké mestá</title>
+      <description>Ahojte všetci, a vitajte pri jedenástej epizóde Kolby AI Podcastu! Je pondelok, ôsmeho júna dvetisíc dvadsaťšesť, a my sa dnes ponoríme do víru najnovších správ zo sveta umelej inteligencie, ktoré nám prináša tento búrlivý týždeň. Pripravte sa na poriadnu dávku informácií, analýz a možno aj trochu humoru, pretože AI nikdy nespí, a my s ňou tiež nie.
+
+Dnes máme na stole naozaj nabitý program. Najprv sa pozrieme za oceán, konkrétne do centrály spoločnosti Apple, kde sa už čoskoro bude konať ich na...</description>
+      <pubDate>Mon, 08 Jun 2026 11:10:48 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-08/kolby-ai-2026-06-08.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-08/kolby-ai-2026-06-08.mp3" length="11271024" type="audio/mpeg" />
+      <ns0:duration>00:31:18</ns0:duration>
+    </item>
     <item>
       <title>Ep. 10: Éj-aj: Od politiky po vreckový zázrak</title>
       <description>Ahojte všetci priatelia a nadšenci éj-aj sveta! Vitajte pri ďalšej dávke technologických noviniek, postrehov a praktických tipov, ktoré vám, ako verím, pomôžu lepšie sa orientovať v neustále sa meniacej krajine umelej inteligencie. Dnes je piatok, 7. júna 2026, a ja som váš sprievodca vo svete technológií. Počúvate už desiatu epizódu Kolby AI Podcastu, a to je pre nás malý míľnik, za ktorý vám všetkým veľmi pekne ďakujem! Bez vás by to nešlo.
