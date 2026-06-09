@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-08</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-09</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-08</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-09</link>
     </image>
+    <item>
+      <title>Ep. 12: Jablká, promty a miliardové I P O vo svete AI</title>
+      <description>Ahojte všetci priaznivci umelej inteligencie a technológií! Vitajte pri ďalšej dávke najhorúcejších správ zo sveta, kde sa digitálny rozum stretáva s realitou. Je utorok, 9. 6. 2026, a vy počúvate Kolby AI Podcast, už v našej dvanástej epizóde. Dnes nás čaká naozaj pestré menu, plné prekvapení a dôležitých zmien, ktoré formujú našu budúcnosť.
+
+Čo konkrétne máme pre vás pripravené? Začneme globálnym pohľadom, kde sa pozrieme na to, ako Apple s pomocou AI rieši večný problém s rozšíreniami pre svo...</description>
+      <pubDate>Tue, 09 Jun 2026 09:58:52 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-09/kolby-ai-2026-06-09.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-09/kolby-ai-2026-06-09.mp3" length="11818368" type="audio/mpeg" />
+      <ns0:duration>00:32:49</ns0:duration>
+    </item>
     <item>
       <title>Ep. 11: Keď AI mení Siri, médiá aj americké mestá</title>
       <description>Ahojte všetci, a vitajte pri jedenástej epizóde Kolby AI Podcastu! Je pondelok, ôsmeho júna dvetisíc dvadsaťšesť, a my sa dnes ponoríme do víru najnovších správ zo sveta umelej inteligencie, ktoré nám prináša tento búrlivý týždeň. Pripravte sa na poriadnu dávku informácií, analýz a možno aj trochu humoru, pretože AI nikdy nespí, a my s ňou tiež nie.
