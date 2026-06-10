@@ -61,6 +61,7 @@ LLM_MODEL = "gemini-2.5-flash"
 OUTPUT_DIR = Path("./output")
 RSS_FILE = Path("./docs/feed.xml")   # GitHub Pages slúži z ./docs
 EPISODES_FILE = Path("./docs/episodes.json")
+USED_ARTICLES_FILE = Path("./docs/used_articles.json")
 
 
 # ─────────────────────────────────────────────────────────────
@@ -174,20 +175,97 @@ def _deduplicate(articles: list[dict]) -> list[dict]:
     return unique
 
 
-def fetch_todays_ai_news(max_articles: int = MAX_ARTICLES) -> list[dict]:
+def load_used_articles(days: int = 7) -> set[str]:
+    """Načíta URL a titulky článkov použitých v posledných N dňoch."""
+    if not USED_ARTICLES_FILE.exists():
+        return set()
+    cutoff = datetime.now(timezone.utc).date()
+    from datetime import timedelta
+    cutoff -= timedelta(days=days)
+    with open(USED_ARTICLES_FILE, encoding="utf-8") as f:
+        records = json.load(f)
+    used = set()
+    for r in records:
+        try:
+            rec_date = datetime.strptime(r["date"], "%Y-%m-%d").date()
+        except (KeyError, ValueError):
+            continue
+        if rec_date >= cutoff:
+            if r.get("url"):
+                used.add(r["url"])
+            if r.get("title"):
+                used.add(r["title"].lower()[:60])
+    return used
+
+
+def save_used_articles(articles: list[dict], date_str: str) -> None:
+    """Uloží použité články do súboru pre budúcu deduplikáciu."""
+    USED_ARTICLES_FILE.parent.mkdir(parents=True, exist_ok=True)
+    existing = []
+    if USED_ARTICLES_FILE.exists():
+        with open(USED_ARTICLES_FILE, encoding="utf-8") as f:
+            existing = json.load(f)
+    new_records = [
+        {"url": a.get("url", ""), "title": a.get("title", ""), "date": date_str}
+        for a in articles
+    ]
+    # Zachovaj záznamy z posledných 14 dní
+    from datetime import timedelta
+    cutoff = (datetime.now(timezone.utc).date() - timedelta(days=14)).isoformat()
+    existing = [r for r in existing if r.get("date", "") >= cutoff]
+    existing.extend(new_records)
+    with open(USED_ARTICLES_FILE, "w", encoding="utf-8") as f:
+        json.dump(existing, f, ensure_ascii=False, indent=2)
+    print(f"  💾 Uložených {len(new_records)} článkov do histórie použitých")
+
+
+def _filter_used(articles: list[dict], used: set[str]) -> list[dict]:
+    """Vyfiltruje články, ktoré už boli použité v posledných epizódach."""
+    fresh = []
+    skipped = 0
+    for a in articles:
+        url_used = a.get("url", "") in used
+        title_used = a.get("title", "").lower()[:60] in used
+        if url_used or title_used:
+            skipped += 1
+        else:
+            fresh.append(a)
+    if skipped:
+        print(f"  🔁 Preskočených {skipped} opakujúcich sa článkov")
+    return fresh
+
+
+def fetch_todays_ai_news(max_articles: int = MAX_ARTICLES, used: set[str] | None = None) -> list[dict]:
     """Stiahne dnešné AI novinky zo všetkých RSS feedov."""
     print("📰 Sťahujem AI novinky...")
     articles = _deduplicate(_parse_feed_articles(AI_NEWS_FEEDS))
-    print(f"  ✅ Nájdených {len(articles)} článkov, vyberám top {max_articles}")
+    if used:
+        articles = _filter_used(articles, used)
+    print(f"  ✅ Nájdených {len(articles)} nových článkov, vyberám top {max_articles}")
     return articles[:max_articles]
 
 
-def fetch_eu_sk_news(max_articles: int = 3) -> list[dict]:
+def fetch_eu_sk_news(max_articles: int = 3, used: set[str] | None = None) -> list[dict]:
     """Stiahne novinky o AI zo zdrojov zameraných na EÚ/Slovensko."""
     print("🇪🇺 Sťahujem EÚ/SK AI novinky...")
     articles = _deduplicate(_parse_feed_articles(EU_SK_FEEDS, max_per_feed=5, max_age_days=4))
-    print(f"  ✅ Nájdených {len(articles)} EÚ/SK článkov, vyberám top {max_articles}")
+    if used:
+        articles = _filter_used(articles, used)
+    print(f"  ✅ Nájdených {len(articles)} nových EÚ/SK článkov, vyberám top {max_articles}")
     return articles[:max_articles]
+
+
+def load_recent_episode_context(n: int = 3) -> str:
+    """Vráti zoznam tém z posledných N epizód pre kontext LLM."""
+    if not EPISODES_FILE.exists():
+        return ""
+    with open(EPISODES_FILE, encoding="utf-8") as f:
+        episodes = json.load(f)
+    recent = episodes[:n]
+    if not recent:
+        return ""
+    lines = [f"- {ep['title']}: {ep['description'][:200]}" for ep in recent]
+    return "\n".join(lines)
 
 
 # ─────────────────────────────────────────────────────────────
@@ -198,6 +276,7 @@ def generate_podcast_script(
     articles: list[dict],
     episode_number: int,
     eu_articles: list[dict] | None = None,
+    recent_context: str = "",
 ) -> tuple[str, str]:
     """
     Cez Gemini vygeneruje prirodzený slovenský podcast skript.
@@ -236,6 +315,14 @@ EÚ / SLOVENSKO SPRÁVY (použi pre sekciu č. 3 nižšie):
 {eu_text}"""
 
     today_sk = get_today_sk()
+
+    recent_section = ""
+    if recent_context:
+        recent_section = f"""
+
+NEDÁVNO PREBRANÉ TÉMY (posledné {min(3, recent_context.count(chr(10)) + 1)} epizódy) – VYHNI SA OPAKOVANIU týchto tém:
+{recent_context}
+Ak sa niektorý dnešný článok týka rovnakej témy ako vyššie, buď ho preskočь alebo ho spomeň len v kontexte nového vývoja oproti tomu, čo sme hovorili pred pár dňami."""
 
     prompt = f"""Si slovenský podcast moderátor pre show "Kolby AI Podcast".
 Napíš prirodzený, plynulý podcast skript v slovenčine. Dnes je {today_sk}. Toto je epizóda číslo {episode_number}.
@@ -282,7 +369,7 @@ FONETICKÉ PRAVIDLÁ – slovenský TTS číta anglické slová zle, VŽDY nahra
 - Iné anglické slová: nahraď slovenským prekladom alebo píš foneticky
 
 DNEŠNÉ SPRÁVY (pokryj VŠETKY v sekcii č. 2):
-{articles_text}{eu_section}
+{articles_text}{eu_section}{recent_section}
 
 FORMÁT VÝSTUPU – PRVÝ RIADOK MUSÍ BYŤ PRÁVE TOTO:
 NAZOV: Ep. {episode_number}: [kreatívny slovenský názov vystihujúci hlavnú tému, max 65 znakov]
@@ -458,16 +545,23 @@ async def main():
             existing = json.load(f)
         episode_number = len(existing) + 1
 
-    # 1. Novinky
-    articles = fetch_todays_ai_news()
+    # 1. Novinky (s filtrom použitých článkov)
+    used = load_used_articles(days=7)
+    articles = fetch_todays_ai_news(used=used)
     if not articles:
-        print("❌ Žiadne dnešné novinky. Skúsim staršie (48h)...")
-        articles = fetch_todays_ai_news(max_articles=MAX_ARTICLES)
+        print("❌ Žiadne nové dnešné novinky. Skúsim bez filtra...")
+        articles = fetch_todays_ai_news()
 
-    eu_articles = fetch_eu_sk_news()
+    eu_articles = fetch_eu_sk_news(used=used)
 
-    # 2. Skript
-    episode_title, script = generate_podcast_script(articles, episode_number, eu_articles)
+    # 2. Skript (s kontextom posledných epizód)
+    recent_context = load_recent_episode_context(n=3)
+    episode_title, script = generate_podcast_script(
+        articles, episode_number, eu_articles, recent_context
+    )
+
+    # Ulož použité články do histórie
+    save_used_articles(articles + (eu_articles or []), date_str)
 
     # Ulož skript pre debugovanie
     script_path = OUTPUT_DIR / f"script-{date_str}.txt"
