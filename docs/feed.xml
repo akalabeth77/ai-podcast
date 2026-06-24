@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-23</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-24</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,16 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-23</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-24</link>
     </image>
+    <item>
+      <title>Ep. 27: AI v každom kúte: Od domova po voľby a zdravie</title>
+      <description>Ahojte všetci priatelia umelej inteligencie, technológií a zvedavosti, srdečne vás vítam pri ďalšej dávke najhorúcejších noviniek a postrehov zo sveta, kde sa digitálny rozum stretáva s našou každodennosťou. Som váš hostiteľ, a toto je Kolby AI Podcast, epizóda číslo dvadsaťsedem. Dnes je streda, dvadsiateho štvrtého júna dvetisícšesťdesiatšesť a máme pred sebou naozaj pestré spektrum tém, ktoré ukazujú, ako hlboko AI preniká do našich životov, od tých najosobnejších okamihov až po veľké korporá...</description>
+      <pubDate>Wed, 24 Jun 2026 07:27:21 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-24/kolby-ai-2026-06-24.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-24/kolby-ai-2026-06-24.mp3" length="10980576" type="audio/mpeg" />
+      <ns0:duration>00:30:30</ns0:duration>
+    </item>
     <item>
       <title>Ep. 26: AI: Horúce dáta, chladné byty a nové výzvy</title>
       <description>Ahojte všetci priatelia umelej inteligencie, technológií a zvedavosti, srdečne vás vítam pri ďalšej dávke najhorúcejších noviniek a postrehov zo sveta, kde sa digitálny rozum stretáva s našou každodennou realitou. Dnes je utorok, dvadsiateho tretieho júna dvoch tisíc dvadsaťšesť a pred vami je Kolby AI Podcast, epizóda číslo dvadsaťšesť.
