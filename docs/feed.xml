@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-29</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-30</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-29</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-30</link>
     </image>
+    <item>
+      <title>Ep. 33: Od AI hudby po dáta a tajomné zariadenia</title>
+      <description>Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už tridsiatej tretej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je utorok, tridsiateho júna roku dvetisíc dvadsaťšesť, a ako vždy máme pre vás plnú nálož čerstvých správ a hlbokých analýz priamo z epicentra AI revolúcie.
+
+Dnes sa spoločne ponoríme do fascinujúceho sveta umelej inteligencie a prejdeme si osem kľúčových tém, ktoré rezonujú na glob...</description>
+      <pubDate>Tue, 30 Jun 2026 07:32:52 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-30/kolby-ai-2026-06-30.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-30/kolby-ai-2026-06-30.mp3" length="5393232" type="audio/mpeg" />
+      <ns0:duration>00:14:58</ns0:duration>
+    </item>
     <item>
       <title>Ep. 32: AI v súdnej sieni, za volantom a v peňaženke</title>
       <description>Ahojte priatelia technológií, inovácií a všetkého, čo vonia budúcnosťou! Srdečne vás vítam pri ďalšej, v poradí už tridsiatej druhej epizóde Kolby AI Podcastu, vašej dennej dávke prehľadu o dianí vo svete umelej inteligencie. Dnes je pondelok, dvadsiateho deviateho júna dvetisíc dvadsiateho šiesteho roku a máme pre vás opäť poriadnu nálož zaujímavých informácií, ktoré ovplyvňujú nielen technologický svet, ale aj náš každodenný život.
