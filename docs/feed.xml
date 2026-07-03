@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-02</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-03</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-02</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-03</link>
     </image>
+    <item>
+      <title>Ep. 36: Keď AI mení pravidlá hry aj majiteľov</title>
+      <description>Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už tridsiatej šiestej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je piatok, tretí júl dvetisíc dvadsaťšesť, a opäť nás čaká poriadna dávka fascinujúcich správ a hlbokých úvah z tohto dynamického odvetvia. Pripravte si kávu, čaj alebo čo vám je milé, pretože sa ponoríme do sveta, kde sa inovácie rodia rýchlejšie, než stíhame sledovať.
+
+Čo konkrét...</description>
+      <pubDate>Fri, 03 Jul 2026 07:17:21 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-03/kolby-ai-2026-07-03.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-03/kolby-ai-2026-07-03.mp3" length="10794816" type="audio/mpeg" />
+      <ns0:duration>00:29:59</ns0:duration>
+    </item>
     <item>
       <title>Ep. 35: AI hlasy, múdre reproduktory a veľký návrat Fable 5</title>
       <description>Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už tridsiatej piatej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Som váš moderátor a teší ma, že ste si aj dnes naladili našu vlnu. Dnes je štvrtok, druhého júla dvetisíc dvadsaťšesť, a ako vždy, máme pre vás pripravený poriadny náklad čerstvých správ a hĺbkových analýz zo sveta AI.
