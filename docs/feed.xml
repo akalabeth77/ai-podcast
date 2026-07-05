@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-04</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-05</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-04</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-05</link>
     </image>
+    <item>
+      <title>Ep. 38: Keď AI delí tvorcov, skúma telá a mení pravidlá</title>
+      <description>Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už tridsiatej ôsmej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie a jej dopadov na naše životy. Dnes je krásna nedeľa, piateho júla dvetisícdvadsaťšesť, a ako vždy, máme pre vás pripravenú poriadnu dávku horúcich noviniek, zaujímavých analýz a, samozrejme, aj jeden praktický tip, ako AI využiť vo svoj prospech.
+
+Dnes sa spoločne ponoríme do búrlivých vôd...</description>
+      <pubDate>Sun, 05 Jul 2026 07:17:36 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-05/kolby-ai-2026-07-05.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-05/kolby-ai-2026-07-05.mp3" length="11928240" type="audio/mpeg" />
+      <ns0:duration>00:33:08</ns0:duration>
+    </item>
     <item>
       <title>Ep. 37: AI od liekov po hype: Hľadanie zmyslu v digitálnom svete</title>
       <description>Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už tridsiatej siedmej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je sobota, štvrtého júla dvetisíc dvadsiateho šiesteho roka, a ja som pripravený ponoriť sa s vami do najhorúcejších správ, ktoré hýbu naším digitálnym vesmírom. Verím, že máte kávu, čaj, alebo možno aj nejakú letnú limonádu pripravenú, pretože dnešná jazda bude plná prekvapení, al...</description>
