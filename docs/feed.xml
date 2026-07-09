@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-08</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-09</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-08</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-09</link>
     </image>
+    <item>
+      <title>Ep. 41: Keď AI počúva, vidí aj klame: Hrozba či pomoc?</title>
+      <description>Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už štyridsiatej prvej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je štvrtok, deviaty júla roku dvetisíc dvadsaťšesť, a ako vždy vás čaká poriadna dávka noviniek, analýz a praktických tipov zo sveta, kde sa digitálne stretáva s reálnym.
+
+Čo konkrétne nás dnes čaká? No, svet AI sa opäť nezastavil ani na sekundu a prináša nám poriadne zaujímavé prí...</description>
+      <pubDate>Thu, 09 Jul 2026 07:25:28 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-09/kolby-ai-2026-07-09.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-09/kolby-ai-2026-07-09.mp3" length="9554400" type="audio/mpeg" />
+      <ns0:duration>00:26:32</ns0:duration>
+    </item>
     <item>
       <title>Ep. 40: Meta a Anthropic na vzostupe, Microsoft prepúšťa, AI dohliada</title>
       <description>Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už štyridsiatej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je streda, ôsmeho júla dvetisíc dvadsaťšesť, a opäť máme pred sebou poriadnu nálož zaujímavých správ, noviniek a pohľadov do sveta, kde AI mení všetko, čo poznáme.
