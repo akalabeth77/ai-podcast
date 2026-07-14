@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-13</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-14</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-13</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-14</link>
     </image>
+    <item>
+      <title>Ep. 46: Siri ožíva, Waze ukazuje cestu a AI zarába miliardy</title>
+      <description>Ahojte, priatelia technológií, inovácií a všetkého, čo nám mení svet pod rukami! Srdečne vás vítam pri ďalšej, v poradí už štyridsiatej šiestej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Som váš moderátor a teším sa, že ste sa naladili aj dnes, v utorok, štrnásteho júla dvetisícšesťdesiatšesť.
+
+Dnes máme pred sebou poriadnu nálož zaujímavých tém, ktoré nám opäť ukážu, ako rýchlo sa AI stáva neoddeliteľnou súčasťou nášho každodenného života. Začneme samoz...</description>
+      <pubDate>Tue, 14 Jul 2026 06:56:29 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-14/kolby-ai-2026-07-14.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-14/kolby-ai-2026-07-14.mp3" length="11456208" type="audio/mpeg" />
+      <ns0:duration>00:31:49</ns0:duration>
+    </item>
     <item>
       <title>Ep. 45: AI Okuliare, Nečakané Čipy a Rodinná Realita</title>
       <description>Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už štyridsiatej piatej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je pondelok, trinásteho júla roku dvetisíc dvadsaťšesť, a ako vždy, máme pre vás pripravenú poriadnu dávku zaujímavých správ, postrehov a praktických tipov, ktoré vám pomôžu zorientovať sa v rýchlo sa meniacom AI vesmíre.
