@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-15</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-16</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-15</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-16</link>
     </image>
+    <item>
+      <title>Ep. 48: AI: Etika, kreatívny chaos a nové hračky</title>
+      <description>Ahojte všetci milovníci inovácií, zvedavci a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už štyridsiatej ôsmej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie, kde rozoberáme novinky, trendy a dopady AI na náš každodenný život. Dnes je štvrtok, šestnásteho júla dvetisícšesť, a svet AI opäť nespí. Máme pre vás poriadnu dávku horúcich tém, ktoré sa dotýkajú nielen technologického pokroku, ale aj etiky, práva a dokonca aj našich peňaženiek.
+
+Dnes...</description>
+      <pubDate>Thu, 16 Jul 2026 07:00:30 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-16/kolby-ai-2026-07-16.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-16/kolby-ai-2026-07-16.mp3" length="12192768" type="audio/mpeg" />
+      <ns0:duration>00:33:52</ns0:duration>
+    </item>
     <item>
       <title>Ep. 47: Keď AI prehovorí, vidí a… šnupe váš kód</title>
       <description>Ahojte všetci milovníci inovácií, zvedavci a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už štyridsiatej siedmej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je streda, pätnásteho júla dvetisíc dvadsaťšesť, a ako vždy, mám pre vás poriadnu nálož horúcich správ, hlbokých analýz a praktických tipov priamo zo srdca technologickej revolúcie.
