@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-18</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-19</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-18</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-19</link>
     </image>
+    <item>
+      <title>Ep. 51: AI v súdnych sieňach, v peňaženkách a na TikToku</title>
+      <description>Ahojte všetci milovníci inovácií, zvedavci a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už päťdesiatej prvej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je krásna nedeľa, devätnásteho júla dvetisícdvadsaťšesť, a my sa ponoríme do víru najnovších správ, ktoré menia náš svet. Pripravte si kávu, alebo čaj, a poďme na to.
+
+Dnes si posvietime na niekoľko kľúčových tém. Začneme s pohľadom do zákulisia Open AI, kde známy autor Dave Eggers ...</description>
+      <pubDate>Sun, 19 Jul 2026 07:02:05 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-19/kolby-ai-2026-07-19.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-19/kolby-ai-2026-07-19.mp3" length="11233440" type="audio/mpeg" />
+      <ns0:duration>00:31:12</ns0:duration>
+    </item>
     <item>
       <title>Ep. 50: AI: Boj o kontrolu, peniaze a tvoje heslá</title>
       <description>Ahojte všetci milovníci inovácií, zvedavci a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už päťdesiatej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je sobota, osemnásteho júla, dvetisíc dvadsiateho šiesteho a máme pre vás plný balík horúcich noviniek a zaujímavých pohľadov. Verím, že sa mi podarí nielen prejsť dnešnými fascinujúcimi témami, ale aj vtiahnuť vás do diskusie a priniesť vám čo najviac praktických informácií, ktoré môžete...</description>
