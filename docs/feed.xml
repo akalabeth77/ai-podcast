@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-20</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-21</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-20</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-21</link>
     </image>
+    <item>
+      <title>Ep. 53: AI v objatí práva, čipov a čínskej ofenzívy</title>
+      <description>Ahojte všetci milovníci inovácií, zvedavci a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už päťdesiat tretej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je utorok, dvadsiaty prvý júl, dvetisíc dvadsiateho šiesteho roku, a verím, že máte pripravenú kávu alebo čaj, pretože nás čaká naozaj nabitá epizóda plná najnovších správ a zaujímavých pohľadov.
+
+Dnes sa spoločne ponoríme do hlbín svetových správ, kde budeme diskutovať o tom, ako sp...</description>
+      <pubDate>Tue, 21 Jul 2026 07:04:08 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-21/kolby-ai-2026-07-21.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-21/kolby-ai-2026-07-21.mp3" length="11626704" type="audio/mpeg" />
+      <ns0:duration>00:32:17</ns0:duration>
+    </item>
     <item>
       <title>Ep. 52: AI v hudbe, etike a geopolitických hrách</title>
       <description>Ahojte všetci milovníci inovácií, zvedavci a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už päťdesiatdva epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je pondelok, dvadsiateho júla dvetisícdvadsaťšesť, a ako vždy, máme pre vás pripravenú poriadnu nálož horúcich noviniek a zaujímavých postrehov.
