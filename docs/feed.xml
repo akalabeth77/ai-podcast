@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-26</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-27</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,16 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-26</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-27</link>
     </image>
+    <item>
+      <title>Ep. 59: AI: Vlny mozgu, kyberútoky a dôsledky na trh práce</title>
+      <description>Ahojte, milovníci technológií, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už päťdesiatej deviatej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie, ktorý sa snaží dešifrovať zložité koncepty do zrozumiteľnej reči. Ja som váš hostiteľ a som nesmierne rád, že ste si dnes naladili náš podcast. Dnes je pondelok, dvadsiateho siedmeho júla, dva tisíc dvadsaťšesť, a ve...</description>
+      <pubDate>Mon, 27 Jul 2026 07:24:16 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-27/kolby-ai-2026-07-27.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-27/kolby-ai-2026-07-27.mp3" length="11306592" type="audio/mpeg" />
+      <ns0:duration>00:31:24</ns0:duration>
+    </item>
     <item>
       <title>Ep. 58: AI: Od horoskopov cez vedu až po regulácie</title>
       <description>Ahojte všetci milovníci inovácií, zvedavci a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už päťdesiatej ôsmej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je nedeľa, dvadsiateho šiesteho júla dvetisíc dvadsiateho šiesteho roku, a veruže, opäť máme plné ruky správ, ktoré potvrdzujú, že AI nie je len nejaký vzdialený koncept, ale je už tu, s nami, a mení náš svet – od hviezd až po praktické každodenné rozhodnutia. Pripravte si kávu, čaj...</description>
