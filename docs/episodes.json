@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-07-29",
+    "title": "Ep. 61: Hranice, miliardy a etické výzvy AI",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného podcastu. Dnes je streda, dvadsiateho deviateho júla dvetisíc dvadsiateho šiesteho roka, a mám pre vás opäť poriadnu dávku horúcich noviniek, ktoré búria nielen technologický svet, ale už aj bežný život každého z nás.\n\nDnes sa spoločne ponoríme do skutočne širokého ...",
+    "pub_date": "Wed, 29 Jul 2026 07:06:33 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-29/kolby-ai-2026-07-29.mp3",
+    "mp3_size": 10306656,
+    "duration": "00:28:37"
+  },
+  {
     "id": "2026-07-28",
     "title": "Ep. 60: Globálna AI: Veľmocenské preteky a digitálna obrana",
     "description": "Ahojte všetci zvedavci, inovátori a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je utorok, dvadsiateho ôsmeho júla dvetisíc dvadsaťšesť a máme pre vás opäť poriadnu dávku horúcich noviniek, ktoré formujú nielen technologický svet, ale aj náš každodenný život.\n\nDnes sa pozrieme naozaj do hĺbky, pretože dianie okolo umelej inteligencie naberá na obrátkach, a to doslova z hodin...",
@@ -528,15 +537,6 @@
     "pub_date": "Sat, 30 May 2026 07:07:16 +0000",
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-30/ai-dnes-2026-05-30.mp3",
     "mp3_size": 1945440,
-    "duration": "00:20:00"
-  },
-  {
-    "id": "2026-05-29",
-    "title": "AI D",
-    "description": "Ahojte všetci pri mikrofóne! Vítam vás pri ďalšej epizóde vášho obľúbeného podcastu AI Dnes. Píše sa 29. máj 2026 a máme pre vás opäť poriadnu dávku noviniek zo sveta umelej inteligencie, ktorá nám neustále mení životy – či už si to uvedomujeme, alebo nie. Dnes sa pozrieme na to, ako sa nám AI snaží upratať dom (zadarmo, ale s há...",
-    "pub_date": "Fri, 29 May 2026 21:58:06 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-29/ai-dnes-2026-05-29.mp3",
-    "mp3_size": 146592,
     "duration": "00:20:00"
   }
 ]
