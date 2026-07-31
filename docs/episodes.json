@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-07-31",
+    "title": "Ep. 61: Apple, Roboty a AI Slop: Dátové Vrstvy Nášho Života",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu tým, čo je nové a dôležité vo svete AI. Dnes je piatok, tridsiateho prvého júla dvetisíc dvadsiateho šiesteho roku, a aj dnes máme pre vás plný košík zaujímavostí, ktoré menia nielen technologický svet, ale aj naše každodenné životy.\n...",
+    "pub_date": "Fri, 31 Jul 2026 07:12:09 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-31/kolby-ai-2026-07-31.mp3",
+    "mp3_size": 10452528,
+    "duration": "00:29:02"
+  },
+  {
     "id": "2026-07-29",
     "title": "Ep. 61: Hranice, miliardy a etické výzvy AI",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného podcastu. Dnes je streda, dvadsiateho deviateho júla dvetisíc dvadsiateho šiesteho roka, a mám pre vás opäť poriadnu dávku horúcich noviniek, ktoré búria nielen technologický svet, ale už aj bežný život každého z nás.\n\nDnes sa spoločne ponoríme do skutočne širokého ...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-31/kolby-ai-2026-05-31.mp3",
     "mp3_size": 5973408,
     "duration": "00:16:35"
-  },
-  {
-    "id": "2026-05-30",
-    "title": "AI revol",
-    "description": "Ahojte všetci fanúšikovia technológií, AI a budúcnosti! Vitajte pri ďalšej epizóde vášho obľúbeného podcastu AI Dnes. Dnes je piatok, 30. mája 2026, a ja som váš moderátor, pripravený vás previesť najhorúcejšími správami zo sveta umelej inteligencie. Dnes sa pozrieme na to, ako vám AI chce upratovať byt, ale za akú cenu, prečo aj ikona ako Ferrari podlieha AI revolúcii, prečo kodéri nechcú pracovať bez AI a či je to dobré, a povieme si aj o tom, ako môže byť AI v práci skvelý pomocník, ale aj pr...",
-    "pub_date": "Sat, 30 May 2026 07:07:16 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-30/ai-dnes-2026-05-30.mp3",
-    "mp3_size": 1945440,
-    "duration": "00:20:00"
   }
 ]
