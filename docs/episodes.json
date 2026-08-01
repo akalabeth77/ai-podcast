@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-08-01",
+    "title": "Ep. 61: Neposlušné AI a digitálne ilúzie Googlu",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného sprievodcu svetom umelej inteligencie. Dnes je sobota, prvého augusta dvetisícdvadsaťšesť, a veruže sa máme opäť o čom rozprávať! Pripravte si kávu, čaj alebo čo len máte radi, lebo dnešný program je nabitý novinkami, ktoré nám poriadne preveria, kde sú hranice tech...",
+    "pub_date": "Sat, 01 Aug 2026 07:00:31 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-01/kolby-ai-2026-08-01.mp3",
+    "mp3_size": 8816400,
+    "duration": "00:24:29"
+  },
+  {
     "id": "2026-07-31",
     "title": "Ep. 61: Apple, Roboty a AI Slop: Dátové Vrstvy Nášho Života",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu tým, čo je nové a dôležité vo svete AI. Dnes je piatok, tridsiateho prvého júla dvetisíc dvadsiateho šiesteho roku, a aj dnes máme pre vás plný košík zaujímavostí, ktoré menia nielen technologický svet, ale aj naše každodenné životy.\n...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-01/kolby-ai-2026-06-01.mp3",
     "mp3_size": 8028720,
     "duration": "00:22:18"
-  },
-  {
-    "id": "2026-05-31",
-    "title": "Kolby AI Podcast",
-    "description": "Ahojte všetci, vitajte pri Kolby AI Podcaste! Som váš hostiteľ a s radosťou vás vítam pri ďalšej dávke najčerstvejších a najzaujímavejších správ zo sveta umelej inteligencie. Dnes je piatok, 31. mája 2026, a my sa opäť ponoríme do divokých vôd AI, aby sme zistili, čo nám to tento týždeň prichystalo. Pripravte sa na poriadnu jazdu, pretože máme pred sebou správy, ktoré vás buď šokujú, rozosmejú, alebo prinajmenšom donútia zamyslieť sa nad tým, kam sa to vlastne uberáme. Budeme sa rozprávať o podi...",
-    "pub_date": "Sun, 31 May 2026 20:15:23 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-05-31/kolby-ai-2026-05-31.mp3",
-    "mp3_size": 5973408,
-    "duration": "00:16:35"
   }
 ]
