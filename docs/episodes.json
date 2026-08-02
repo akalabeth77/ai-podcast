@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-08-02",
+    "title": "Ep. 61: Keď AI klame, hackuje a mení mapy: Nová hudba a rodičovstvo",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde, ktorá je nabitá novinkami, postrehmi a, úprimne, aj pár dôvodmi na zamyslenie. Dnes je nedeľa, druhého augusta roku dvetisíc dvadsaťšesť, a svet AI sa ani na chvíľu nezastavil, ba priam naopak – pridal na obrátkach. Ak ste si mysleli, že víkend je na oddych, tak v tomto digitálnom ...",
+    "pub_date": "Sun, 02 Aug 2026 07:04:21 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-02/kolby-ai-2026-08-02.mp3",
+    "mp3_size": 9725040,
+    "duration": "00:27:00"
+  },
+  {
     "id": "2026-08-01",
     "title": "Ep. 61: Neposlušné AI a digitálne ilúzie Googlu",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného sprievodcu svetom umelej inteligencie. Dnes je sobota, prvého augusta dvetisícdvadsaťšesť, a veruže sa máme opäť o čom rozprávať! Pripravte si kávu, čaj alebo čo len máte radi, lebo dnešný program je nabitý novinkami, ktoré nám poriadne preveria, kde sú hranice tech...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-02/kolby-ai-2026-06-02.mp3",
     "mp3_size": 6240528,
     "duration": "00:17:20"
-  },
-  {
-    "id": "2026-06-01",
-    "title": "AI novinky:",
-    "description": "Ahojte všetci, vitajte pri mikrofónoch Kolby AI Podcastu, tu je váš obľúbený sprievodca svetom umelej inteligencie a všetkého, čo s ňou súvisí. Dnes je prvý jún 2026 a my sa ponoríme do najčerstvejších a najšokujúcejších správ zo sveta technológií. Pripravte sa, pretože dnešná epizóda je plná neuveriteľných príbehov – od kryptokanabisových vapov, cez podvodníkov s AI, až po prekvapivé kroky miliardárov a ekologických aktivistiek. Nebude chýbať ani náš praktický tip dňa, takže si určite naladíte ...",
-    "pub_date": "Mon, 01 Jun 2026 11:48:52 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-01/kolby-ai-2026-06-01.mp3",
-    "mp3_size": 8028720,
-    "duration": "00:22:18"
   }
 ]
