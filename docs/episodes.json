@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-08-03",
+    "title": "Ep. 61: Gitara proti AI, Altmanova brzda a digitálna očista",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde, ktorá je nabitá najčerstvejšími informáciami z tohto fascinujúceho odvetvia. Dnes je pondelok, tretí august 2026, a my sa ponoríme do spleti udalostí, ktoré formujú nielen technológiu, ale aj našu každodennú realitu.\n\nČo nás dnes čaká? Po prvé, budeme hovoriť o pomerne kontroverzný...",
+    "pub_date": "Mon, 03 Aug 2026 07:21:46 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-03/kolby-ai-2026-08-03.mp3",
+    "mp3_size": 9278640,
+    "duration": "00:25:46"
+  },
+  {
     "id": "2026-08-02",
     "title": "Ep. 61: Keď AI klame, hackuje a mení mapy: Nová hudba a rodičovstvo",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde, ktorá je nabitá novinkami, postrehmi a, úprimne, aj pár dôvodmi na zamyslenie. Dnes je nedeľa, druhého augusta roku dvetisíc dvadsaťšesť, a svet AI sa ani na chvíľu nezastavil, ba priam naopak – pridal na obrátkach. Ak ste si mysleli, že víkend je na oddych, tak v tomto digitálnom ...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-03/kolby-ai-2026-06-03.mp3",
     "mp3_size": 6969024,
     "duration": "00:19:21"
-  },
-  {
-    "id": "2026-06-02",
-    "title": "AI Novinky:",
-    "description": "Ahojte všetci priatelia technológií, inovácií a všetkého, čo nám v budúcnosti uľahčí (alebo možno skomplikuje) život! Vitajte pri ďalšej epizóde vášho obľúbeného Kolby AI Podcastu, kde sa ponoríme do najčerstvejších správ zo sveta umelej inteligencie. Dnes je 2. jún 2026 a máme pre vás riadnu dávku horúcich noviniek, ktoré ovplyvňujú nielen technologický svet, ale aj nás všetkých. Povieme si o revolučných oznámeniach z Microsoft Build 2026, pozrieme sa na prekvapivý krok Donalda Trumpa ohľadom r...",
-    "pub_date": "Tue, 02 Jun 2026 21:23:48 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-02/kolby-ai-2026-06-02.mp3",
-    "mp3_size": 6240528,
-    "duration": "00:17:20"
   }
 ]
