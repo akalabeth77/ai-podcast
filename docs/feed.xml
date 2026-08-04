@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-03</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-04</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,16 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-03</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-04</link>
     </image>
+    <item>
+      <title>Ep. 61: AI pod lupou: Brusel reguluje, Čína nespí</title>
+      <description>Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiat prvej epizóde nášho spoločného objavovania. Ja som váš moderátor a teším sa, že ste si aj dnes naladili náš Kolby AI Podcast. Dnes je utorok, štvrtého augusta dvetisíc dvadsaťšesť, a svet AI nám opäť prináša záplavu fascinujúcich noviniek, ktoré ovplyvňujú naše životy, či už si to uvedomujeme, aleb...</description>
+      <pubDate>Tue, 04 Aug 2026 07:03:58 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-04/kolby-ai-2026-08-04.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-04/kolby-ai-2026-08-04.mp3" length="8766864" type="audio/mpeg" />
+      <ns0:duration>00:24:21</ns0:duration>
+    </item>
     <item>
       <title>Ep. 61: Gitara proti AI, Altmanova brzda a digitálna očista</title>
       <description>Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde, ktorá je nabitá najčerstvejšími informáciami z tohto fascinujúceho odvetvia. Dnes je pondelok, tretí august 2026, a my sa ponoríme do spleti udalostí, ktoré formujú nielen technológiu, ale aj našu každodennú realitu.
@@ -572,14 +580,6 @@ No a čo si pre vás dnes v tejto jubilejnej desiatej ...</description>
       <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-04/kolby-ai-2026-06-04.mp3</guid>
       <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-04/kolby-ai-2026-06-04.mp3" length="4885200" type="audio/mpeg" />
       <ns0:duration>00:13:34</ns0:duration>
-    </item>
-    <item>
-      <title>AI, ekológ</title>
-      <description>Ahojte všetci, milí poslucháči a fanúšikovia technológií, vitajte pri mikrofóne vášho obľúbeného Kolby AI Podcastu! Dnes je tretí jún, rok 2026, a my sa opäť ponárame do fascinujúceho, rýchlo sa meniaceho sveta umelej inteligencie. Ja som váš hostiteľ a dnes máme pre vás poriadnu dávku noviniek a postrehov. Rozoberieme si, ako AI ovplyvňuje naše životné prostredie a ako sa Google snaží tváriť zeleno. Pozrieme sa na to, ako sa vydavatelia bijú s technologickými gigantmi o kontrolu nad vlastným ob...</description>
-      <pubDate>Wed, 03 Jun 2026 11:12:13 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-03/kolby-ai-2026-06-03.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-03/kolby-ai-2026-06-03.mp3" length="6969024" type="audio/mpeg" />
-      <ns0:duration>00:19:21</ns0:duration>
     </item>
   </channel>
 </rss>
