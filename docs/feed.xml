@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-05</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-06</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-05</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-06</link>
     </image>
+    <item>
+      <title>Ep. 61: Od Muskových sľubov po Google otrasy a AI v hudbe</title>
+      <description>Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného zdroja informácií o AI. Dnes je štvrtok, šiesty august dvoch tisíc dvadsiateho šiesteho roku a máme pre vás opäť plné vrece pútavých správ a analýz.
+
+Dnes sa spoločne ponoríme do zaujímavých tém zo svetového diania v umelej inteligencii. Budeme hovoriť o ambicióznom...</description>
+      <pubDate>Thu, 06 Aug 2026 07:06:55 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-06/kolby-ai-2026-08-06.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-06/kolby-ai-2026-08-06.mp3" length="11327616" type="audio/mpeg" />
+      <ns0:duration>00:31:27</ns0:duration>
+    </item>
     <item>
       <title>Ep. 61: AI: Biznis rastie, influenceri horia, Texas kontroluje</title>
       <description>Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde vášho obľúbeného podcastu. Dnes je streda, piateho augusta dvetisícdvadsaťšesť a opäť máme pred sebou poriadnu dávku horúcich noviniek, ktoré nám ukážu, kam sa AI posúva a čo to pre nás znamená.
@@ -574,14 +584,6 @@ No a čo si pre vás dnes v tejto jubilejnej desiatej ...</description>
       <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-06/kolby-ai-2026-06-06.mp3</guid>
       <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-06/kolby-ai-2026-06-06.mp3" length="13073904" type="audio/mpeg" />
       <ns0:duration>00:36:18</ns0:duration>
-    </item>
-    <item>
-      <title>Ep. 9: Éj-aj v laptope a nekonečné dátové centrá: Sny vs. realita</title>
-      <description>Ahojte všetci priaznivci technológií a budúcnosti! Vitajte pri Kolby AI Podcaste, dnešného 5. júna 2026. Som váš moderátor a pred vami je už neuveriteľná, v poradí deviata epizóda, kde sa spoločne ponoríme do najčerstvejších a najzaujímavejších správ zo sveta umelej inteligencie. Viete, niekedy mám pocit, že ten čas letí rýchlejšie ako svetelné bity cez dátové káble, a to hlavne v éj-aj svete, kde sa novinky sypú ako jarné kvety po daždi. A veru, dnes máme pred sebou poriadnu kytičku plnú prekva...</description>
-      <pubDate>Fri, 05 Jun 2026 18:02:51 +0000</pubDate>
-      <guid>https://github.com/tvoje-meno/ai-podcast/releases/download/2026-06-05/kolby-ai-2026-06-05.mp3</guid>
-      <enclosure url="https://github.com/tvoje-meno/ai-podcast/releases/download/2026-06-05/kolby-ai-2026-06-05.mp3" length="12209616" type="audio/mpeg" />
-      <ns0:duration>00:33:54</ns0:duration>
     </item>
   </channel>
 </rss>
