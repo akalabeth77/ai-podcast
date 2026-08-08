@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-08-08",
+    "title": "Ep. 61: AI spomalí, roztrasie a zarába – víkendový prehľad.",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiat prvej epizóde vášho obľúbeného podcastu. Dnes je sobota, ôsmeho augusta roka dvetisíc dvadsaťšesť, a ako vždy vás čaká poriadna dávka noviniek, analýz a možno aj trocha humoru z AI sveta. Pripravte si kávu, čaj alebo čo len chcete, pohodlne sa usaďte, pretože dnes máme naozaj nabitý program.\n\nČo ná...",
+    "pub_date": "Sat, 08 Aug 2026 06:26:15 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-08/kolby-ai-2026-08-08.mp3",
+    "mp3_size": 12476160,
+    "duration": "00:34:39"
+  },
+  {
     "id": "2026-08-07",
     "title": "Ep. 61: Od Jonyho šepkára po AI bezplatné reči a data centrá",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej, epizóde vášho obľúbeného podcastu. Dnes je krásny piatok, siedmeho augusta roka dvetisíc dvadsaťšesť, a ako vždy, máme pre vás pripravenú riadnu nálož tých najčerstvejších a najdôležitejších správ zo sveta umelej inteligencie. Pripravte si kávu, alebo možno už aj nejaký osviežujúci letný d...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-08/kolby-ai-2026-06-08.mp3",
     "mp3_size": 11271024,
     "duration": "00:31:18"
-  },
-  {
-    "id": "2026-06-07",
-    "title": "Ep. 10: Éj-aj: Od politiky po vreckový zázrak",
-    "description": "Ahojte všetci priatelia a nadšenci éj-aj sveta! Vitajte pri ďalšej dávke technologických noviniek, postrehov a praktických tipov, ktoré vám, ako verím, pomôžu lepšie sa orientovať v neustále sa meniacej krajine umelej inteligencie. Dnes je piatok, 7. júna 2026, a ja som váš sprievodca vo svete technológií. Počúvate už desiatu epizódu Kolby AI Podcastu, a to je pre nás malý míľnik, za ktorý vám všetkým veľmi pekne ďakujem! Bez vás by to nešlo.\n\nNo a čo si pre vás dnes v tejto jubilejnej desiatej ...",
-    "pub_date": "Sun, 07 Jun 2026 09:27:25 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-07/kolby-ai-2026-06-07.mp3",
-    "mp3_size": 13198752,
-    "duration": "00:36:39"
   }
 ]

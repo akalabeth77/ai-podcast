@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-07</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-08</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-07</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-08</link>
     </image>
+    <item>
+      <title>Ep. 61: AI spomalí, roztrasie a zarába – víkendový prehľad.</title>
+      <description>Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiat prvej epizóde vášho obľúbeného podcastu. Dnes je sobota, ôsmeho augusta roka dvetisíc dvadsaťšesť, a ako vždy vás čaká poriadna dávka noviniek, analýz a možno aj trocha humoru z AI sveta. Pripravte si kávu, čaj alebo čo len chcete, pohodlne sa usaďte, pretože dnes máme naozaj nabitý program.
+
+Čo ná...</description>
+      <pubDate>Sat, 08 Aug 2026 06:26:15 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-08/kolby-ai-2026-08-08.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-08/kolby-ai-2026-08-08.mp3" length="12476160" type="audio/mpeg" />
+      <ns0:duration>00:34:39</ns0:duration>
+    </item>
     <item>
       <title>Ep. 61: Od Jonyho šepkára po AI bezplatné reči a data centrá</title>
       <description>Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej, epizóde vášho obľúbeného podcastu. Dnes je krásny piatok, siedmeho augusta roka dvetisíc dvadsaťšesť, a ako vždy, máme pre vás pripravenú riadnu nálož tých najčerstvejších a najdôležitejších správ zo sveta umelej inteligencie. Pripravte si kávu, alebo možno už aj nejaký osviežujúci letný d...</description>
@@ -572,16 +582,6 @@ Dnes máme na stole naozaj nabitý program. Najprv sa pozrieme za oceán, konkr�
       <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-08/kolby-ai-2026-06-08.mp3</guid>
       <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-08/kolby-ai-2026-06-08.mp3" length="11271024" type="audio/mpeg" />
       <ns0:duration>00:31:18</ns0:duration>
-    </item>
-    <item>
-      <title>Ep. 10: Éj-aj: Od politiky po vreckový zázrak</title>
-      <description>Ahojte všetci priatelia a nadšenci éj-aj sveta! Vitajte pri ďalšej dávke technologických noviniek, postrehov a praktických tipov, ktoré vám, ako verím, pomôžu lepšie sa orientovať v neustále sa meniacej krajine umelej inteligencie. Dnes je piatok, 7. júna 2026, a ja som váš sprievodca vo svete technológií. Počúvate už desiatu epizódu Kolby AI Podcastu, a to je pre nás malý míľnik, za ktorý vám všetkým veľmi pekne ďakujem! Bez vás by to nešlo.
-
-No a čo si pre vás dnes v tejto jubilejnej desiatej ...</description>
-      <pubDate>Sun, 07 Jun 2026 09:27:25 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-07/kolby-ai-2026-06-07.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-07/kolby-ai-2026-06-07.mp3" length="13198752" type="audio/mpeg" />
-      <ns0:duration>00:36:39</ns0:duration>
     </item>
   </channel>
 </rss>
