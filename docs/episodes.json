@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-08-12",
+    "title": "Ep. 61: Míľniky, odchody a overovanie pravosti v AI",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde vášho obľúbeného podcastu. Dnes je streda, dvanásteho augusta dvetisícdvadsaťšesť, a ako vždy, čaká nás poriadna dávka noviniek a analýz priamo z epicentra AI revolúcie. Svet umelej inteligencie sa nezastavuje ani na okamih a prináša nám opäť fascinujúce témy, ktoré ovplyvňujú naše živ...",
+    "pub_date": "Wed, 12 Aug 2026 06:39:49 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-12/kolby-ai-2026-08-12.mp3",
+    "mp3_size": 11323872,
+    "duration": "00:31:27"
+  },
+  {
     "id": "2026-08-11",
     "title": "Ep. 61: Zuckerbergov manifest, AI v ušiach a dôvera na vážkach",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiat prvej epizóde vášho obľúbeného AI sprievodcu. Dnes je utorok, jedenásteho augusta dvetisíc dvadsaťšesť a ako vždy, máme pre vás pripravenú poriadnu dávku horúcich noviniek a zaujímavých postrehov z globálneho aj lokálneho AI ekosystému.\n\nČo nás dnes čaká? Nebojte sa, nenechám vás v neistote. Dnes s...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-12/kolby-ai-2026-06-12.mp3",
     "mp3_size": 11386080,
     "duration": "00:31:37"
-  },
-  {
-    "id": "2026-06-11",
-    "title": "Ep. 14: AI: Hudba, etika a tie zvláštne paradoxy",
-    "description": "Ahojte všetci priatelia umelej inteligencie a technológií, vitajte pri ďalšej dávke najhorúcejších noviniek a postrehov zo sveta, kde sa digitálny rozum stretáva s našou každodennou realitou. Dnes je štvrtok, jedenásteho júna dvetisíc dvadsaťšesť, a vy počúvate Kolby AI Podcast, už v štrnástej epizóde! Som váš moderátor a teším sa, že vás môžem sprevádzať fascinujúcim, občas aj trošku absurdným, svetom AI.\n\nDnes máme pre vás skutočne pestrú paletu tém, ktoré pokrývajú takmer všetky aspekty vplyv...",
-    "pub_date": "Thu, 11 Jun 2026 10:50:25 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-11/kolby-ai-2026-06-11.mp3",
-    "mp3_size": 11235600,
-    "duration": "00:31:12"
   }
 ]
