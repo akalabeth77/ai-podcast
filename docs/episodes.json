@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-08-13",
+    "title": "Ep. 61: Keď AI trénuje na nás: etika a osobná voľba",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného podcastu. Dnes je štvrtok, trinásteho augusta dvetisícdvadsaťšesť, a opäť sa ponoríme do víru najnovších správ, ktoré menia náš svet.\n\nDnes si posvietime na niekoľko kľúčových tém, ktoré rezonujú vo svete AI. Začneme tým, ako sa spoločnosť Twitch, patriaca pod Amazo...",
+    "pub_date": "Thu, 13 Aug 2026 06:41:35 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-13/kolby-ai-2026-08-13.mp3",
+    "mp3_size": 10404288,
+    "duration": "00:28:54"
+  },
+  {
     "id": "2026-08-12",
     "title": "Ep. 61: Míľniky, odchody a overovanie pravosti v AI",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde vášho obľúbeného podcastu. Dnes je streda, dvanásteho augusta dvetisícdvadsaťšesť, a ako vždy, čaká nás poriadna dávka noviniek a analýz priamo z epicentra AI revolúcie. Svet umelej inteligencie sa nezastavuje ani na okamih a prináša nám opäť fascinujúce témy, ktoré ovplyvňujú naše živ...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-13/kolby-ai-2026-06-13.mp3",
     "mp3_size": 8656704,
     "duration": "00:24:02"
-  },
-  {
-    "id": "2026-06-12",
-    "title": "Ep. 15: Miliardové ambície, neviditeľné múry a skromná voda",
-    "description": "Ahojte všetci priatelia umelej inteligencie a technológií! Vitajte pri ďalšej dávke najhorúcejších správ zo sveta, kde sa digitálny rozum stretáva s realitou. Dnes je piatok, dvanásteho júna dvetisíc dvadsaťšesť, a vy počúvate Kolby AI Podcast, už v pätnástej epizóde. Som váš moderátor a teším sa, že vás môžem opäť sprevádzať fascinujúcim a niekedy aj trochu záhadným svetom AI.\n\nDnes máme naozaj nabitý program, priatelia, tak si uvarte kávu, alebo si pripravte akýkoľkoľvek váš obľúbený nápoj, pr...",
-    "pub_date": "Fri, 12 Jun 2026 10:25:58 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-12/kolby-ai-2026-06-12.mp3",
-    "mp3_size": 11386080,
-    "duration": "00:31:37"
   }
 ]
