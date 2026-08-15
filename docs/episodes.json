@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-08-15",
+    "title": "Ep. 61: Zmeny, odchody a AI pre všetkých – aj s novým logom",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného AI podcastu. Dnes je sobota, pätnásteho augusta roka dvetisíc dvadsaťšesť, a opäť sa ponoríme do víru najčerstvejších správ a trendov, ktoré formujú zajtrajší svet. Posaďte sa, urobte si pohodlie a poďme na to.\n\nDnes máme naozaj nabitý program, priatelia. Prejdeme s...",
+    "pub_date": "Sat, 15 Aug 2026 06:15:28 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-15/kolby-ai-2026-08-15.mp3",
+    "mp3_size": 10927584,
+    "duration": "00:30:21"
+  },
+  {
     "id": "2026-08-14",
     "title": "Ep. 61: AI v pohybe: Od tvárí k financiám a rýchlosti",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde vášho obľúbeného zdroja informácií o AI. Dnes je piatok, štrnásty august dvetisícdvadsaťšesť, a veruže, opäť nás čaká poriadna nálož zaujímavostí, ktoré menia nielen technologický svet, ale aj naše každodenné životy. Som váš hostiteľ a s radosťou vás prevediem dnešnými horúcimi správam...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-15/kolby-ai-2026-06-15.mp3",
     "mp3_size": 10659312,
     "duration": "00:29:36"
-  },
-  {
-    "id": "2026-06-14",
-    "title": "Ep. 17: AI pod lupou: Štátne zákazy a každodenné apky",
-    "description": "Ahojte všetci priatelia umelej inteligencie a technológií, vitajte pri ďalšej dávke najhorúcejších noviniek a postrehov zo sveta, kde sa digitálny rozum stretáva s našou každodennou realitou! Toto je Kolby AI Podcast, vaša pravidelná dávka informácií a analýz z fascinujúceho sveta umelej inteligencie. Dnes je nedeľa, štrnásteho júna dvetisíc dvadsaťšesť, a pred nami je už sedemnásta epizóda.\n\nDnes máme pre vás naozaj pestrý mix tém, ktoré siahajú od národnej bezpečnosti až po praktické tipy pre ...",
-    "pub_date": "Sun, 14 Jun 2026 09:47:54 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-14/kolby-ai-2026-06-14.mp3",
-    "mp3_size": 12817584,
-    "duration": "00:35:36"
   }
 ]
