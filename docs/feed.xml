@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-15</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-16</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-15</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-16</link>
     </image>
+    <item>
+      <title>Ep. 61: Etika, transparentnosť a AI na globálnej šachovnici</title>
+      <description>Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde vášho obľúbeného zdroja informácií o AI. Ja som váš moderátor a teším sa, že sa s vami môžem podeliť o najhorúcejšie novinky a postrehy. Dnes je nedeľa, šestnásteho augusta roka dvetisícdvadsaťšesť, a svet AI sa ani na chvíľu nezastavil.
+
+Máme pred sebou naozaj plnú agendu, takže sa po...</description>
+      <pubDate>Sun, 16 Aug 2026 06:15:27 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-16/kolby-ai-2026-08-16.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-16/kolby-ai-2026-08-16.mp3" length="9581904" type="audio/mpeg" />
+      <ns0:duration>00:26:36</ns0:duration>
+    </item>
     <item>
       <title>Ep. 61: Zmeny, odchody a AI pre všetkých – aj s novým logom</title>
       <description>Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného AI podcastu. Dnes je sobota, pätnásteho augusta roka dvetisíc dvadsaťšesť, a opäť sa ponoríme do víru najčerstvejších správ a trendov, ktoré formujú zajtrajší svet. Posaďte sa, urobte si pohodlie a poďme na to.
@@ -568,16 +578,6 @@ Dnešná epizóda bude opäť nabitá zaujímavými té...</description>
       <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-16/kolby-ai-2026-06-16.mp3</guid>
       <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-16/kolby-ai-2026-06-16.mp3" length="11450736" type="audio/mpeg" />
       <ns0:duration>00:31:48</ns0:duration>
-    </item>
-    <item>
-      <title>Ep. 18: AI na hrane: Špionáž, zákazy a domáce záhradky</title>
-      <description>Ahojte priatelia AI, technológií a budúcnosti! Vitajte pri ďalšej dávke najhorúcejších noviniek a postrehov zo sveta, kde sa digitálny rozum stretáva s našou každodennou realitou. Dnes je pondelok, pätnásteho júna dvetisíc dvadsaťšesť, a ja som váš moderátor pre Kolby AI Podcast, práve ste naladili epizódu číslo osemnásť.
-
-Dnešok bude skutočne plný zvratov a kľúčových momentov. Ponoríme sa do geopolitických hier s umelou inteligenciou, konkrétne do správ o možnom prístupe Číny k pokročilým model...</description>
-      <pubDate>Mon, 15 Jun 2026 12:31:15 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-15/kolby-ai-2026-06-15.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-15/kolby-ai-2026-06-15.mp3" length="10659312" type="audio/mpeg" />
-      <ns0:duration>00:29:36</ns0:duration>
     </item>
   </channel>
 </rss>
