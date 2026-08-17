@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-08-17",
+    "title": "Ep. 61: Dôvera, riziká a AI v našich životoch",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde, ktorá sa k vám dostáva v tento krásny pondelok, sedemnásteho augusta roka dvetisíc dvadsaťšesť.\n\nDnes máme pred sebou naozaj pestrý a zamyslenia hodný program. Ponoríme sa do zákulisia jedného z najväčších hráčov v AI svete, Open AI, a ich rozhodnutia rozpustiť tím pre pripravenosť...",
+    "pub_date": "Mon, 17 Aug 2026 06:22:05 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-17/kolby-ai-2026-08-17.mp3",
+    "mp3_size": 10464912,
+    "duration": "00:29:04"
+  },
+  {
     "id": "2026-08-16",
     "title": "Ep. 61: Etika, transparentnosť a AI na globálnej šachovnici",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde vášho obľúbeného zdroja informácií o AI. Ja som váš moderátor a teším sa, že sa s vami môžem podeliť o najhorúcejšie novinky a postrehy. Dnes je nedeľa, šestnásteho augusta roka dvetisícdvadsaťšesť, a svet AI sa ani na chvíľu nezastavil.\n\nMáme pred sebou naozaj plnú agendu, takže sa po...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-17/kolby-ai-2026-06-17.mp3",
     "mp3_size": 11606112,
     "duration": "00:32:14"
-  },
-  {
-    "id": "2026-06-16",
-    "title": "Ep. 19: AI suverenita pod paľbou: USA, Anthropic a globálny boj",
-    "description": "Ahojte všetci priatelia umelej inteligencie a technológií, vitajte pri ďalšej dávke najhorúcejších noviniek a postrehov zo sveta, kde sa digitálny rozum stretáva s našou každodennou realitou! Toto je Kolby AI Podcast, a ja som váš moderátor, pripravený vás previesť labyrintom najnovších trendov, výziev a príležitostí, ktoré nám prináša AI. Dnes je utorok, šestnásteho júna dvetisícdvadsaťšesť, a pred nami je epizóda číslo devätnásť, ktorá je, môžem vám sľúbiť, naozaj plná prekvapení a zásadných u...",
-    "pub_date": "Tue, 16 Jun 2026 11:24:51 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-16/kolby-ai-2026-06-16.mp3",
-    "mp3_size": 11450736,
-    "duration": "00:31:48"
   }
 ]
