@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-08-18",
+    "title": "Ep. 61: Neviditeľné stopy AI: Od mačiek po miliardy",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného AI podcastu. Dnes je utorok, osemnásteho augusta dvoch tisíc dvadsaťšesť, a svet umelej inteligencie nám opäť prináša plno zaujímavostí, ktoré menia nielen globálnu technologickú scénu, ale aj náš každodenný život, často bez toho, aby sme si to vôbec uvedomovali.\n\nD...",
+    "pub_date": "Tue, 18 Aug 2026 06:18:21 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-18/kolby-ai-2026-08-18.mp3",
+    "mp3_size": 10717776,
+    "duration": "00:29:46"
+  },
+  {
     "id": "2026-08-17",
     "title": "Ep. 61: Dôvera, riziká a AI v našich životoch",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde, ktorá sa k vám dostáva v tento krásny pondelok, sedemnásteho augusta roka dvetisíc dvadsaťšesť.\n\nDnes máme pred sebou naozaj pestrý a zamyslenia hodný program. Ponoríme sa do zákulisia jedného z najväčších hráčov v AI svete, Open AI, a ich rozhodnutia rozpustiť tím pre pripravenosť...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-18/kolby-ai-2026-06-18.mp3",
     "mp3_size": 12212928,
     "duration": "00:33:55"
-  },
-  {
-    "id": "2026-06-17",
-    "title": "Ep. 20: Roboti bez hlavy, okuliare s rozumom a Muskove miliardy",
-    "description": "Ahojte všetci priatelia umelej inteligencie a technológií, vitajte pri ďalšej dávke najhorúcejších noviniek a postrehov zo sveta, kde sa digitálny rozum stretáva s našou každodennou realitou! Toto je Kolby AI Podcast, epizóda číslo dvadsať, a ja som váš moderátor, pripravený vás previesť najdôležitejšími udalosťami z prostredia AI. Dnes je streda, sedemnásteho júna dvetisícdvadsaťšesť, a verím, že máte pripravenú svoju rannú kávu, pretože pred nami je poriadna nálož informácií.\n\nČo konkrétne si ...",
-    "pub_date": "Wed, 17 Jun 2026 11:10:25 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-17/kolby-ai-2026-06-17.mp3",
-    "mp3_size": 11606112,
-    "duration": "00:32:14"
   }
 ]
