@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-08-20",
+    "title": "Ep. 61: AI od štúdia po súkromie: Keď sa technológie dotknú každého",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného podcastu. Dnes je štvrtok, dvadsiateho augusta dvetisíc dvadsaťšesť, a opäť máme pred sebou poriadnu dávku noviniek, ktoré nám ukážu, kam sa umelá inteligencia posúva a ako ovplyvňuje naše životy.\n\nDnes sa spoločne ponoríme do zaujímavého mixu správ, ktoré ovplyvňujú študentov, gigantick...",
+    "pub_date": "Thu, 20 Aug 2026 06:19:38 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-20/kolby-ai-2026-08-20.mp3",
+    "mp3_size": 12886992,
+    "duration": "00:35:47"
+  },
+  {
     "id": "2026-08-19",
     "title": "Ep. 61: AI pod lupou: Etika, hacky a miliardové valuácie",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného podcastu. Dnes je streda, devätnásteho augusta roku dvetisíc dvadsaťšesť, a svet AI opäť nezaspal ani na minútu. Poďme sa spoločne ponoriť do najčerstvejších správ, ktoré formujú nielen technológiu, ale aj naše každodenné životy.\n\nČo nás dnes čaká? Máme pred sebou p...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-20/kolby-ai-2026-06-20.mp3",
     "mp3_size": 11305296,
     "duration": "00:31:24"
-  },
-  {
-    "id": "2026-06-19",
-    "title": "Ep. 22: AI turbulencie, Adobe inovácie a chipová vojna",
-    "description": "Ahojte všetci priatelia umelej inteligencie a technológií, srdečne vás vítam pri ďalšej dávke najhorúcejších noviniek a postrehov zo sveta, kde sa digitálny rozum stretáva s našou každodennou realitou! Toto je Kolby AI Podcast, a ja som váš moderátor, pripravený vás previesť najdôležitejšími udalosťami posledných dní. Dnes je piatok, devätnásteho júna dvetisícšesťdesiatšesť a máme pre vás už dvadsiatu druhú epizódu plnú fascinujúcich správ.\n\nČo nás čaká dnes? Pripravte sa na poriadnu jazdu, pret...",
-    "pub_date": "Fri, 19 Jun 2026 10:49:40 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-19/kolby-ai-2026-06-19.mp3",
-    "mp3_size": 11494080,
-    "duration": "00:31:55"
   }
 ]
