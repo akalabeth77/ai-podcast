@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-08-24",
+    "title": "Ep. 61: AI: Záhady, etika a domáce vychytávky",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného podcastu. Dnes je pondelok, dvadsiateho štvrtého augusta roku dvetisíc dvadsaťšesť, a ako vždy, čaká nás poriadna dávka noviniek, zaujímavých postrehov a, samozrejme, praktických tipov zo sveta AI.\n\nPripravte si kávu, čaj, alebo pokojne aj ovocný džús, pretože dnešná jazda bude naozaj pe...",
+    "pub_date": "Mon, 24 Aug 2026 06:24:40 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-24/kolby-ai-2026-08-24.mp3",
+    "mp3_size": 13337712,
+    "duration": "00:37:02"
+  },
+  {
     "id": "2026-08-23",
     "title": "Ep. 61: Etika, inovácie a riziko: AI v praxi a regulácii",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného podcastu. Dnes je nedeľa, dvadsiateho tretieho augusta dvetisíc dvadsiateho šiesteho roka, a my sa opäť ponoríme do najnovších správ a trendov, ktoré formujú budúcnosť, ale aj našu prítomnosť.\n\nMáme pred sebou naozaj pestrú paletu tém. Najprv sa pozrieme na to, ako sociálne siete bojujú ...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-24/kolby-ai-2026-06-24.mp3",
     "mp3_size": 10980576,
     "duration": "00:30:30"
-  },
-  {
-    "id": "2026-06-23",
-    "title": "Ep. 26: AI: Horúce dáta, chladné byty a nové výzvy",
-    "description": "Ahojte všetci priatelia umelej inteligencie, technológií a zvedavosti, srdečne vás vítam pri ďalšej dávke najhorúcejších noviniek a postrehov zo sveta, kde sa digitálny rozum stretáva s našou každodennou realitou. Dnes je utorok, dvadsiateho tretieho júna dvoch tisíc dvadsaťšesť a pred vami je Kolby AI Podcast, epizóda číslo dvadsaťšesť.\n\nPredstavte si, že by ste mohli bývať v byte snov, ktorý však existuje len vo virtuálnej realite, alebo že by ste si kúpili auto, ktoré je síce krásne, ale dver...",
-    "pub_date": "Tue, 23 Jun 2026 09:56:10 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-23/kolby-ai-2026-06-23.mp3",
-    "mp3_size": 12954096,
-    "duration": "00:35:59"
   }
 ]
