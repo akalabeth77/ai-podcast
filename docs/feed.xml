@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-24</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-25</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,16 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-24</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-25</link>
     </image>
+    <item>
+      <title>Ep. 61: AI: Hranice, riziká a nové obzory</title>
+      <description>Ahojte, milí poslucháči Kolby AI Podcastu, vaši sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného podcastu. Dnes je utorok, dvadsiateho piateho augusta dvetisíc dvadsaťšesť, a ako vždy, máme pre vás pripravenú poriadnu dávku tých najhorúcejších správ, postrehov a analýz priamo zo srdca technologického diania. Pripravte si kávu, alebo možno nejaký osviežujúci drink, pretože to bude op...</description>
+      <pubDate>Tue, 25 Aug 2026 06:19:56 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-25/kolby-ai-2026-08-25.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-25/kolby-ai-2026-08-25.mp3" length="11621664" type="audio/mpeg" />
+      <ns0:duration>00:32:16</ns0:duration>
+    </item>
     <item>
       <title>Ep. 61: AI: Záhady, etika a domáce vychytávky</title>
       <description>Ahojte, milí poslucháči Kolby AI Podcastu, vaši sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného podcastu. Dnes je pondelok, dvadsiateho štvrtého augusta roku dvetisíc dvadsaťšesť, a ako vždy, čaká nás poriadna dávka noviniek, zaujímavých postrehov a, samozrejme, praktických tipov zo sveta AI.
@@ -576,14 +584,6 @@ Dnes nás čaká naozaj pestrá paleta tém, priatelia. Ponorím...</description
       <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-25/kolby-ai-2026-06-25.mp3</guid>
       <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-25/kolby-ai-2026-06-25.mp3" length="10247904" type="audio/mpeg" />
       <ns0:duration>00:28:27</ns0:duration>
-    </item>
-    <item>
-      <title>Ep. 27: AI v každom kúte: Od domova po voľby a zdravie</title>
-      <description>Ahojte všetci priatelia umelej inteligencie, technológií a zvedavosti, srdečne vás vítam pri ďalšej dávke najhorúcejších noviniek a postrehov zo sveta, kde sa digitálny rozum stretáva s našou každodennosťou. Som váš hostiteľ, a toto je Kolby AI Podcast, epizóda číslo dvadsaťsedem. Dnes je streda, dvadsiateho štvrtého júna dvetisícšesťdesiatšesť a máme pred sebou naozaj pestré spektrum tém, ktoré ukazujú, ako hlboko AI preniká do našich životov, od tých najosobnejších okamihov až po veľké korporá...</description>
-      <pubDate>Wed, 24 Jun 2026 07:27:21 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-24/kolby-ai-2026-06-24.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-24/kolby-ai-2026-06-24.mp3" length="10980576" type="audio/mpeg" />
-      <ns0:duration>00:30:30</ns0:duration>
     </item>
   </channel>
 </rss>

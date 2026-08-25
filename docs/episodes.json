@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-08-25",
+    "title": "Ep. 61: AI: Hranice, riziká a nové obzory",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného podcastu. Dnes je utorok, dvadsiateho piateho augusta dvetisíc dvadsaťšesť, a ako vždy, máme pre vás pripravenú poriadnu dávku tých najhorúcejších správ, postrehov a analýz priamo zo srdca technologického diania. Pripravte si kávu, alebo možno nejaký osviežujúci drink, pretože to bude op...",
+    "pub_date": "Tue, 25 Aug 2026 06:19:56 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-25/kolby-ai-2026-08-25.mp3",
+    "mp3_size": 11621664,
+    "duration": "00:32:16"
+  },
+  {
     "id": "2026-08-24",
     "title": "Ep. 61: AI: Záhady, etika a domáce vychytávky",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného podcastu. Dnes je pondelok, dvadsiateho štvrtého augusta roku dvetisíc dvadsaťšesť, a ako vždy, čaká nás poriadna dávka noviniek, zaujímavých postrehov a, samozrejme, praktických tipov zo sveta AI.\n\nPripravte si kávu, čaj, alebo pokojne aj ovocný džús, pretože dnešná jazda bude naozaj pe...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-25/kolby-ai-2026-06-25.mp3",
     "mp3_size": 10247904,
     "duration": "00:28:27"
-  },
-  {
-    "id": "2026-06-24",
-    "title": "Ep. 27: AI v každom kúte: Od domova po voľby a zdravie",
-    "description": "Ahojte všetci priatelia umelej inteligencie, technológií a zvedavosti, srdečne vás vítam pri ďalšej dávke najhorúcejších noviniek a postrehov zo sveta, kde sa digitálny rozum stretáva s našou každodennosťou. Som váš hostiteľ, a toto je Kolby AI Podcast, epizóda číslo dvadsaťsedem. Dnes je streda, dvadsiateho štvrtého júna dvetisícšesťdesiatšesť a máme pred sebou naozaj pestré spektrum tém, ktoré ukazujú, ako hlboko AI preniká do našich životov, od tých najosobnejších okamihov až po veľké korporá...",
-    "pub_date": "Wed, 24 Jun 2026 07:27:21 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-24/kolby-ai-2026-06-24.mp3",
-    "mp3_size": 10980576,
-    "duration": "00:30:30"
   }
 ]
