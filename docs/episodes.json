@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-08-26",
+    "title": "Ep. 61: Čipy, Hacky a Radiológovia: AI v roku 2026",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného programu. Dnes je streda, dvadsiateho šiesteho augusta roka dvetisíc dvadsaťšesť, a ako vždy, aj dnes máme pre vás plno horúcich správ, analýz a praktických tipov, ktoré vám pomôžu zorientovať sa v rýchlo sa rozvíjajúcom svete AI. Pripravte si šálku kávy alebo čaju a poďme sa spoločne po...",
+    "pub_date": "Wed, 26 Aug 2026 06:20:03 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-26/kolby-ai-2026-08-26.mp3",
+    "mp3_size": 11300688,
+    "duration": "00:31:23"
+  },
+  {
     "id": "2026-08-25",
     "title": "Ep. 61: AI: Hranice, riziká a nové obzory",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného podcastu. Dnes je utorok, dvadsiateho piateho augusta dvetisíc dvadsaťšesť, a ako vždy, máme pre vás pripravenú poriadnu dávku tých najhorúcejších správ, postrehov a analýz priamo zo srdca technologického diania. Pripravte si kávu, alebo možno nejaký osviežujúci drink, pretože to bude op...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-26/kolby-ai-2026-06-26.mp3",
     "mp3_size": 10201104,
     "duration": "00:28:20"
-  },
-  {
-    "id": "2026-06-25",
-    "title": "Ep. 28: Keď AI píše zákony, varí kávu a stráži čipy",
-    "description": "Ahojte všetci priatelia umelej inteligencie, technológií a zvedavosti, srdečne vás vítam pri ďalšej dávke najhorúcejších noviniek a postrehov zo sveta, kde sa digitálny rozum stretáva s našou každodennou realitou. Dnes je štvrtok, dvadsiateho piateho júna, dvetisíc dvadsaťšesť, a vy počúvate už dvadsiatu ôsmu epizódu Kolby AI Podcastu. Opäť vás prevediem labyrintom najzaujímavejších udalostí, ktoré formujú budúcnosť, v ktorej už žijeme.\n\nDnes nás čaká naozaj pestrá paleta tém, priatelia. Ponorím...",
-    "pub_date": "Thu, 25 Jun 2026 07:27:29 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-06-25/kolby-ai-2026-06-25.mp3",
-    "mp3_size": 10247904,
-    "duration": "00:28:27"
   }
 ]
