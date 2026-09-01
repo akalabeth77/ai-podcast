@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-01",
+    "title": "Ep. 61: AI pod kontrolou? Od Linuxu po Pentagón",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde, ktorá je nabitá najčerstvejšími správami priamo z prvej línie AI revolúcie. Dnes je utorok, prvého septembra dvetisíc dvadsaťšesť, a veruže máme o čom hovoriť. Dnešok nám opäť ukazuje, ako hlboko sa AI zakoreňuje do našich životov, či už v softvéri, politike, na sociálnych sieťach alebo dokonca aj...",
+    "pub_date": "Tue, 01 Sep 2026 06:34:05 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-01/kolby-ai-2026-09-01.mp3",
+    "mp3_size": 13507776,
+    "duration": "00:37:31"
+  },
+  {
     "id": "2026-08-31",
     "title": "Ep. 61: AI v súdnych sieňach, na cestách a v baniach",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde, ktorá je dnes, v pondelok tridsiateho prvého augusta dvoch tisíc šesťdesiateho šiesteho roku, plná naozaj horúcich správ z oblasti AI, ktoré ovplyvňujú naše životy viac, než si možno uvedomujeme.\n\nDnes sa spoločne ponoríme do zákutí globálneho AI diania. Začneme v Texase, kde guvernér Abbott zmraz...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-02/kolby-ai-2026-07-02.mp3",
     "mp3_size": 10725264,
     "duration": "00:29:47"
-  },
-  {
-    "id": "2026-07-01",
-    "title": "Ep. 34: Veľký návrat, umelé hlasy a internet na dôchodku",
-    "description": "Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už tridsiatej štvrtej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je streda, prvého júla dvetisíc dvadsaťšesť, a veruže sa máme na čo tešiť. Svet AI nikdy nespí, a tak tu máme opäť plnú náruč horúcich noviniek, ktoré ovplyvnia náš každodenný život, prácu aj zábavu.\n\nČo konkrétne si dnes prejdeme? Začneme tým, že sa ponoríme do zaujímavého príbehu...",
-    "pub_date": "Wed, 01 Jul 2026 07:46:01 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-01/kolby-ai-2026-07-01.mp3",
-    "mp3_size": 10978560,
-    "duration": "00:30:29"
   }
 ]
