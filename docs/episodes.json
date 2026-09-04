@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-04",
+    "title": "Ep. 61: Astra letí, systémy padajú a miliardy prúdia",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde, ktorá je nabitá novinkami z prvej ruky. Dnes je piatok, štvrtého septembra dvoch tisíc dvadsiateho šiesteho roku, a veruže máme o čom hovoriť. Dnešná epizóda nám ukáže, ako rýchlo sa svet AI vyvíja, a to doslova pred našimi očami.\n\nČo nás dnes čaká? No, pripravte sa na poriadnu dávku vzrušenia, pr...",
+    "pub_date": "Fri, 04 Sep 2026 06:31:37 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-04/kolby-ai-2026-09-04.mp3",
+    "mp3_size": 12635424,
+    "duration": "00:35:05"
+  },
+  {
     "id": "2026-09-03",
     "title": "Ep. 61: AI v divočine, súde a na pódiách: Od Gemini po Astru",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde, ktorá je nabitá najčerstvejšími novinkami, analýzami a praktickými tipmi. Dnes je štvrtok, tretí september dvoch tisíc dvadsiateho šiesteho roku, a veruže máme o čom rozprávať! Pripravte si kávu, čaj alebo čo vám je milé, pretože sa spoločne ponoríme do hlbín AI, ktorá nám už dávno neťuká len niek...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-05/kolby-ai-2026-07-05.mp3",
     "mp3_size": 11928240,
     "duration": "00:33:08"
-  },
-  {
-    "id": "2026-07-04",
-    "title": "Ep. 37: AI od liekov po hype: Hľadanie zmyslu v digitálnom svete",
-    "description": "Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už tridsiatej siedmej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je sobota, štvrtého júla dvetisíc dvadsiateho šiesteho roka, a ja som pripravený ponoriť sa s vami do najhorúcejších správ, ktoré hýbu naším digitálnym vesmírom. Verím, že máte kávu, čaj, alebo možno aj nejakú letnú limonádu pripravenú, pretože dnešná jazda bude plná prekvapení, al...",
-    "pub_date": "Sat, 04 Jul 2026 07:11:13 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-04/kolby-ai-2026-07-04.mp3",
-    "mp3_size": 10426464,
-    "duration": "00:28:57"
   }
 ]
