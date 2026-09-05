@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-05",
+    "title": "Ep. 61: Keď AI hrá, útočí a varuje: Rozumieš tomu?",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde, ktorá je nabitá najčerstvejšími novinkami. Dnes je sobota, piateho septembra dvetisícšesťdesiatšesť, a veruže, udialo sa toho opäť neúrekom!\n\nDnes sa spoločne ponoríme do hlbín umelou inteligenciou generovanej hudby, kde nám tradičný gigant Roland ukáže svoj nový nástroj Melody Flip. Potom sa pozr...",
+    "pub_date": "Sat, 05 Sep 2026 06:28:21 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-05/kolby-ai-2026-09-05.mp3",
+    "mp3_size": 10955376,
+    "duration": "00:30:25"
+  },
+  {
     "id": "2026-09-04",
     "title": "Ep. 61: Astra letí, systémy padajú a miliardy prúdia",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde, ktorá je nabitá novinkami z prvej ruky. Dnes je piatok, štvrtého septembra dvoch tisíc dvadsiateho šiesteho roku, a veruže máme o čom hovoriť. Dnešná epizóda nám ukáže, ako rýchlo sa svet AI vyvíja, a to doslova pred našimi očami.\n\nČo nás dnes čaká? No, pripravte sa na poriadnu dávku vzrušenia, pr...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-06/kolby-ai-2026-07-06.mp3",
     "mp3_size": 9679824,
     "duration": "00:26:53"
-  },
-  {
-    "id": "2026-07-05",
-    "title": "Ep. 38: Keď AI delí tvorcov, skúma telá a mení pravidlá",
-    "description": "Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už tridsiatej ôsmej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie a jej dopadov na naše životy. Dnes je krásna nedeľa, piateho júla dvetisícdvadsaťšesť, a ako vždy, máme pre vás pripravenú poriadnu dávku horúcich noviniek, zaujímavých analýz a, samozrejme, aj jeden praktický tip, ako AI využiť vo svoj prospech.\n\nDnes sa spoločne ponoríme do búrlivých vôd...",
-    "pub_date": "Sun, 05 Jul 2026 07:17:36 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-05/kolby-ai-2026-07-05.mp3",
-    "mp3_size": 11928240,
-    "duration": "00:33:08"
   }
 ]
