@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-07",
+    "title": "Ep. 61: AI súdi sa, útočí a nešťastne radí",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Je pondelok, siedmeho septembra dvetisícdvadsaťšesť, a my sa spoločne ponoríme do najčerstvejších udalostí, ktoré hýbu svetom AI. Pripravte si kávu, alebo čaj, pohodlne sa usaďte, lebo dnes máme naozaj nabitý program.\n\nČo konkrétne nás dnes čaká? Začneme poriadnou dávkou súdnych sporov, keďže renomov...",
+    "pub_date": "Mon, 07 Sep 2026 06:41:49 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-07/kolby-ai-2026-09-07.mp3",
+    "mp3_size": 10949040,
+    "duration": "00:30:24"
+  },
+  {
     "id": "2026-09-06",
     "title": "Ep. 61: Keď AI útočí, súdi sa a (ne)radí",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je nedeľa, šiesteho septembra dvetisíc dvadsaťšesť, a ako vždy, mám pre vás pripravenú poriadnu dávku tých najhorúcejších noviniek zo sveta AI.\n\nDnešná epizóda bude poriadne nabitá, takže sa poriadne usaďte, možno si pripravte kávu alebo čaj, a poďme sa na to spoločne pozrieť. Ponoríme sa dnes h...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-09/kolby-ai-2026-07-09.mp3",
     "mp3_size": 9554400,
     "duration": "00:26:32"
-  },
-  {
-    "id": "2026-07-08",
-    "title": "Ep. 40: Meta a Anthropic na vzostupe, Microsoft prepúšťa, AI dohliada",
-    "description": "Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už štyridsiatej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je streda, ôsmeho júla dvetisíc dvadsaťšesť, a opäť máme pred sebou poriadnu nálož zaujímavých správ, noviniek a pohľadov do sveta, kde AI mení všetko, čo poznáme.\n\nČo nás dnes čaká? Veru, nemôžem sa dočkať, lebo témy sú naozaj pestré a dotýkajú sa nás všetkých, či už ste technický nadše...",
-    "pub_date": "Wed, 08 Jul 2026 07:02:52 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-08/kolby-ai-2026-07-08.mp3",
-    "mp3_size": 13168944,
-    "duration": "00:36:34"
   }
 ]
