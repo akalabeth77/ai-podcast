@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-09",
+    "title": "Ep. 61: Matematička AI, kresliace chaty a agenti pod lupou",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde nášho pravidelného ponoru do tohto revolučného odvetvia. Dnes je streda, deviateho septembra dvetisíc dvadsaťšesť, a verím, že máte pripravenú svoju rannú kávu, alebo možno večerný čaj, pretože nás čaká poriadna dávka horúcich správ a zaujímavých pohľadov.\n\nDnes si posvietime na niekoľko kľúčových mom...",
+    "pub_date": "Wed, 09 Sep 2026 06:32:06 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-09/kolby-ai-2026-09-09.mp3",
+    "mp3_size": 11288736,
+    "duration": "00:31:21"
+  },
+  {
     "id": "2026-09-08",
     "title": "Ep. 61: Súdy, autorské práva a AI agenti na voľno",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je utorok, 8. 9. 2026, a opäť máme pre vás plnú nálož čerstvých správ, analýz a zaujímavostí zo sveta AI, ktoré vás zaručene nenechajú chladnými.\n\nDnes sa spoločne ponoríme do búrlivých vôd právnych sporov, kde sa na pretras dostávajú autorské práva a spôsob, akým s nimi nakladajú giganti ako Op...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-11/kolby-ai-2026-07-11.mp3",
     "mp3_size": 9290592,
     "duration": "00:25:48"
-  },
-  {
-    "id": "2026-07-10",
-    "title": "Ep. 42: AI dilemy: Uhlík, šéfovia a mŕtve prehliadače",
-    "description": "Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už štyridsiatej druhej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je piatok, desiateho júla dvetisíc dvadsaťšesť, a opäť máme plno horúcich noviniek, ktoré formujú nielen technologický svet, ale aj naše každodenné životy.\n\nČo nás dnes čaká? Nebojte sa, nenechám vás v neistote. Najprv sa pozrieme na alarmujúce správy o tom, ako Microsoftu, jedném...",
-    "pub_date": "Fri, 10 Jul 2026 07:23:12 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-10/kolby-ai-2026-07-10.mp3",
-    "mp3_size": 12553344,
-    "duration": "00:34:52"
   }
 ]
