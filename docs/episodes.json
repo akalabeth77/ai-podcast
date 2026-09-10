@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-10",
+    "title": "Ep. 61: Melódie AI, sporné objavy a boj o dôveru",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je štvrtok, desiateho septembra dvetisíc dvadsaťšesť, a opäť máme pre vás plný zásobník tých najhorúcejších noviniek z globálnej aj našej domácej, slovenskej AI scény. Pripravte si kávu, možno nejaké tie chrumky, a poďme sa ponoriť do sveta, kde sa technológie neustále posúvajú vpred.\n\nDnes si p...",
+    "pub_date": "Thu, 10 Sep 2026 06:33:05 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-10/kolby-ai-2026-09-10.mp3",
+    "mp3_size": 14008176,
+    "duration": "00:38:54"
+  },
+  {
     "id": "2026-09-09",
     "title": "Ep. 61: Matematička AI, kresliace chaty a agenti pod lupou",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde nášho pravidelného ponoru do tohto revolučného odvetvia. Dnes je streda, deviateho septembra dvetisíc dvadsaťšesť, a verím, že máte pripravenú svoju rannú kávu, alebo možno večerný čaj, pretože nás čaká poriadna dávka horúcich správ a zaujímavých pohľadov.\n\nDnes si posvietime na niekoľko kľúčových mom...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-12/kolby-ai-2026-07-12.mp3",
     "mp3_size": 10034352,
     "duration": "00:27:52"
-  },
-  {
-    "id": "2026-07-11",
-    "title": "Ep. 43: AI bojisko: Meta ustupuje, Apple žaluje a AI mieri domov",
-    "description": "Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už štyridsiatej tretej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je sobota, jedenásteho júla dvetisíc dvadsiateho šiesteho roku a máme pre vás opäť poriadnu dávku horúcich noviniek, ktoré búrajú bariéry a formujú náš zajtrajšok. Svet AI sa nikdy nezastaví a my sa s ním nenecháme zahanbiť.\n\nV dnešnej epizóde sa pozrieme na niekoľko kľúčových mom...",
-    "pub_date": "Sat, 11 Jul 2026 06:56:10 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-11/kolby-ai-2026-07-11.mp3",
-    "mp3_size": 9290592,
-    "duration": "00:25:48"
   }
 ]

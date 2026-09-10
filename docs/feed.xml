@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-09</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-10</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-09</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-10</link>
     </image>
+    <item>
+      <title>Ep. 61: Melódie AI, sporné objavy a boj o dôveru</title>
+      <description>Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je štvrtok, desiateho septembra dvetisíc dvadsaťšesť, a opäť máme pre vás plný zásobník tých najhorúcejších noviniek z globálnej aj našej domácej, slovenskej AI scény. Pripravte si kávu, možno nejaké tie chrumky, a poďme sa ponoriť do sveta, kde sa technológie neustále posúvajú vpred.
+
+Dnes si p...</description>
+      <pubDate>Thu, 10 Sep 2026 06:33:05 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-10/kolby-ai-2026-09-10.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-10/kolby-ai-2026-09-10.mp3" length="14008176" type="audio/mpeg" />
+      <ns0:duration>00:38:54</ns0:duration>
+    </item>
     <item>
       <title>Ep. 61: Matematička AI, kresliace chaty a agenti pod lupou</title>
       <description>Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde nášho pravidelného ponoru do tohto revolučného odvetvia. Dnes je streda, deviateho septembra dvetisíc dvadsaťšesť, a verím, že máte pripravenú svoju rannú kávu, alebo možno večerný čaj, pretože nás čaká poriadna dávka horúcich správ a zaujímavých pohľadov.
@@ -566,16 +576,6 @@ V dnešnej epizóde sa ponoríme do turbulentných vôd najnovších svetových 
       <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-12/kolby-ai-2026-07-12.mp3</guid>
       <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-12/kolby-ai-2026-07-12.mp3" length="10034352" type="audio/mpeg" />
       <ns0:duration>00:27:52</ns0:duration>
-    </item>
-    <item>
-      <title>Ep. 43: AI bojisko: Meta ustupuje, Apple žaluje a AI mieri domov</title>
-      <description>Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už štyridsiatej tretej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je sobota, jedenásteho júla dvetisíc dvadsiateho šiesteho roku a máme pre vás opäť poriadnu dávku horúcich noviniek, ktoré búrajú bariéry a formujú náš zajtrajšok. Svet AI sa nikdy nezastaví a my sa s ním nenecháme zahanbiť.
-
-V dnešnej epizóde sa pozrieme na niekoľko kľúčových mom...</description>
-      <pubDate>Sat, 11 Jul 2026 06:56:10 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-11/kolby-ai-2026-07-11.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-11/kolby-ai-2026-07-11.mp3" length="9290592" type="audio/mpeg" />
-      <ns0:duration>00:25:48</ns0:duration>
     </item>
   </channel>
 </rss>
