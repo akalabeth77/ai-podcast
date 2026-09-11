@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-10</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-11</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-10</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-11</link>
     </image>
+    <item>
+      <title>Ep. 61: Keď AI diktuje hudbu, učí školy a pomáha nám s prácou</title>
+      <description>Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je piatok, jedenásteho septembra roku dvetisíc dvadsaťšesť, a ako vždy máme pre vás plný balík tých najhorúcejších noviniek, postrehov a praktických tipov zo sveta AI. Pripravte si uši, možno aj kávu, lebo to bude jazda!
+
+Dnes sa spoločne ponoríme do zaujímavých tém, ktoré ovplyvňujú náš každode...</description>
+      <pubDate>Fri, 11 Sep 2026 06:32:32 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-11/kolby-ai-2026-09-11.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-11/kolby-ai-2026-09-11.mp3" length="11638368" type="audio/mpeg" />
+      <ns0:duration>00:32:19</ns0:duration>
+    </item>
     <item>
       <title>Ep. 61: Melódie AI, sporné objavy a boj o dôveru</title>
       <description>Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je štvrtok, desiateho septembra dvetisíc dvadsaťšesť, a opäť máme pre vás plný zásobník tých najhorúcejších noviniek z globálnej aj našej domácej, slovenskej AI scény. Pripravte si kávu, možno nejaké tie chrumky, a poďme sa ponoriť do sveta, kde sa technológie neustále posúvajú vpred.
@@ -566,16 +576,6 @@ Dnes máme pred sebou poriadnu nálož zaujímavých tém, ktoré nám opäť uk
       <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-13/kolby-ai-2026-07-13.mp3</guid>
       <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-13/kolby-ai-2026-07-13.mp3" length="9477648" type="audio/mpeg" />
       <ns0:duration>00:26:19</ns0:duration>
-    </item>
-    <item>
-      <title>Ep. 44: AI v rozpore: Meta ustupuje, Apple žaluje, domy vítajú</title>
-      <description>Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už štyridsiatej štvrtej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je nedeľa, dvanásteho júla roku dvetisíc dvadsaťšesť, a veruže, opäť nás čaká poriadna dávka noviniek, ktoré búrajú hranice možného a zároveň kladú pred nás dôležité otázky o budúcnosti.
-
-V dnešnej epizóde sa ponoríme do turbulentných vôd najnovších svetových AI správ. Začneme tý...</description>
-      <pubDate>Sun, 12 Jul 2026 07:03:44 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-12/kolby-ai-2026-07-12.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-12/kolby-ai-2026-07-12.mp3" length="10034352" type="audio/mpeg" />
-      <ns0:duration>00:27:52</ns0:duration>
     </item>
   </channel>
 </rss>
