@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-12",
+    "title": "Ep. 61: Právne AI minely, hackeri a etické otázniky",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je sobota, dvanásteho septembra dvetisíc dvadsaťšesť, a ako vždy, čaká nás poriadna dávka noviniek, postrehov a praktických tipov zo sveta umelej inteligencie. Pripravte si kávu, čaj alebo čo len máte radi, lebo ideme sa ponoriť do búrlivých vôd AI, kde sa na nás valia nielen úspechy a pokroky, ...",
+    "pub_date": "Sat, 12 Sep 2026 06:28:40 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-12/kolby-ai-2026-09-12.mp3",
+    "mp3_size": 11630880,
+    "duration": "00:32:18"
+  },
+  {
     "id": "2026-09-11",
     "title": "Ep. 61: Keď AI diktuje hudbu, učí školy a pomáha nám s prácou",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je piatok, jedenásteho septembra roku dvetisíc dvadsaťšesť, a ako vždy máme pre vás plný balík tých najhorúcejších noviniek, postrehov a praktických tipov zo sveta AI. Pripravte si uši, možno aj kávu, lebo to bude jazda!\n\nDnes sa spoločne ponoríme do zaujímavých tém, ktoré ovplyvňujú náš každode...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-14/kolby-ai-2026-07-14.mp3",
     "mp3_size": 11456208,
     "duration": "00:31:49"
-  },
-  {
-    "id": "2026-07-13",
-    "title": "Ep. 45: AI Okuliare, Nečakané Čipy a Rodinná Realita",
-    "description": "Ahojte všetci priatelia technológií, inovácií a digitálnych vízií! Srdečne vás vítam pri ďalšej, v poradí už štyridsiatej piatej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je pondelok, trinásteho júla roku dvetisíc dvadsaťšesť, a ako vždy, máme pre vás pripravenú poriadnu dávku zaujímavých správ, postrehov a praktických tipov, ktoré vám pomôžu zorientovať sa v rýchlo sa meniacom AI vesmíre.\n\nČo nás dnes čaká? Nuž, pripravte si uši, lebo to bude pest...",
-    "pub_date": "Mon, 13 Jul 2026 07:21:20 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-13/kolby-ai-2026-07-13.mp3",
-    "mp3_size": 9477648,
-    "duration": "00:26:19"
   }
 ]
