@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-13",
+    "title": "Ep. 61: Keď AI útočí, Altman mlčí a Anthropic brzdí",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je nedeľa, trinásteho septembra dvetisíc dvadsaťšesť a opäť sa spoločne ponoríme do najčerstvejších udalostí, ktoré hýbu svetom umelej inteligencie. Pripravte si kávu, čaj alebo čo len chcete, pretože nás čaká naozaj bohatá agenda plná prekvapení, kontroverzií a možno aj niekoľkých etických dile...",
+    "pub_date": "Sun, 13 Sep 2026 06:32:54 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-13/kolby-ai-2026-09-13.mp3",
+    "mp3_size": 11211552,
+    "duration": "00:31:08"
+  },
+  {
     "id": "2026-09-12",
     "title": "Ep. 61: Právne AI minely, hackeri a etické otázniky",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je sobota, dvanásteho septembra dvetisíc dvadsaťšesť, a ako vždy, čaká nás poriadna dávka noviniek, postrehov a praktických tipov zo sveta umelej inteligencie. Pripravte si kávu, čaj alebo čo len máte radi, lebo ideme sa ponoriť do búrlivých vôd AI, kde sa na nás valia nielen úspechy a pokroky, ...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-15/kolby-ai-2026-07-15.mp3",
     "mp3_size": 12688128,
     "duration": "00:35:14"
-  },
-  {
-    "id": "2026-07-14",
-    "title": "Ep. 46: Siri ožíva, Waze ukazuje cestu a AI zarába miliardy",
-    "description": "Ahojte, priatelia technológií, inovácií a všetkého, čo nám mení svet pod rukami! Srdečne vás vítam pri ďalšej, v poradí už štyridsiatej šiestej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Som váš moderátor a teším sa, že ste sa naladili aj dnes, v utorok, štrnásteho júla dvetisícšesťdesiatšesť.\n\nDnes máme pred sebou poriadnu nálož zaujímavých tém, ktoré nám opäť ukážu, ako rýchlo sa AI stáva neoddeliteľnou súčasťou nášho každodenného života. Začneme samoz...",
-    "pub_date": "Tue, 14 Jul 2026 06:56:29 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-14/kolby-ai-2026-07-14.mp3",
-    "mp3_size": 11456208,
-    "duration": "00:31:49"
   }
 ]
