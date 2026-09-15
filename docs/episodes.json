@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-15",
+    "title": "Ep. 61: AI brzda? Titáni sa sporia, Trump má jasno",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je utorok, pätnásteho septembra dvetisíc dvadsaťšesť, a ako vždy, máme pre vás pripravenú poriadnu dávku horúcich správ, postrehov a zaujímavých analógií, aby ste sa v tomto rýchlom svete AI nestratili.\n\nDnešná epizóda bude poriadne nabitá, tak si uvarte kávu, alebo si vezmite nejaký dobrý čaj, ...",
+    "pub_date": "Tue, 15 Sep 2026 06:32:36 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-15/kolby-ai-2026-09-15.mp3",
+    "mp3_size": 9240768,
+    "duration": "00:25:40"
+  },
+  {
     "id": "2026-09-13",
     "title": "Ep. 61: Keď AI útočí, Altman mlčí a Anthropic brzdí",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je nedeľa, trinásteho septembra dvetisíc dvadsaťšesť a opäť sa spoločne ponoríme do najčerstvejších udalostí, ktoré hýbu svetom umelej inteligencie. Pripravte si kávu, čaj alebo čo len chcete, pretože nás čaká naozaj bohatá agenda plná prekvapení, kontroverzií a možno aj niekoľkých etických dile...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-16/kolby-ai-2026-07-16.mp3",
     "mp3_size": 12192768,
     "duration": "00:33:52"
-  },
-  {
-    "id": "2026-07-15",
-    "title": "Ep. 47: Keď AI prehovorí, vidí a… šnupe váš kód",
-    "description": "Ahojte všetci milovníci inovácií, zvedavci a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už štyridsiatej siedmej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je streda, pätnásteho júla dvetisíc dvadsaťšesť, a ako vždy, mám pre vás poriadnu nálož horúcich správ, hlbokých analýz a praktických tipov priamo zo srdca technologickej revolúcie.\n\nPripravte sa na poriadnu jazdu, pretože dnes sa ponoríme do sveta, kde AI už nielen rozmýšľa, ale...",
-    "pub_date": "Wed, 15 Jul 2026 06:57:23 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-15/kolby-ai-2026-07-15.mp3",
-    "mp3_size": 12688128,
-    "duration": "00:35:14"
   }
 ]
