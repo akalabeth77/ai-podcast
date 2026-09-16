@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-15</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-16</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-15</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-16</link>
     </image>
+    <item>
+      <title>Ep. 61: Odpor k AI: Dátové centrá, etika a oligarchovia</title>
+      <description>Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je streda, šestnásteho septembra roku dvetisíc dvadsaťšesť, a ako vždy, máme pre vás pripravenú poriadnu dávku horúcich noviniek a hlbokých analýz priamo z epicentra AI revolúcie.
+
+Dnes nás čaká skutočne pestrá zmes tém, ktoré hýbu svetom umelej inteligencie a ovplyvňujú naše životy viac, než si...</description>
+      <pubDate>Wed, 16 Sep 2026 06:32:21 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-16/kolby-ai-2026-09-16.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-16/kolby-ai-2026-09-16.mp3" length="12822480" type="audio/mpeg" />
+      <ns0:duration>00:35:37</ns0:duration>
+    </item>
     <item>
       <title>Ep. 61: AI brzda? Titáni sa sporia, Trump má jasno</title>
       <description>Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je utorok, pätnásteho septembra dvetisíc dvadsaťšesť, a ako vždy, máme pre vás pripravenú poriadnu dávku horúcich správ, postrehov a zaujímavých analógií, aby ste sa v tomto rýchlom svete AI nestratili.
@@ -562,16 +572,6 @@ Dnes si posvietime na niekoľko kľúčových tém. Začneme s pohľadom do zák
       <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-17/kolby-ai-2026-07-17.mp3</guid>
       <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-17/kolby-ai-2026-07-17.mp3" length="13344480" type="audio/mpeg" />
       <ns0:duration>00:37:04</ns0:duration>
-    </item>
-    <item>
-      <title>Ep. 48: AI: Etika, kreatívny chaos a nové hračky</title>
-      <description>Ahojte všetci milovníci inovácií, zvedavci a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už štyridsiatej ôsmej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie, kde rozoberáme novinky, trendy a dopady AI na náš každodenný život. Dnes je štvrtok, šestnásteho júla dvetisícšesť, a svet AI opäť nespí. Máme pre vás poriadnu dávku horúcich tém, ktoré sa dotýkajú nielen technologického pokroku, ale aj etiky, práva a dokonca aj našich peňaženiek.
-
-Dnes...</description>
-      <pubDate>Thu, 16 Jul 2026 07:00:30 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-16/kolby-ai-2026-07-16.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-16/kolby-ai-2026-07-16.mp3" length="12192768" type="audio/mpeg" />
-      <ns0:duration>00:33:52</ns0:duration>
     </item>
   </channel>
 </rss>
