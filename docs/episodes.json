@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-18",
+    "title": "Ep. 61: AI na križovatke: Bezpečnosť, moc a miliardy investícií",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je piatok, osemnásteho septembra dvetisíc dvadsaťšesť, a opäť sa ponoríme do najnovších udalostí, ktoré hýbu týmto dynamickým odvetvím. Tento týždeň sa naozaj diali veci, a ja sa už neviem dočkať, kým sa s vami podelím o všetky novinky a moje postrehy.\n\nDnes si posvietime na niekoľko kľúčových t...",
+    "pub_date": "Fri, 18 Sep 2026 06:33:23 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-18/kolby-ai-2026-09-18.mp3",
+    "mp3_size": 12600000,
+    "duration": "00:35:00"
+  },
+  {
     "id": "2026-09-17",
     "title": "Ep. 61: Od odpadu k hlasu: AI v mobile, dome aj na Islande",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde, ktorá je nabitá najčerstvejšími správami priamo z epicentra technologického diania. Dnes je štvrtok, sedemnásteho septembra dvoch tisícov dvadsaťšesť, a veru, máme sa na čo tešiť. Pripravte si kávu, čaj, alebo pokojne aj nejaký ten čerstvý koláčik, pretože pred nami je skutočná jazda.\n\nČo konkrétne n...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-19/kolby-ai-2026-07-19.mp3",
     "mp3_size": 11233440,
     "duration": "00:31:12"
-  },
-  {
-    "id": "2026-07-18",
-    "title": "Ep. 50: AI: Boj o kontrolu, peniaze a tvoje heslá",
-    "description": "Ahojte všetci milovníci inovácií, zvedavci a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už päťdesiatej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je sobota, osemnásteho júla, dvetisíc dvadsiateho šiesteho a máme pre vás plný balík horúcich noviniek a zaujímavých pohľadov. Verím, že sa mi podarí nielen prejsť dnešnými fascinujúcimi témami, ale aj vtiahnuť vás do diskusie a priniesť vám čo najviac praktických informácií, ktoré môžete...",
-    "pub_date": "Sat, 18 Jul 2026 06:50:21 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-18/kolby-ai-2026-07-18.mp3",
-    "mp3_size": 13659840,
-    "duration": "00:37:56"
   }
 ]
