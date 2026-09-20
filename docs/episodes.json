@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-20",
+    "title": "Ep. 61: AI na hrane: Tajomstvá, hacky a boj o budúcnosť webu",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je nedeľa, dvadsiateho septembra roku dvetisícdvadsaťšesť, a veruže máme pre vás opäť plný balík dôležitých správ, zaujímavých pohľadov a, samozrejme, môjich osobných komentárov. Svet AI sa nikdy nezastaví a tento týždeň nám priniesol niekoľko naozaj prekvapivých odhalení a diskusných tém, ktoré...",
+    "pub_date": "Sun, 20 Sep 2026 06:29:30 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-20/kolby-ai-2026-09-20.mp3",
+    "mp3_size": 10501488,
+    "duration": "00:29:10"
+  },
+  {
     "id": "2026-09-19",
     "title": "Ep. 61: AI na križovatke: Regulácie, hacky a prežitie webu",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je sobota, devätnásteho septembra dvetisíc dvadsaťšesť, a opäť nás čaká poriadna dávka noviniek, postrehov a zaujímavých analógií, ktoré vám pomôžu zorientovať sa v rýchlo napredujúcom svete AI. Pripravte si kávu, možno aj nejaký koláčik, pretože máme pred sebou naozaj bohatý program.\n\nDnes sa p...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-21/kolby-ai-2026-07-21.mp3",
     "mp3_size": 11626704,
     "duration": "00:32:17"
-  },
-  {
-    "id": "2026-07-20",
-    "title": "Ep. 52: AI v hudbe, etike a geopolitických hrách",
-    "description": "Ahojte všetci milovníci inovácií, zvedavci a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už päťdesiatdva epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je pondelok, dvadsiateho júla dvetisícdvadsaťšesť, a ako vždy, máme pre vás pripravenú poriadnu nálož horúcich noviniek a zaujímavých postrehov.\n\nDnes sa spoločne ponoríme do pestrého sveta AI. Najprv si vezmeme pod drobnohľad svetové AI správy. Budeme sa baviť o tom, ako AI mení hudbu v...",
-    "pub_date": "Mon, 20 Jul 2026 07:20:33 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-20/kolby-ai-2026-07-20.mp3",
-    "mp3_size": 11435616,
-    "duration": "00:31:45"
   }
 ]
