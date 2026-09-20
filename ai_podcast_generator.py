@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Denný AI Podcast Generátor
---------------------------
-Každý deň:
+Týždenný AI Podcast Generátor
+-----------------------------
+Každý pondelok:
 1. Stiahne najnovšie AI novinky z RSS feedov
 2. Vygeneruje podcast skript cez Claude API (Haiku - veľmi lacné)
 3. Skonvertuje text na reč cez edge-tts (ZADARMO, slovenský hlas)
@@ -33,8 +33,8 @@ from openai import OpenAI
 
 PODCAST_TITLE = "Kolby AI Podcast"
 PODCAST_DESCRIPTION = (
-    "Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. "
-    "Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, "
+    "Kolby AI Podcast je týždenný slovenský podcast o umelej inteligencii. "
+    "Každý pondelok ti v skratke poviem, čo sa nové dialo vo svete AI – nové modely, "
     "nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. "
     "Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. "
     "Ideálne na rannú kávu alebo cestou do práce."
@@ -135,7 +135,7 @@ def clean_markdown(text: str) -> str:
 #  KROK 1: Stiahni novinky
 # ─────────────────────────────────────────────────────────────
 
-def _parse_feed_articles(feed_urls: list[str], max_per_feed: int = 5, max_age_days: int = 2) -> list[dict]:
+def _parse_feed_articles(feed_urls: list[str], max_per_feed: int = 5, max_age_days: int = 7) -> list[dict]:
     """Pomocná funkcia – stiahne a vyčistí články zo zoznamu feedov."""
     today = datetime.now(timezone.utc).date()
     articles = []
@@ -236,7 +236,7 @@ def _filter_used(articles: list[dict], used: set[str]) -> list[dict]:
 
 
 def fetch_todays_ai_news(max_articles: int = MAX_ARTICLES, used: set[str] | None = None) -> list[dict]:
-    """Stiahne dnešné AI novinky zo všetkých RSS feedov."""
+    """Stiahne AI novinky z uplynulého týždňa zo všetkých RSS feedov."""
     print("📰 Sťahujem AI novinky...")
     articles = _deduplicate(_parse_feed_articles(AI_NEWS_FEEDS))
     if used:
@@ -248,11 +248,29 @@ def fetch_todays_ai_news(max_articles: int = MAX_ARTICLES, used: set[str] | None
 def fetch_eu_sk_news(max_articles: int = 3, used: set[str] | None = None) -> list[dict]:
     """Stiahne novinky o AI zo zdrojov zameraných na EÚ/Slovensko."""
     print("🇪🇺 Sťahujem EÚ/SK AI novinky...")
-    articles = _deduplicate(_parse_feed_articles(EU_SK_FEEDS, max_per_feed=5, max_age_days=4))
+    articles = _deduplicate(_parse_feed_articles(EU_SK_FEEDS, max_per_feed=5, max_age_days=7))
     if used:
         articles = _filter_used(articles, used)
     print(f"  ✅ Nájdených {len(articles)} nových EÚ/SK článkov, vyberám top {max_articles}")
     return articles[:max_articles]
+
+
+def get_episode_number(episodes: list[dict], date_str: str) -> int:
+    """
+    Vráti číslo dnešnej epizódy. Nesmie sa odvodzovať z dĺžky zoznamu –
+    ten je orezaný na posledných 60 epizód, takže číslo by sa zasekelo.
+    """
+    def number_of(ep: dict) -> int:
+        if ep.get("number"):
+            return int(ep["number"])
+        m = re.match(r"Ep\.\s*(\d+)", ep.get("title", ""))
+        return int(m.group(1)) if m else 0
+
+    # Opakovaný beh v ten istý deň nahradí existujúcu epizódu → zachovaj jej číslo
+    for ep in episodes:
+        if ep.get("id") == date_str and number_of(ep):
+            return number_of(ep)
+    return max((number_of(ep) for ep in episodes), default=0) + 1
 
 
 def load_recent_episode_context(n: int = 3) -> str:
@@ -329,10 +347,10 @@ Napíš prirodzený, plynulý podcast skript v slovenčine. Dnes je {today_sk}. 
 
 ŠTRUKTÚRA (dodržuj presne, v tomto poradí):
 1. ÚVOD: Pozdrav poslucháčov, predstav sa ako Kolby AI Podcast (epizóda {episode_number}), povedz dnešný dátum (deň aj dátum), zhrň ČO KONKRÉTNE dnes pokryjeme – vymenuj všetky témy zo svetových správ aj z EÚ/SK sekcie
-2. SVETOVÉ AI SPRÁVY: Prejdi KAŽDÚ jednu novinku z "DNEŠNÉ SPRÁVY" zvlášť – vysvetli o čo ide, prečo je dôležitá pre bežného človeka, pridaj vlastný komentár a zaujímavú analógiu
+2. SVETOVÉ AI SPRÁVY (novinky uplynulého týždňa): Prejdi KAŽDÚ jednu novinku z "DNEŠNÉ SPRÁVY" zvlášť – vysvetli o čo ide, prečo je dôležitá pre bežného človeka, pridaj vlastný komentár a zaujímavú analógiu
 3. EÚ A SLOVENSKO V AI: Osobitná sekcia venovaná správam z Európskej únie a Slovenska v kontexte umelej inteligencie – regulácie, financovanie, dopady AI zákonov na nás, slovenské AI projekty a startupy. Použи správy z "EÚ / SLOVENSKO SPRÁVY" a doplň vlastným kontextom.
 4. PRAKTICKÝ TIP DŇA: Jeden konkrétny, použiteľný tip ako využiť AI v praxi na základe dnešných správ – s krokovým príkladom ako to urobiť
-5. ZÁVER: Stručné zhrnutie čo sme dnes prebrali (jedna veta ku každej téme), rozlúčka, pozvanie na zajtra
+5. ZÁVER: Stručné zhrnutie čo sme dnes prebrali (jedna veta ku každej téme), rozlúčka, pozvanie na budúci pondelok (epizódy vychádzajú raz týždenne)
 
 KRITICKÉ PRAVIDLÁ – porušenie je neprijateľné:
 - KOMPLETNOSŤ: Ak v úvode sľubuješ tému, MUSÍŠ ju pokryť. Záver píš AŽ po pokrytí každej témy. Nekonči predčasne.
@@ -391,6 +409,9 @@ Potom prázdny riadok a začína hovorený skript. Žiadne ďalšie metadáta.""
     if lines[0].startswith("NAZOV:"):
         episode_title = lines[0].removeprefix("NAZOV:").strip().strip('"\'')
         script = "\n".join(lines[1:]).lstrip("\n").strip()
+        # Číslo epizódy nech vždy určuje kód, nie LLM
+        episode_title = re.sub(r"^Ep\.\s*\d+\s*:\s*", "", episode_title)
+        episode_title = f"Ep. {episode_number}: {episode_title}"
 
     # Odstráň prípadné zvyšné markdown znaky
     script = clean_markdown(script)
@@ -423,8 +444,8 @@ async def text_to_speech(script: str, output_path: Path) -> None:
 #  KROK 4: Aktualizuj RSS feed
 # ─────────────────────────────────────────────────────────────
 
-def update_rss_feed(episode_title: str, mp3_filename: str, mp3_size: int,
-                    script: str, base_url: str) -> None:
+def update_rss_feed(episode_title: str, episode_number: int, mp3_filename: str,
+                    mp3_size: int, script: str, base_url: str) -> None:
     """
     Aktualizuje RSS XML súbor pre Spotify/podcast aplikácie.
     base_url: URL kde sú MP3 súbory hostované (napr. GitHub Releases URL)
@@ -457,6 +478,7 @@ def update_rss_feed(episode_title: str, mp3_filename: str, mp3_size: int,
 
     new_episode = {
         "id": episode_id,
+        "number": episode_number,
         "title": episode_title,
         "description": script[:500] + "...",
         "pub_date": pub_date,
@@ -539,11 +561,11 @@ async def main():
     release_base = f"https://github.com/{github_user}/{github_repo}/releases/download/{date_str}"
 
     # Vypočítaj číslo epizódy
-    episode_number = 1
+    existing = []
     if EPISODES_FILE.exists():
         with open(EPISODES_FILE, encoding="utf-8") as f:
             existing = json.load(f)
-        episode_number = len(existing) + 1
+    episode_number = get_episode_number(existing, date_str)
 
     # 1. Novinky (s filtrom použitých článkov)
     used = load_used_articles(days=7)
@@ -573,7 +595,7 @@ async def main():
 
     # 4. RSS
     mp3_size = mp3_path.stat().st_size
-    update_rss_feed(episode_title, mp3_filename, mp3_size, script, release_base)
+    update_rss_feed(episode_title, episode_number, mp3_filename, mp3_size, script, release_base)
 
     print(f"\n😙️  Hotovo! Epizóda: {episode_title}")
     print(f"   MP3: {mp3_path}")

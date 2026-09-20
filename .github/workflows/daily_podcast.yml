@@ -1,9 +1,12 @@
-name: Denný AI Podcast
+name: Týždenný AI Podcast
 
 on:
-  # Spúšťaj každý deň o 6:00 UTC (= 7:00 SEČ, alebo 8:00 SELČ)
+  # Každý pondelok o 8:00 v Bratislave. GitHub cron beží len v UTC, preto sú dve
+  # spúšťania (6:00 UTC = 8:00 letný čas, 7:00 UTC = 8:00 zimný čas) a job
+  # "check-time" prepustí len to, ktoré zodpovedá 8:00 podľa Europe/Bratislava.
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "0 6 * * 1"
+    - cron: "0 7 * * 1"
 
   # Alebo spusti manuálne cez GitHub UI (Actions → Run workflow)
   workflow_dispatch:
@@ -14,7 +17,26 @@ permissions:
   id-token: write
 
 jobs:
+  # ─── Zisti, či je v Bratislave práve hodina spustenia (8:xx) ──
+  check-time:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.gate.outputs.run }}
+    steps:
+      - name: Skontroluj lokálny čas
+        id: gate
+        run: |
+          HOUR=$(TZ=Europe/Bratislava date +%H)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$HOUR" = "08" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Lokálna hodina v Bratislave je $HOUR, nie 08 – preskakujem."
+          fi
+
   generate-podcast:
+    needs: check-time
+    if: needs.check-time.outputs.run == 'true'
     runs-on: ubuntu-latest
 
     steps:
@@ -54,7 +76,7 @@ jobs:
           name: "Kolby AI Podcast – ${{ steps.date.outputs.DATE }}"
           files: output/kolby-ai-${{ steps.date.outputs.DATE }}.mp3
           body: |
-            Denná epizóda Kolby AI Podcast.
+            Týždenná epizóda Kolby AI Podcast.
             Automaticky vygenerovaná ${{ steps.date.outputs.DATE }}.
 
       # ─── Commitni RSS feed na GitHub Pages ──────────────────
@@ -62,6 +84,6 @@ jobs:
         run: |
           git config user.name "AI Podcast Bot"
           git config user.email "bot@ai-podcast.local"
-          git add docs/feed.xml docs/episodes.json
+          git add docs/feed.xml docs/episodes.json docs/used_articles.json
           git diff --staged --quiet || git commit -m "😙️ Epizóda ${{ steps.date.outputs.DATE }}"
           git push

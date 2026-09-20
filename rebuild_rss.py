@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 PODCAST_TITLE = "Kolby AI Podcast"
-PODCAST_DESCRIPTION = "Každý deň novinky zo sveta umelej inteligencie po slovensky."
+PODCAST_DESCRIPTION = "Každý pondelok novinky zo sveta umelej inteligencie po slovensky."
 PODCAST_LANGUAGE = "sk"
 PODCAST_AUTHOR = "Andrej Kolbaský"
 PODCAST_EMAIL = "andrej.kolbasky@gmail.com"
