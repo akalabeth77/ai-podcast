@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-21",
+    "title": "Ep. 61: AI v tieni tajomstiev: Hacky, politika a ľudská slabosť",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je pondelok, dvadsiateho prvého septembra roku dvetisíc dvadsaťšesť, a opäť sa spoločne ponoríme do najčerstvejších správ a najhorúcejších trendov, ktoré formujú našu digitálnu budúcnosť.\n\nČo nás dnes čaká? Máme pred sebou poriadnu dávku tém, ktoré nás prinútia zamyslieť sa nad smerovaním AI, je...",
+    "pub_date": "Mon, 21 Sep 2026 06:42:04 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-21/kolby-ai-2026-09-21.mp3",
+    "mp3_size": 12610080,
+    "duration": "00:35:01"
+  },
+  {
     "id": "2026-09-20",
     "title": "Ep. 61: AI na hrane: Tajomstvá, hacky a boj o budúcnosť webu",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je nedeľa, dvadsiateho septembra roku dvetisícdvadsaťšesť, a veruže máme pre vás opäť plný balík dôležitých správ, zaujímavých pohľadov a, samozrejme, môjich osobných komentárov. Svet AI sa nikdy nezastaví a tento týždeň nám priniesol niekoľko naozaj prekvapivých odhalení a diskusných tém, ktoré...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-22/kolby-ai-2026-07-22.mp3",
     "mp3_size": 10366272,
     "duration": "00:28:47"
-  },
-  {
-    "id": "2026-07-21",
-    "title": "Ep. 53: AI v objatí práva, čipov a čínskej ofenzívy",
-    "description": "Ahojte všetci milovníci inovácií, zvedavci a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už päťdesiat tretej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je utorok, dvadsiaty prvý júl, dvetisíc dvadsiateho šiesteho roku, a verím, že máte pripravenú kávu alebo čaj, pretože nás čaká naozaj nabitá epizóda plná najnovších správ a zaujímavých pohľadov.\n\nDnes sa spoločne ponoríme do hlbín svetových správ, kde budeme diskutovať o tom, ako sp...",
-    "pub_date": "Tue, 21 Jul 2026 07:04:08 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-21/kolby-ai-2026-07-21.mp3",
-    "mp3_size": 11626704,
-    "duration": "00:32:17"
   }
 ]
