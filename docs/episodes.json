@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-24",
+    "title": "Ep. 61: Meta a Muse: AI v každom vrecku, už aj bez kamery",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je štvrtok, dvadsiateho štvrtého septembra dvetisíc dvadsaťšesť a máme pre vás opäť poriadnu dávku horúcich noviniek, ktoré búrajú hranice možného a menia náš svet. Pohodlne sa usaďte, možno si vezmite šálku kávy, pretože dnes sa ponoríme do hĺbky a prejdeme si naozaj zaujímavé témy.\n\nČo nás dne...",
+    "pub_date": "Thu, 24 Sep 2026 06:33:24 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-24/kolby-ai-2026-09-24.mp3",
+    "mp3_size": 8949456,
+    "duration": "00:24:51"
+  },
+  {
     "id": "2026-09-23",
     "title": "Ep. 61: Matika, agenti a miliardy: AI v pohybe",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je streda, dvadsiateho tretieho septembra roku dvetisíc dvadsaťšesť, a ako vždy, máme pre vás plný zásobník tých najčerstvejších a najzaujímavejších správ zo sveta AI.\n\nPripravte sa na poriadnu dávku poznatkov a postrehov, pretože dnes sa ponoríme do skutočne pestrej palety tém. Začneme tým, ako...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-25/kolby-ai-2026-07-25.mp3",
     "mp3_size": 12905568,
     "duration": "00:35:50"
-  },
-  {
-    "id": "2026-07-24",
-    "title": "Ep. 56: AI v dennom živote: Hlas, zdravie a bezpečnostný vypínač",
-    "description": "Ahojte všetci milovníci inovácií, zvedavci a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už päťdesiatej šiestej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je piatok, dvadsiateho štvrtého júla dvetisícdvadsaťšesť, a ako vždy, máme pre vás pripravenú poriadnu dávku tých najhorúcejších správ, postrehov a analýz z dynamického sveta A I.\n\nDnes sa spoločne ponoríme do fascinujúcich tém, ktoré ovplyvňujú nielen technologický sektor, ale aj...",
-    "pub_date": "Fri, 24 Jul 2026 07:03:06 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-24/kolby-ai-2026-07-24.mp3",
-    "mp3_size": 11545056,
-    "duration": "00:32:04"
   }
 ]
