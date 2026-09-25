@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-24</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-25</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-24</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-25</link>
     </image>
+    <item>
+      <title>Ep. 61: Avatary, hry a AI agenti v pohybe</title>
+      <description>Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je piatok, dvadsiateho piateho septembra roku dvoch tisíc dvadsaťšesť, a my sa opäť ponoríme do víru noviniek, ktoré nám umelá inteligencia prináša. Pripravte si kávu, možno aj nejaký ten koláčik, a poďme na to.
+
+Dnes nás čaká naozaj pestrá paleta tém, ktoré hýbu technologickým svetom. Začneme t...</description>
+      <pubDate>Fri, 25 Sep 2026 06:33:51 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-25/kolby-ai-2026-09-25.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-25/kolby-ai-2026-09-25.mp3" length="12712464" type="audio/mpeg" />
+      <ns0:duration>00:35:18</ns0:duration>
+    </item>
     <item>
       <title>Ep. 61: Meta a Muse: AI v každom vrecku, už aj bez kamery</title>
       <description>Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je štvrtok, dvadsiateho štvrtého septembra dvetisíc dvadsaťšesť a máme pre vás opäť poriadnu dávku horúcich noviniek, ktoré búrajú hranice možného a menia náš svet. Pohodlne sa usaďte, možno si vezmite šálku kávy, pretože dnes sa ponoríme do hĺbky a prejdeme si naozaj zaujímavé témy.
@@ -568,14 +578,6 @@ Dnes sa pozrieme naozaj do hĺbky, pretože dianie okolo umelej inteligencie nab
       <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-26/kolby-ai-2026-07-26.mp3</guid>
       <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-26/kolby-ai-2026-07-26.mp3" length="11510928" type="audio/mpeg" />
       <ns0:duration>00:31:58</ns0:duration>
-    </item>
-    <item>
-      <title>Ep. 57: AI všade: Od astrológie po vedu a asistenta</title>
-      <description>Ahojte všetci milovníci inovácií, zvedavci a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už päťdesiatej siedmej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je sobota, dvadsiateho piateho júla dvetisíc dvadsaťšesť, a svet AI opäť nespí. Práve naopak, búrlivo sa vyvíja a zasahuje do sfér, o ktorých by sme pred pár rokmi len ťažko snívali. Pripravte si kávu, alebo čaj, pohodlne sa usaďte, pretože dnes nás čaká poriadna nádielka fascinuj...</description>
-      <pubDate>Sat, 25 Jul 2026 06:58:12 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-25/kolby-ai-2026-07-25.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-25/kolby-ai-2026-07-25.mp3" length="12905568" type="audio/mpeg" />
-      <ns0:duration>00:35:50</ns0:duration>
     </item>
   </channel>
 </rss>

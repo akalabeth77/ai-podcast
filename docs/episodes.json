@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-25",
+    "title": "Ep. 61: Avatary, hry a AI agenti v pohybe",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je piatok, dvadsiateho piateho septembra roku dvoch tisíc dvadsaťšesť, a my sa opäť ponoríme do víru noviniek, ktoré nám umelá inteligencia prináša. Pripravte si kávu, možno aj nejaký ten koláčik, a poďme na to.\n\nDnes nás čaká naozaj pestrá paleta tém, ktoré hýbu technologickým svetom. Začneme t...",
+    "pub_date": "Fri, 25 Sep 2026 06:33:51 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-25/kolby-ai-2026-09-25.mp3",
+    "mp3_size": 12712464,
+    "duration": "00:35:18"
+  },
+  {
     "id": "2026-09-24",
     "title": "Ep. 61: Meta a Muse: AI v každom vrecku, už aj bez kamery",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je štvrtok, dvadsiateho štvrtého septembra dvetisíc dvadsaťšesť a máme pre vás opäť poriadnu dávku horúcich noviniek, ktoré búrajú hranice možného a menia náš svet. Pohodlne sa usaďte, možno si vezmite šálku kávy, pretože dnes sa ponoríme do hĺbky a prejdeme si naozaj zaujímavé témy.\n\nČo nás dne...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-26/kolby-ai-2026-07-26.mp3",
     "mp3_size": 11510928,
     "duration": "00:31:58"
-  },
-  {
-    "id": "2026-07-25",
-    "title": "Ep. 57: AI všade: Od astrológie po vedu a asistenta",
-    "description": "Ahojte všetci milovníci inovácií, zvedavci a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už päťdesiatej siedmej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je sobota, dvadsiateho piateho júla dvetisíc dvadsaťšesť, a svet AI opäť nespí. Práve naopak, búrlivo sa vyvíja a zasahuje do sfér, o ktorých by sme pred pár rokmi len ťažko snívali. Pripravte si kávu, alebo čaj, pohodlne sa usaďte, pretože dnes nás čaká poriadna nádielka fascinuj...",
-    "pub_date": "Sat, 25 Jul 2026 06:58:12 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-25/kolby-ai-2026-07-25.mp3",
-    "mp3_size": 12905568,
-    "duration": "00:35:50"
   }
 ]
