@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-27",
+    "title": "Ep. 61: Zbesilá AI, súdy o hudbu a drahšie zdravie",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Som váš moderátor a teším sa, že s vami môžem stráviť túto nedeľu, dvadsiateho siedmeho septembra roku dvetisíc dvadsaťšesť. Počasie je vonku možno jesenné, ale vo svete AI to vrie ako v kotli! Dnes máme pred sebou poriadnu nálož horúcich správ, ktoré ovplyvňujú nielen technologický sektor, ale doslo...",
+    "pub_date": "Sun, 27 Sep 2026 06:31:55 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-27/kolby-ai-2026-09-27.mp3",
+    "mp3_size": 11655360,
+    "duration": "00:32:22"
+  },
+  {
     "id": "2026-09-26",
     "title": "Ep. 61: AI na úteku: Autorské práva a nečakané tajomstvá",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde nášho podcastu. Je sobota, dvadsiateho šiesteho septembra, roku dvetisíc dvadsaťšesť, a my sa opäť ponoríme do najčerstvejších správ a najdôležitejších udalostí, ktoré hýbu svetom umelej inteligencie. Dnes máme naozaj pestrý program, plný prekvapení, kontroverzií aj inovatívnych riešení.\n\nČo konkrétne...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-28/kolby-ai-2026-07-28.mp3",
     "mp3_size": 12434400,
     "duration": "00:34:32"
-  },
-  {
-    "id": "2026-07-27",
-    "title": "Ep. 59: AI: Vlny mozgu, kyberútoky a dôsledky na trh práce",
-    "description": "Ahojte, milovníci technológií, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už päťdesiatej deviatej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie, ktorý sa snaží dešifrovať zložité koncepty do zrozumiteľnej reči. Ja som váš hostiteľ a som nesmierne rád, že ste si dnes naladili náš podcast. Dnes je pondelok, dvadsiateho siedmeho júla, dva tisíc dvadsaťšesť, a ve...",
-    "pub_date": "Mon, 27 Jul 2026 07:24:16 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-27/kolby-ai-2026-07-27.mp3",
-    "mp3_size": 11306592,
-    "duration": "00:31:24"
   }
 ]
