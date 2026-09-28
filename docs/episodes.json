@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-09-28",
+    "title": "Ep. 61: Keď AI halucinuje hudbu a straší OSN",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je pondelok, dvadsiateho ôsmeho septembra roku dvetisíc dvadsaťšesť, a veruže máme pre vás opäť poriadnu nálož zaujímavých správ, postrehov a praktických tipov, ktoré vám, dúfam, rozjasnia váš deň a pomôžu lepšie sa orientovať v tomto dynamickom digitálnom vesmíre.\n\nDnes sa spoločne ponoríme do ...",
+    "pub_date": "Mon, 28 Sep 2026 06:44:57 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-28/kolby-ai-2026-09-28.mp3",
+    "mp3_size": 11813040,
+    "duration": "00:32:48"
+  },
+  {
     "id": "2026-09-27",
     "title": "Ep. 61: Zbesilá AI, súdy o hudbu a drahšie zdravie",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Som váš moderátor a teším sa, že s vami môžem stráviť túto nedeľu, dvadsiateho siedmeho septembra roku dvetisíc dvadsaťšesť. Počasie je vonku možno jesenné, ale vo svete AI to vrie ako v kotli! Dnes máme pred sebou poriadnu nálož horúcich správ, ktoré ovplyvňujú nielen technologický sektor, ale doslo...",
@@ -529,14 +538,5 @@
     "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-29/kolby-ai-2026-07-29.mp3",
     "mp3_size": 10306656,
     "duration": "00:28:37"
-  },
-  {
-    "id": "2026-07-28",
-    "title": "Ep. 60: Globálna AI: Veľmocenské preteky a digitálna obrana",
-    "description": "Ahojte všetci zvedavci, inovátori a priatelia budúcnosti! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu svetom umelej inteligencie. Dnes je utorok, dvadsiateho ôsmeho júla dvetisíc dvadsaťšesť a máme pre vás opäť poriadnu dávku horúcich noviniek, ktoré formujú nielen technologický svet, ale aj náš každodenný život.\n\nDnes sa pozrieme naozaj do hĺbky, pretože dianie okolo umelej inteligencie naberá na obrátkach, a to doslova z hodin...",
-    "pub_date": "Tue, 28 Jul 2026 07:04:52 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-28/kolby-ai-2026-07-28.mp3",
-    "mp3_size": 12434400,
-    "duration": "00:34:32"
   }
 ]
