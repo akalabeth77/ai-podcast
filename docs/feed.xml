@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je denný slovenský podcast o umelej inteligencii. Každý deň ti v skratke poviem, čo sa nové deje vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-29</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-30</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-29</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-30</link>
     </image>
+    <item>
+      <title>Ep. 61: Superinteligencia, Bezpečnosť a Súboj AI gigantov</title>
+      <description>Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je streda, tridsiateho septembra dvetisícdvadsaťšesť, a ako vždy, máme pre vás pripravenú poriadnu dávku tých najhorúcejších správ, ktoré hýbu svetom technológií a ovplyvňujú naše každodenné životy.
+
+Dnes sa spoločne ponoríme do hlbín AI, začneme dôležitým vyhlásením generálneho riaditeľa Open A...</description>
+      <pubDate>Wed, 30 Sep 2026 06:34:02 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-30/kolby-ai-2026-09-30.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-09-30/kolby-ai-2026-09-30.mp3" length="9235008" type="audio/mpeg" />
+      <ns0:duration>00:25:39</ns0:duration>
+    </item>
     <item>
       <title>Ep. 61: AI agenti v akcii: Akvizície, hackeri a etika</title>
       <description>Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde nášho spoločného objavovania. Dnes je utorok, dvadsiateho deviateho septembra dvetisíc dvadsaťšesť a opäť máme pre vás plný zásobník tých najhorúcejších správ, ktoré hýbu svetom AI. Pripravte sa na poriadnu dávku informácií, pretože nás čaká naozaj pestré menu.
@@ -571,15 +581,6 @@ Dnes sa pozrieme na to, ako sa niektoré technologické giganty preorientovávaj
       <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-01/kolby-ai-2026-08-01.mp3</guid>
       <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-01/kolby-ai-2026-08-01.mp3" length="8816400" type="audio/mpeg" />
       <ns0:duration>00:24:29</ns0:duration>
-    </item>
-    <item>
-      <title>Ep. 61: Apple, Roboty a AI Slop: Dátové Vrstvy Nášho Života</title>
-      <description>Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde Kolby AI Podcastu, vášho spoľahlivého sprievodcu tým, čo je nové a dôležité vo svete AI. Dnes je piatok, tridsiateho prvého júla dvetisíc dvadsiateho šiesteho roku, a aj dnes máme pre vás plný košík zaujímavostí, ktoré menia nielen technologický svet, ale aj naše každodenné životy.
-...</description>
-      <pubDate>Fri, 31 Jul 2026 07:12:09 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-31/kolby-ai-2026-07-31.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-07-31/kolby-ai-2026-07-31.mp3" length="10452528" type="audio/mpeg" />
-      <ns0:duration>00:29:02</ns0:duration>
     </item>
   </channel>
 </rss>
