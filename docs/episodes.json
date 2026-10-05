@@ -1,5 +1,15 @@
 [
   {
+    "id": "2026-10-05",
+    "number": 123,
+    "title": "Ep. 123: Keď AI podvádza, žaluje a mení politiku",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už sto dvadsiatej tretej epizóde. Dnes je pondelok, piateho októbra roka dvetisíc dvadsaťšesť, a ako vždy, mám pre vás pripravenú poriadnu dávku tých najhorúcejších noviniek a analýz z diania okolo umelej inteligencie.\n\nSvet sa nezastavil, ba práve naopak, točí sa čoraz rýchlejšie a AI je v epicentre mnohých udalostí. Dnes sa p...",
+    "pub_date": "Mon, 05 Oct 2026 06:20:24 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-10-05/kolby-ai-2026-10-05.mp3",
+    "mp3_size": 14501952,
+    "duration": "00:40:16"
+  },
+  {
     "id": "2026-09-30",
     "title": "Ep. 122: Superinteligencia, Bezpečnosť a Súboj AI gigantov",
     "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde. Dnes je streda, tridsiateho septembra dvetisícdvadsaťšesť, a ako vždy, máme pre vás pripravenú poriadnu dávku tých najhorúcejších správ, ktoré hýbu svetom technológií a ovplyvňujú naše každodenné životy.\n\nDnes sa spoločne ponoríme do hlbín AI, začneme dôležitým vyhlásením generálneho riaditeľa Open A...",
@@ -588,15 +598,5 @@
     "mp3_size": 9725040,
     "duration": "00:27:00",
     "number": 64
-  },
-  {
-    "id": "2026-08-01",
-    "title": "Ep. 63: Neposlušné AI a digitálne ilúzie Googlu",
-    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného sprievodcu svetom umelej inteligencie. Dnes je sobota, prvého augusta dvetisícdvadsaťšesť, a veruže sa máme opäť o čom rozprávať! Pripravte si kávu, čaj alebo čo len máte radi, lebo dnešný program je nabitý novinkami, ktoré nám poriadne preveria, kde sú hranice tech...",
-    "pub_date": "Sat, 01 Aug 2026 07:00:31 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-01/kolby-ai-2026-08-01.mp3",
-    "mp3_size": 8816400,
-    "duration": "00:24:29",
-    "number": 63
   }
 ]
