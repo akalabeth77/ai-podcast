@@ -46,7 +46,7 @@ PODCAST_IMAGE_URL = "https://akalabeth77.github.io/ai-podcast/cover.png"
 
 # Slovenský hlas (edge-tts): Lukáš alebo Viktória
 # Všetky dostupné hlasy: edge-tts --list-voices | grep sk-SK
-TTS_VOICE = "sk-SK-LukasNeural"  # alebo "sk-SK-ViktoriaNeural"
+TTS_VOICE = "sk-SK-ViktoriaNeural"  # sk-SK-LukasNeural momentálne vracia NoAudioReceived
 
 # Tempo reči: +0% = normálne, +10% = rýchlejšie, -10% = pomalšie
 TTS_RATE = "+5%"
@@ -432,10 +432,42 @@ Potom prázdny riadok a začína hovorený skript. Žiadne ďalšie metadáta.""
 # ─────────────────────────────────────────────────────────────
 
 async def text_to_speech(script: str, output_path: Path) -> None:
-    """Skonvertuje skript na MP3 pomocou Microsoft Edge TTS (zadarmo)."""
+    """Skonvertuje skript na MP3 pomocou Microsoft Edge TTS (zadarmo).
+
+    Skript sa posiela po častiach (odseky) a každá časť sa pri chybe
+    (napr. NoAudioReceived) zopakuje, aby jeden výpadok nezhodil celý beh.
+    """
     print(f"🔊 Konvertujem text na reč ({TTS_VOICE})...")
-    communicate = edge_tts.Communicate(script, TTS_VOICE, rate=TTS_RATE)
-    await communicate.save(str(output_path))
+
+    chunks, current = [], ""
+    for para in re.split(r"\n\s*\n", script):
+        if current and len(current) + len(para) > 3000:
+            chunks.append(current)
+            current = ""
+        current += para + "\n\n"
+    if current.strip():
+        chunks.append(current)
+
+    audio = bytearray()
+    for i, chunk in enumerate(chunks, 1):
+        for attempt in range(1, 6):
+            try:
+                part = bytearray()
+                communicate = edge_tts.Communicate(chunk, TTS_VOICE, rate=TTS_RATE)
+                async for msg in communicate.stream():
+                    if msg["type"] == "audio":
+                        part += msg["data"]
+                if not part:
+                    raise edge_tts.exceptions.NoAudioReceived("prázdne audio")
+                audio += part
+                break
+            except Exception as e:
+                print(f"  ⚠️ Časť {i}/{len(chunks)}, pokus {attempt}/5: {e}")
+                if attempt == 5:
+                    raise
+                await asyncio.sleep(5 * attempt)
+
+    output_path.write_bytes(bytes(audio))
     size_mb = output_path.stat().st_size / 1024 / 1024
     print(f"  ✅ Audio uložené: {output_path} ({size_mb:.1f} MB)")
 
