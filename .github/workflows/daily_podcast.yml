@@ -1,9 +1,8 @@
 name: Týždenný AI Podcast
 
 on:
-  # Každý pondelok o 8:00 v Bratislave. GitHub cron beží len v UTC, preto sú dve
-  # spúšťania (6:00 UTC = 8:00 letný čas, 7:00 UTC = 8:00 zimný čas) a job
-  # "check-time" prepustí len to, ktoré zodpovedá 8:00 podľa Europe/Bratislava.
+  # Každý pondelok ráno. Dve spúšťania pre letný/zimný čas; job "check-time"
+  # prepustí len prvé, ktoré nájde dnes ešte nevytvorenú epizódu.
   schedule:
     - cron: "0 6 * * 1"
     - cron: "0 7 * * 1"
@@ -23,15 +22,18 @@ jobs:
     outputs:
       run: ${{ steps.gate.outputs.run }}
     steps:
-      - name: Skontroluj lokálny čas
+      - uses: actions/checkout@v4
+      - name: Skontroluj, či dnešná epizóda ešte neexistuje
         id: gate
         run: |
-          HOUR=$(TZ=Europe/Bratislava date +%H)
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$HOUR" = "08" ]; then
+          # GitHub cron mešká (aj o hodiny), preto nehľadáme presnú hodinu,
+          # ale len či už dnes (Europe/Bratislava) epizóda vznikla.
+          TODAY=$(TZ=Europe/Bratislava date +%F)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || ! git ls-remote --exit-code --tags origin "refs/tags/$TODAY" >/dev/null; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
-            echo "Lokálna hodina v Bratislave je $HOUR, nie 08 – preskakujem."
+            echo "Epizóda $TODAY už existuje – preskakujem."
           fi
 
   generate-podcast:
