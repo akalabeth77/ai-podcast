@@ -1,5 +1,15 @@
 [
   {
+    "id": "2026-10-20",
+    "number": 124,
+    "title": "Ep. 124: AI: Od čarovnej fotky po dieru v peňaženke",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už sto dvadsiatej štvrtej epizóde. Dnes je utorok, dvadsiateho októbra dvoch tisíc dvadsiateho šiesteho roku a máme pre vás opäť plný koš zaujímavých tém, ktoré ovplyvňujú nielen technologický svet, ale aj naše každodenné životy.\n\nDnes sa pozrieme na to, ako technologickí giganti bojujú s ochranou súkromia a spamom, ale aj s fi...",
+    "pub_date": "Tue, 20 Oct 2026 20:07:11 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-10-20/kolby-ai-2026-10-20.mp3",
+    "mp3_size": 11145024,
+    "duration": "00:30:57"
+  },
+  {
     "id": "2026-10-05",
     "number": 123,
     "title": "Ep. 123: Keď AI podvádza, žaluje a mení politiku",
@@ -588,15 +598,5 @@
     "mp3_size": 9278640,
     "duration": "00:25:46",
     "number": 65
-  },
-  {
-    "id": "2026-08-02",
-    "title": "Ep. 64: Keď AI klame, hackuje a mení mapy: Nová hudba a rodičovstvo",
-    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde, ktorá je nabitá novinkami, postrehmi a, úprimne, aj pár dôvodmi na zamyslenie. Dnes je nedeľa, druhého augusta roku dvetisíc dvadsaťšesť, a svet AI sa ani na chvíľu nezastavil, ba priam naopak – pridal na obrátkach. Ak ste si mysleli, že víkend je na oddych, tak v tomto digitálnom ...",
-    "pub_date": "Sun, 02 Aug 2026 07:04:21 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-02/kolby-ai-2026-08-02.mp3",
-    "mp3_size": 9725040,
-    "duration": "00:27:00",
-    "number": 64
   }
 ]

@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je týždenný slovenský podcast o umelej inteligencii. Každý pondelok ti v skratke poviem, čo sa nové dialo vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-10-05</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-10-20</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-10-05</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-10-20</link>
     </image>
+    <item>
+      <title>Ep. 124: AI: Od čarovnej fotky po dieru v peňaženke</title>
+      <description>Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už sto dvadsiatej štvrtej epizóde. Dnes je utorok, dvadsiateho októbra dvoch tisíc dvadsiateho šiesteho roku a máme pre vás opäť plný koš zaujímavých tém, ktoré ovplyvňujú nielen technologický svet, ale aj naše každodenné životy.
+
+Dnes sa pozrieme na to, ako technologickí giganti bojujú s ochranou súkromia a spamom, ale aj s fi...</description>
+      <pubDate>Tue, 20 Oct 2026 20:07:11 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-10-20/kolby-ai-2026-10-20.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-10-20/kolby-ai-2026-10-20.mp3" length="11145024" type="audio/mpeg" />
+      <ns0:duration>00:30:57</ns0:duration>
+    </item>
     <item>
       <title>Ep. 123: Keď AI podvádza, žaluje a mení politiku</title>
       <description>Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už sto dvadsiatej tretej epizóde. Dnes je pondelok, piateho októbra roka dvetisíc dvadsaťšesť, a ako vždy, mám pre vás pripravenú poriadnu dávku tých najhorúcejších noviniek a analýz z diania okolo umelej inteligencie.
@@ -575,14 +585,6 @@ Dnes sa pozrieme na to, ako sa niektoré technologické giganty preorientovávaj
       <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-03/kolby-ai-2026-08-03.mp3</guid>
       <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-03/kolby-ai-2026-08-03.mp3" length="9278640" type="audio/mpeg" />
       <ns0:duration>00:25:46</ns0:duration>
-    </item>
-    <item>
-      <title>Ep. 64: Keď AI klame, hackuje a mení mapy: Nová hudba a rodičovstvo</title>
-      <description>Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde, ktorá je nabitá novinkami, postrehmi a, úprimne, aj pár dôvodmi na zamyslenie. Dnes je nedeľa, druhého augusta roku dvetisíc dvadsaťšesť, a svet AI sa ani na chvíľu nezastavil, ba priam naopak – pridal na obrátkach. Ak ste si mysleli, že víkend je na oddych, tak v tomto digitálnom ...</description>
-      <pubDate>Sun, 02 Aug 2026 07:04:21 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-02/kolby-ai-2026-08-02.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-02/kolby-ai-2026-08-02.mp3" length="9725040" type="audio/mpeg" />
-      <ns0:duration>00:27:00</ns0:duration>
     </item>
   </channel>
 </rss>
