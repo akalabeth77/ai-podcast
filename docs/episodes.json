@@ -1,5 +1,15 @@
 [
   {
+    "id": "2026-10-26",
+    "number": 125,
+    "title": "Ep. 125: AI realita: Od regulácie po autenticitu a praktické dopady",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už sto dvadsiatej piatej epizóde. Dnes je krásny jesenný pondelok, dvadsiateho šiesteho októbra roku dvetisíc dvadsaťšesť, a svet AI nám opäť prináša záplavu dôležitých správ a zaujímavých tém, ktoré ovplyvňujú naše životy viac, než si možno uvedomujeme.\n\nČo nás dnes čaká? No, pripravte sa na poriadnu dávku informácií, pretože ...",
+    "pub_date": "Mon, 26 Oct 2026 12:02:48 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-10-26/kolby-ai-2026-10-26.mp3",
+    "mp3_size": 11346336,
+    "duration": "00:31:31"
+  },
+  {
     "id": "2026-10-20",
     "number": 124,
     "title": "Ep. 124: AI: Od čarovnej fotky po dieru v peňaženke",
@@ -588,15 +598,5 @@
     "mp3_size": 8766864,
     "duration": "00:24:21",
     "number": 66
-  },
-  {
-    "id": "2026-08-03",
-    "title": "Ep. 65: Gitara proti AI, Altmanova brzda a digitálna očista",
-    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde, ktorá je nabitá najčerstvejšími informáciami z tohto fascinujúceho odvetvia. Dnes je pondelok, tretí august 2026, a my sa ponoríme do spleti udalostí, ktoré formujú nielen technológiu, ale aj našu každodennú realitu.\n\nČo nás dnes čaká? Po prvé, budeme hovoriť o pomerne kontroverzný...",
-    "pub_date": "Mon, 03 Aug 2026 07:21:46 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-03/kolby-ai-2026-08-03.mp3",
-    "mp3_size": 9278640,
-    "duration": "00:25:46",
-    "number": 65
   }
 ]
