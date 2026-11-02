@@ -1,5 +1,15 @@
 [
   {
+    "id": "2026-11-02",
+    "number": 126,
+    "title": "Ep. 126: AI všade okolo nás: Od Tamagoči po vesmírny haiku",
+    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už sto dvadsiatej šiestej epizóde, ktorá je plná horúcich noviniek a zaujímavých pohľadov na to, ako AI formuje náš svet. Dnes je pondelok, druhého novembra dvetisíc dvadsaťšesť, a veru, máme pre vás pripravené skutočné lahôdky.\n\nČo konkrétne nás dnes čaká? Pustíme sa do osem svetových AI správ, ktoré nám ukazujú, kam sa techno...",
+    "pub_date": "Mon, 02 Nov 2026 14:24:28 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-11-02/kolby-ai-2026-11-02.mp3",
+    "mp3_size": 13761792,
+    "duration": "00:38:13"
+  },
+  {
     "id": "2026-10-26",
     "number": 125,
     "title": "Ep. 125: AI realita: Od regulácie po autenticitu a praktické dopady",
@@ -588,15 +598,5 @@
     "mp3_size": 10331136,
     "duration": "00:28:41",
     "number": 67
-  },
-  {
-    "id": "2026-08-04",
-    "title": "Ep. 66: AI pod lupou: Brusel reguluje, Čína nespí",
-    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiat prvej epizóde nášho spoločného objavovania. Ja som váš moderátor a teším sa, že ste si aj dnes naladili náš Kolby AI Podcast. Dnes je utorok, štvrtého augusta dvetisíc dvadsaťšesť, a svet AI nám opäť prináša záplavu fascinujúcich noviniek, ktoré ovplyvňujú naše životy, či už si to uvedomujeme, aleb...",
-    "pub_date": "Tue, 04 Aug 2026 07:03:58 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-04/kolby-ai-2026-08-04.mp3",
-    "mp3_size": 8766864,
-    "duration": "00:24:21",
-    "number": 66
   }
 ]

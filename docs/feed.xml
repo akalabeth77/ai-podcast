@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je týždenný slovenský podcast o umelej inteligencii. Každý pondelok ti v skratke poviem, čo sa nové dialo vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-10-26</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-11-02</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,18 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-10-26</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-11-02</link>
     </image>
+    <item>
+      <title>Ep. 126: AI všade okolo nás: Od Tamagoči po vesmírny haiku</title>
+      <description>Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už sto dvadsiatej šiestej epizóde, ktorá je plná horúcich noviniek a zaujímavých pohľadov na to, ako AI formuje náš svet. Dnes je pondelok, druhého novembra dvetisíc dvadsaťšesť, a veru, máme pre vás pripravené skutočné lahôdky.
+
+Čo konkrétne nás dnes čaká? Pustíme sa do osem svetových AI správ, ktoré nám ukazujú, kam sa techno...</description>
+      <pubDate>Mon, 02 Nov 2026 14:24:28 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-11-02/kolby-ai-2026-11-02.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-11-02/kolby-ai-2026-11-02.mp3" length="13761792" type="audio/mpeg" />
+      <ns0:duration>00:38:13</ns0:duration>
+    </item>
     <item>
       <title>Ep. 125: AI realita: Od regulácie po autenticitu a praktické dopady</title>
       <description>Ahojte, milí poslucháči Kolby AI Podcastu, vaši verní sprievodcovia fascinujúcim a neustále sa meniacim svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už sto dvadsiatej piatej epizóde. Dnes je krásny jesenný pondelok, dvadsiateho šiesteho októbra roku dvetisíc dvadsaťšesť, a svet AI nám opäť prináša záplavu dôležitých správ a zaujímavých tém, ktoré ovplyvňujú naše životy viac, než si možno uvedomujeme.
@@ -577,14 +587,6 @@ Dnes sa pozrieme na to, ako sa niektoré technologické giganty preorientovávaj
       <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-05/kolby-ai-2026-08-05.mp3</guid>
       <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-05/kolby-ai-2026-08-05.mp3" length="10331136" type="audio/mpeg" />
       <ns0:duration>00:28:41</ns0:duration>
-    </item>
-    <item>
-      <title>Ep. 66: AI pod lupou: Brusel reguluje, Čína nespí</title>
-      <description>Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiat prvej epizóde nášho spoločného objavovania. Ja som váš moderátor a teším sa, že ste si aj dnes naladili náš Kolby AI Podcast. Dnes je utorok, štvrtého augusta dvetisíc dvadsaťšesť, a svet AI nám opäť prináša záplavu fascinujúcich noviniek, ktoré ovplyvňujú naše životy, či už si to uvedomujeme, aleb...</description>
-      <pubDate>Tue, 04 Aug 2026 07:03:58 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-04/kolby-ai-2026-08-04.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-04/kolby-ai-2026-08-04.mp3" length="8766864" type="audio/mpeg" />
-      <ns0:duration>00:24:21</ns0:duration>
     </item>
   </channel>
 </rss>
