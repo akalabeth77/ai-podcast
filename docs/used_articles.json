@@ -1,85 +1,5 @@
 [
   {
-    "url": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
-    "title": "Meta pauses Muse sharing after researchers find AI chats on the web",
-    "date": "2026-10-20"
-  },
-  {
-    "url": "https://www.theverge.com/entertainment/1014284/spotify-ai-slop-spam-songs-removed",
-    "title": "Spotify pulled 50 million AI slop and spam tracks from its recommendations",
-    "date": "2026-10-20"
-  },
-  {
-    "url": "https://www.theverge.com/tech/1014246/adobe-lightroom-mobile-ai-quick-action-open-eyes-closed-blink-repair",
-    "title": "Adobe Lightroom mobile can now open closed eyes in photos with a simple tap",
-    "date": "2026-10-20"
-  },
-  {
-    "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report",
-    "title": "The fossil fuel comeback is here",
-    "date": "2026-10-20"
-  },
-  {
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
-    "title": "CoreWeave&#8217;s debt is becoming the whole AI industry&#8217;s problem",
-    "date": "2026-10-20"
-  },
-  {
-    "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
-    "title": "Google has joined Amazon in attacking Nvidia’s stronghold with AI app developers",
-    "date": "2026-10-20"
-  },
-  {
-    "url": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
-    "title": "ChatGPT now lets you lock your chats",
-    "date": "2026-10-20"
-  },
-  {
-    "url": "https://techcrunch.com/2026/10/20/eric-schmidt-reportedly-owns-about-half-as-much-of-anthropic-as-ceo-dario-amodei/",
-    "title": "Eric Schmidt reportedly owns about half as much of Anthropic as CEO Dario Amodei",
-    "date": "2026-10-20"
-  },
-  {
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
-    "title": "r/opensource just banned AI, non-English speakers, and more",
-    "date": "2026-10-26"
-  },
-  {
-    "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
-    "title": "Google’s AI search changes upended online publishing",
-    "date": "2026-10-26"
-  },
-  {
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
-    "title": "Blue Planet III is keeping the rough edges in the age of AI",
-    "date": "2026-10-26"
-  },
-  {
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
-    "title": "Pennsylvania will require labels on AI-generated ads",
-    "date": "2026-10-26"
-  },
-  {
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
-    "title": "OpenAI now trains its frontier AI models with no internet access",
-    "date": "2026-10-26"
-  },
-  {
-    "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
-    "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
-    "date": "2026-10-26"
-  },
-  {
-    "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-    "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
-    "date": "2026-10-26"
-  },
-  {
-    "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
-    "title": "The hottest AI wearables and gadgets you should know about",
-    "date": "2026-10-26"
-  },
-  {
     "url": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
     "title": "I built an AI Tamagotchi before Meta could",
     "date": "2026-11-02"
@@ -118,5 +38,45 @@
     "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
     "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
     "date": "2026-11-02"
+  },
+  {
+    "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+    "title": "The OpenAI board member who fired Sam Altman says we still can&#8217;t trust AI CEOs",
+    "date": "2026-11-15"
+  },
+  {
+    "url": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
+    "title": "Jensen Huang and the decline of the visionary showman founder CEO",
+    "date": "2026-11-15"
+  },
+  {
+    "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+    "title": "Amazon has a plan to index the world’s online shopping data",
+    "date": "2026-11-15"
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+    "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+    "date": "2026-11-15"
+  },
+  {
+    "url": "https://www.theverge.com/podcast/1032866/jensen-huang-nvidia-china-trump-vergecast",
+    "title": "What&#8217;s really at stake in the Jensen Huang saga",
+    "date": "2026-11-15"
+  },
+  {
+    "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+    "title": "Where was Nvidia’s security team?",
+    "date": "2026-11-15"
+  },
+  {
+    "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+    "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+    "date": "2026-11-15"
+  },
+  {
+    "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+    "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+    "date": "2026-11-15"
   }
 ]

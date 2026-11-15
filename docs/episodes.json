@@ -1,5 +1,15 @@
 [
   {
+    "id": "2026-11-15",
+    "number": 127,
+    "title": "Ep. 127: Pád Jensen Huanga AI peňaženky a Amazonov globálny graf",
+    "description": "Ahojte milí poslucháči vitajte v novej epizóde Kolby AI Podcastu Toto je sto dvadsiatiesma siedma epizóda a dnes je nedeľa pätnásť november dva tisíce dvadsaťšesť Srdečne sa teším že sa k nám pridávate ať už sa práve razíte do bratislavských provozoviek alebo si pijete druhú kávu v pohodlí domova Dnes nám čaká naozaj hmla tém ktorých je celá hrstka a každá z nich by stála za samostatnú epizódu Ale my sa im ponesieme poriadne pod kožu\n\nV tejto epizóde sa pozrieme na to čo sa deje vnútri Open AI k...",
+    "pub_date": "Sun, 15 Nov 2026 12:04:47 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-11-15/kolby-ai-2026-11-15.mp3",
+    "mp3_size": 5268528,
+    "duration": "00:14:38"
+  },
+  {
     "id": "2026-11-02",
     "number": 126,
     "title": "Ep. 126: AI všade okolo nás: Od Tamagoči po vesmírny haiku",
@@ -588,15 +598,5 @@
     "mp3_size": 11327616,
     "duration": "00:31:27",
     "number": 68
-  },
-  {
-    "id": "2026-08-05",
-    "title": "Ep. 67: AI: Biznis rastie, influenceri horia, Texas kontroluje",
-    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatjeden epizóde vášho obľúbeného podcastu. Dnes je streda, piateho augusta dvetisícdvadsaťšesť a opäť máme pred sebou poriadnu dávku horúcich noviniek, ktoré nám ukážu, kam sa AI posúva a čo to pre nás znamená.\n\nDnes sa pozrieme na to, ako sa niektoré technologické giganty preorientovávajú a ako vďaka...",
-    "pub_date": "Wed, 05 Aug 2026 07:05:22 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-05/kolby-ai-2026-08-05.mp3",
-    "mp3_size": 10331136,
-    "duration": "00:28:41",
-    "number": 67
   }
 ]
