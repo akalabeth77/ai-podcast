@@ -17,6 +17,7 @@ import json
 import os
 import re
 import sys
+import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
@@ -24,7 +25,7 @@ from pathlib import Path
 import edge_tts
 import feedparser
 import httpx
-from openai import OpenAI
+from openai import APIConnectionError, APIStatusError, APITimeoutError, OpenAI
 
 
 # ─────────────────────────────────────────────────────────────
@@ -54,8 +55,21 @@ TTS_RATE = "+5%"
 # Koľko článkov spracovať (viac = dlhší podcast)
 MAX_ARTICLES = 8
 
-# Google Gemini – 1500 požiadaviek/deň zadarmo, bez rate limitov
-LLM_MODEL = "gemini-2.5-flash"
+# LLM poskytovatelia v poradí, v akom sa skúšajú. Keď jeden zlyhá (402 = minutý
+# kredit/kvóta, 429 = rate limit, 5xx, prípadne príliš krátky skript), skúsi sa ďalší.
+# Modely sa dajú prepísať env premennými GEMINI_MODELS / OPENROUTER_MODELS
+# (čiarkou oddelený zoznam).
+GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.0-flash"]
+OPENROUTER_MODELS = [
+    "google/gemma-4-31b-it:free",
+    "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "openrouter/free",   # router – sám vyberie aktuálne dostupný bezplatný model
+]
+# Pri automatickom výbere ďalších bezplatných modelov: preferované a vylúčené
+OPENROUTER_PREFERRED = ["gemma", "nemotron-3-ultra", "deepseek", "llama", "qwen", "mistral", "ernie"]
+OPENROUTER_EXCLUDED = ["code", "nano", "mini", "1.7b", "omni", "-vl"]
+LLM_MAX_TOKENS = 16000
+MIN_SCRIPT_WORDS = 2000
 
 # Výstupné súbory
 OUTPUT_DIR = Path("./output")
@@ -290,28 +304,158 @@ def load_recent_episode_context(n: int = 3) -> str:
 #  KROK 2: Vygeneruj podcast skript
 # ─────────────────────────────────────────────────────────────
 
-def generate_podcast_script(
+class LLMError(RuntimeError):
+    """Všetci LLM poskytovatelia zlyhali."""
+
+
+def _env_list(name: str, default: list[str]) -> list[str]:
+    raw = os.environ.get(name, "").strip()
+    return [m.strip() for m in raw.split(",") if m.strip()] if raw else list(default)
+
+
+def discover_openrouter_free_models(limit: int = 4) -> list[str]:
+    """Zistí aktuálne bezplatné OpenRouter modely (zoznam sa často mení)."""
+    try:
+        resp = httpx.get("https://openrouter.ai/api/v1/models", timeout=20)
+        resp.raise_for_status()
+        models = resp.json().get("data", [])
+    except Exception as e:
+        print(f"  ⚠️  Nepodarilo sa načítať zoznam OpenRouter modelov: {e}")
+        return []
+
+    free = [
+        m["id"] for m in models
+        if m.get("id", "").endswith(":free")
+        and (m.get("context_length") or 0) >= 32000
+        and ((m.get("top_provider") or {}).get("max_completion_tokens") or LLM_MAX_TOKENS) >= LLM_MAX_TOKENS
+        and not any(x in m["id"] for x in OPENROUTER_EXCLUDED)
+    ]
+
+    def rank(model_id: str) -> int:
+        for i, key in enumerate(OPENROUTER_PREFERRED):
+            if key in model_id:
+                return i
+        return len(OPENROUTER_PREFERRED)
+
+    return sorted(free, key=rank)[:limit]
+
+
+def get_llm_providers() -> list[dict]:
+    """Zoznam poskytovateľov v poradí skúšania – len tie s nastaveným kľúčom."""
+    providers = []
+    if os.environ.get("GEMINI_API_KEY"):
+        providers.append({
+            "name": "Gemini",
+            "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
+            "api_key": os.environ["GEMINI_API_KEY"],
+            "models": _env_list("GEMINI_MODELS", GEMINI_MODELS),
+        })
+    if os.environ.get("OPENROUTER_API_KEY"):
+        models = _env_list("OPENROUTER_MODELS", OPENROUTER_MODELS)
+        if not os.environ.get("OPENROUTER_MODELS"):
+            models += [m for m in discover_openrouter_free_models() if m not in models]
+        providers.append({
+            "name": "OpenRouter",
+            "base_url": "https://openrouter.ai/api/v1",
+            "api_key": os.environ["OPENROUTER_API_KEY"],
+            "models": models,
+        })
+    return providers
+
+
+def _error_detail(e: Exception) -> str:
+    if isinstance(e, APIStatusError):
+        try:
+            body = e.response.text[:300]
+        except Exception:
+            body = ""
+        return f"HTTP {e.status_code} {body}".strip()
+    return f"{type(e).__name__}: {e}"
+
+
+def call_llm(prompt: str, validate=None, providers: list[dict] | None = None,
+             retry_delays: tuple[int, ...] = (15, 45)) -> tuple[str, str]:
+    """
+    Skúša poskytovateľov a modely postupne, kým jeden nevráti platný výstup.
+    validate(text) môže vyhodiť ValueError → skúsi sa ďalší model.
+    429 / 5xx / sieťové chyby sa pre ten istý model zopakujú (retry_delays).
+    Vracia (text, "Poskytovateľ/model"), inak vyhodí LLMError so všetkými chybami.
+    """
+    if providers is None:
+        providers = get_llm_providers()
+    if not providers:
+        raise EnvironmentError("Nie je nastavený GEMINI_API_KEY ani OPENROUTER_API_KEY!")
+
+    errors = []
+    for prov in providers:
+        client = OpenAI(api_key=prov["api_key"], base_url=prov["base_url"],
+                        timeout=600, max_retries=0)
+        for model in prov["models"]:
+            label = f"{prov['name']}/{model}"
+            for attempt in range(len(retry_delays) + 1):
+                print(f"🤖 Generujem skript cez {label}"
+                      + (f" (pokus {attempt + 1})" if attempt else "") + "...")
+                try:
+                    response = client.chat.completions.create(
+                        model=model,
+                        max_tokens=LLM_MAX_TOKENS,
+                        messages=[{"role": "user", "content": prompt}],
+                    )
+                    text = (response.choices[0].message.content or "").strip()
+                    if validate:
+                        validate(text)
+                    return text, label
+                except ValueError as e:
+                    # zlý / krátky výstup → ďalší model
+                    retryable = False
+                    detail = str(e)
+                except APIStatusError as e:
+                    # 429 a 5xx sú dočasné; 401/402/403/404/400 → rovno ďalší model
+                    retryable = e.status_code == 429 or e.status_code >= 500
+                    detail = _error_detail(e)
+                except (APIConnectionError, APITimeoutError) as e:
+                    retryable = True
+                    detail = _error_detail(e)
+
+                errors.append(f"{label}: {detail}")
+                print(f"  ⚠️  {label}: {detail}")
+                if retryable and attempt < len(retry_delays):
+                    time.sleep(retry_delays[attempt])
+                    continue
+                break
+
+    raise LLMError("Všetci LLM poskytovatelia zlyhali:\n  - " + "\n  - ".join(errors))
+
+
+def parse_script_output(full_output: str, episode_number: int) -> tuple[str, str]:
+    """Z výstupu LLM vytiahne názov epizódy a vyčistený skript. ValueError ak je krátky."""
+    lines = full_output.split("\n")
+    episode_title = f"Ep. {episode_number}"
+    script = full_output
+    if lines[0].startswith("NAZOV:"):
+        episode_title = lines[0].removeprefix("NAZOV:").strip().strip('"\'')
+        script = "\n".join(lines[1:]).lstrip("\n").strip()
+        # Číslo epizódy nech vždy určuje kód, nie LLM
+        episode_title = re.sub(r"^Ep\.\s*\d+\s*:\s*", "", episode_title)
+        episode_title = f"Ep. {episode_number}: {episode_title}"
+
+    # Odstráň prípadné zvyšné markdown znaky
+    script = clean_markdown(script)
+
+    word_count = len(script.split())
+    if word_count < MIN_SCRIPT_WORDS:
+        raise ValueError(
+            f"Skript je príliš krátky: {word_count} slov (minimum {MIN_SCRIPT_WORDS})."
+        )
+    return episode_title, script
+
+
+def build_prompt(
     articles: list[dict],
     episode_number: int,
     eu_articles: list[dict] | None = None,
     recent_context: str = "",
-) -> tuple[str, str]:
-    """
-    Cez Gemini vygeneruje prirodzený slovenský podcast skript.
-    Vracia (title, full_script).
-    """
-    if not articles:
-        raise ValueError("Žiadne články na spracovanie!")
-
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-        raise EnvironmentError("GEMINI_API_KEY nie je nastavený!")
-
-    client = OpenAI(
-        api_key=api_key,
-        base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
-    )
-
+) -> str:
     articles_text = "\n\n".join([
         f"{i+1}. {a['title']}\n"
         f"Zdroj: {a['source']}\n"
@@ -394,36 +538,29 @@ NAZOV: Ep. {episode_number}: [kreatívny slovenský názov vystihujúci hlavnú 
 Príklady: "NAZOV: Ep. 10: Brusel reguluje, Silicon Valley ignoruje" alebo "NAZOV: Ep. 11: Keď AI vstupuje do volebnej kabínky"
 Potom prázdny riadok a začína hovorený skript. Žiadne ďalšie metadáta."""
 
-    print(f"🤖 Generujem skript cez Gemini ({LLM_MODEL})...")
-    response = client.chat.completions.create(
-        model=LLM_MODEL,
-        max_tokens=16000,
-        messages=[{"role": "user", "content": prompt}]
+    return prompt
+
+
+def generate_podcast_script(
+    articles: list[dict],
+    episode_number: int,
+    eu_articles: list[dict] | None = None,
+    recent_context: str = "",
+) -> tuple[str, str]:
+    """
+    Cez LLM (Gemini, záložne OpenRouter) vygeneruje slovenský podcast skript.
+    Vracia (title, full_script).
+    """
+    if not articles:
+        raise ValueError("Žiadne články na spracovanie!")
+
+    prompt = build_prompt(articles, episode_number, eu_articles, recent_context)
+    full_output, used = call_llm(
+        prompt, validate=lambda text: parse_script_output(text, episode_number)
     )
-    full_output = response.choices[0].message.content.strip()
+    episode_title, script = parse_script_output(full_output, episode_number)
 
-    # Extrahuj názov z prvého riadku
-    lines = full_output.split("\n")
-    episode_title = f"Ep. {episode_number}"
-    script = full_output
-    if lines[0].startswith("NAZOV:"):
-        episode_title = lines[0].removeprefix("NAZOV:").strip().strip('"\'')
-        script = "\n".join(lines[1:]).lstrip("\n").strip()
-        # Číslo epizódy nech vždy určuje kód, nie LLM
-        episode_title = re.sub(r"^Ep\.\s*\d+\s*:\s*", "", episode_title)
-        episode_title = f"Ep. {episode_number}: {episode_title}"
-
-    # Odstráň prípadné zvyšné markdown znaky
-    script = clean_markdown(script)
-
-    word_count = len(script.split())
-    if word_count < 2000:
-        raise ValueError(
-            f"Skript je príliš krátky: {word_count} slov (minimum 2000). "
-            "Skontroluj limity API alebo zvýš max_tokens."
-        )
-
-    print(f"  ✅ Skript vygenerovaný: {word_count} slov | Názov: {episode_title}")
+    print(f"  ✅ Skript vygenerovaný ({used}): {len(script.split())} slov | Názov: {episode_title}")
     return episode_title, script
 
 

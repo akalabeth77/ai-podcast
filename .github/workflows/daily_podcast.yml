@@ -59,11 +59,27 @@ jobs:
 
       # ─── Spusti generátor ───────────────────────────────────
       - name: Generuj podcast
+        shell: bash
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           GITHUB_REPO_OWNER: ${{ github.repository_owner }}
           GITHUB_REPO_NAME: ${{ github.event.repository.name }}
-        run: python ai_podcast_generator.py
+          PYTHONUNBUFFERED: "1"
+        run: |
+          set -o pipefail
+          mkdir -p output
+          python ai_podcast_generator.py 2>&1 | tee output/run.log
+
+      # ─── Pri chybe ulož log pre e-mailové upozornenie ───────
+      - name: Nahraj log
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-log
+          path: output/run.log
+          if-no-files-found: ignore
+          retention-days: 7
 
       # ─── Získaj dnešný dátum pre Release tag ────────────────
       - name: Nastav dátum
@@ -89,3 +105,27 @@ jobs:
           git add docs/feed.xml docs/episodes.json docs/used_articles.json
           git diff --staged --quiet || git commit -m "😙️ Epizóda ${{ steps.date.outputs.DATE }}"
           git push
+
+  # ─── E-mail, ak sa epizóda nevygenerovala ─────────────────
+  notify-failure:
+    needs: [check-time, generate-podcast]
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stiahni log
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: run-log
+          path: logs
+
+      - name: Pošli e-mail
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          LOG_FILE: logs/run.log
+        run: python notify_failure.py
