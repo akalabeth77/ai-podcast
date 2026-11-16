@@ -1,5 +1,15 @@
 [
   {
+    "id": "2026-11-16",
+    "number": 128,
+    "title": "Ep. 128: Audible a Maps menia pravidlá hry Nvidia v kríze",
+    "description": "Ahojte milí poslucháči vitajte v novej epizóde Kolby AI Podcastu. Toto je sto dvadsiataosma epizóda a dnes je pondelok šestnásť november dva tisíce dvadsaťšesť. Srdečne sa teším že sa k nám pridávate na začiatku nového týždňa a dúfam že ste si už išli dať tú prvú kávu lebo dnes máme na stope celkom pekný balík tém.\n\nV dnešnom spise sa pozrieme na to ako Audible chce zmeniť spôsob ako objavujeme audioknihy pomocou umelej inteligencie. Potom sa presunieme k Google Maps ktoré teraz umia plánovať ce...",
+    "pub_date": "Mon, 16 Nov 2026 14:31:29 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-11-16/kolby-ai-2026-11-16.mp3",
+    "mp3_size": 8690688,
+    "duration": "00:24:08"
+  },
+  {
     "id": "2026-11-15",
     "number": 127,
     "title": "Ep. 127: Pád Jensen Huanga AI peňaženky a Amazonov globálny graf",
@@ -588,15 +598,5 @@
     "mp3_size": 10089072,
     "duration": "00:28:01",
     "number": 69
-  },
-  {
-    "id": "2026-08-06",
-    "title": "Ep. 68: Od Muskových sľubov po Google otrasy a AI v hudbe",
-    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej epizóde vášho obľúbeného zdroja informácií o AI. Dnes je štvrtok, šiesty august dvoch tisíc dvadsiateho šiesteho roku a máme pre vás opäť plné vrece pútavých správ a analýz.\n\nDnes sa spoločne ponoríme do zaujímavých tém zo svetového diania v umelej inteligencii. Budeme hovoriť o ambicióznom...",
-    "pub_date": "Thu, 06 Aug 2026 07:06:55 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-06/kolby-ai-2026-08-06.mp3",
-    "mp3_size": 11327616,
-    "duration": "00:31:27",
-    "number": 68
   }
 ]
