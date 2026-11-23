@@ -1,5 +1,15 @@
 [
   {
+    "id": "2026-11-23",
+    "number": 129,
+    "title": "Ep. 129: Návrat kráľa čipov a AI nákupy na Black Friday",
+    "description": "Ahojte milí poslucháči a vítam vás pri ďalšej epizóde Kolby AI Podcastu. Dnes je pondelok dvadsiaty treti november dva tisíc dvadsaťšesť a my sme pri sebe v epizóde číslo sto dvadsaťdeväť. Teším sa že ste zapnuli a že spolu budeme dnes zistovať čo sa vo svete umelej inteligencie udeje. Máme pred sebou neskutočne intenzívny týždeň a dnešný program je nabitý až po kraj. Začneme tým čo celý tech svet rozvíril a je to totiž dramatický návrat Jensena Huanga do čela spoločnosti Nvidia. Prejdeme si vše...",
+    "pub_date": "Mon, 23 Nov 2026 17:01:21 +0000",
+    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-11-23/kolby-ai-2026-11-23.mp3",
+    "mp3_size": 6673392,
+    "duration": "00:18:32"
+  },
+  {
     "id": "2026-11-16",
     "number": 128,
     "title": "Ep. 128: Audible a Maps menia pravidlá hry Nvidia v kríze",
@@ -588,15 +598,5 @@
     "mp3_size": 12476160,
     "duration": "00:34:39",
     "number": 70
-  },
-  {
-    "id": "2026-08-07",
-    "title": "Ep. 69: Od Jonyho šepkára po AI bezplatné reči a data centrá",
-    "description": "Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej, epizóde vášho obľúbeného podcastu. Dnes je krásny piatok, siedmeho augusta roka dvetisíc dvadsaťšesť, a ako vždy, máme pre vás pripravenú riadnu nálož tých najčerstvejších a najdôležitejších správ zo sveta umelej inteligencie. Pripravte si kávu, alebo možno už aj nejaký osviežujúci letný d...",
-    "pub_date": "Fri, 07 Aug 2026 06:35:19 +0000",
-    "mp3_url": "https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-07/kolby-ai-2026-08-07.mp3",
-    "mp3_size": 10089072,
-    "duration": "00:28:01",
-    "number": 69
   }
 ]

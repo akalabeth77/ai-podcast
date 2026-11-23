@@ -4,7 +4,7 @@
     <title>Kolby AI Podcast</title>
     <description>Kolby AI Podcast je týždenný slovenský podcast o umelej inteligencii. Každý pondelok ti v skratke poviem, čo sa nové dialo vo svete AI – nové modely, nástroje, výskum aj praktické tipy ako AI využiť v bežnom živote. Moderuje AI hlas, obsah generuje Gemini, správy čerpám z overených zdrojov. Ideálne na rannú kávu alebo cestou do práce.</description>
     <language>sk</language>
-    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-11-16</link>
+    <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-11-23</link>
     <ns0:author>Andrej Kolbaský</ns0:author>
     <ns0:explicit>false</ns0:explicit>
     <ns0:category text="Technology" />
@@ -16,8 +16,16 @@
     <image>
       <url>https://akalabeth77.github.io/ai-podcast/cover.png</url>
       <title>Kolby AI Podcast</title>
-      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-11-16</link>
+      <link>https://github.com/akalabeth77/ai-podcast/releases/download/2026-11-23</link>
     </image>
+    <item>
+      <title>Ep. 129: Návrat kráľa čipov a AI nákupy na Black Friday</title>
+      <description>Ahojte milí poslucháči a vítam vás pri ďalšej epizóde Kolby AI Podcastu. Dnes je pondelok dvadsiaty treti november dva tisíc dvadsaťšesť a my sme pri sebe v epizóde číslo sto dvadsaťdeväť. Teším sa že ste zapnuli a že spolu budeme dnes zistovať čo sa vo svete umelej inteligencie udeje. Máme pred sebou neskutočne intenzívny týždeň a dnešný program je nabitý až po kraj. Začneme tým čo celý tech svet rozvíril a je to totiž dramatický návrat Jensena Huanga do čela spoločnosti Nvidia. Prejdeme si vše...</description>
+      <pubDate>Mon, 23 Nov 2026 17:01:21 +0000</pubDate>
+      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-11-23/kolby-ai-2026-11-23.mp3</guid>
+      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-11-23/kolby-ai-2026-11-23.mp3" length="6673392" type="audio/mpeg" />
+      <ns0:duration>00:18:32</ns0:duration>
+    </item>
     <item>
       <title>Ep. 128: Audible a Maps menia pravidlá hry Nvidia v kríze</title>
       <description>Ahojte milí poslucháči vitajte v novej epizóde Kolby AI Podcastu. Toto je sto dvadsiataosma epizóda a dnes je pondelok šestnásť november dva tisíce dvadsaťšesť. Srdečne sa teším že sa k nám pridávate na začiatku nového týždňa a dúfam že ste si už išli dať tú prvú kávu lebo dnes máme na stope celkom pekný balík tém.
@@ -579,14 +587,6 @@ Dnes nás čaká skutočne pestrý program. Poz...</description>
       <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-08/kolby-ai-2026-08-08.mp3</guid>
       <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-08/kolby-ai-2026-08-08.mp3" length="12476160" type="audio/mpeg" />
       <ns0:duration>00:34:39</ns0:duration>
-    </item>
-    <item>
-      <title>Ep. 69: Od Jonyho šepkára po AI bezplatné reči a data centrá</title>
-      <description>Ahojte, milí poslucháči Kolby AI Podcastu, zvedavci budúcnosti a všetci, ktorí chcete držať krok s neuveriteľne rýchlym svetom umelej inteligencie! Srdečne vás vítam pri ďalšej, v poradí už šesťdesiatej prvej, epizóde vášho obľúbeného podcastu. Dnes je krásny piatok, siedmeho augusta roka dvetisíc dvadsaťšesť, a ako vždy, máme pre vás pripravenú riadnu nálož tých najčerstvejších a najdôležitejších správ zo sveta umelej inteligencie. Pripravte si kávu, alebo možno už aj nejaký osviežujúci letný d...</description>
-      <pubDate>Fri, 07 Aug 2026 06:35:19 +0000</pubDate>
-      <guid>https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-07/kolby-ai-2026-08-07.mp3</guid>
-      <enclosure url="https://github.com/akalabeth77/ai-podcast/releases/download/2026-08-07/kolby-ai-2026-08-07.mp3" length="10089072" type="audio/mpeg" />
-      <ns0:duration>00:28:01</ns0:duration>
     </item>
   </channel>
 </rss>
